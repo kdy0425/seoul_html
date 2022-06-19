@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=1200"/>
+<link rel="canonical" href="">
+<link rel="shortcut icon" type="image/x-icon" href="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta property="og:title" content=""/>
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content=""/>
+<meta property="og:description" content="" />
+<title>서울특별시 임산부 교통비 지원 업무 시스템</title>
+<link rel="stylesheet" type="text/css" href="../assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../assets/css/content.css" />
+<link rel="stylesheet" type="text/css" href="../assets/css/jquery-ui.css" />
+<script src="../assets/js/jquery-1.11.3.min.js"></script>
+<script src="../assets/js/apexcharts.js"></script>
+</head>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+	<h1 id="header_h1">서울특별시 임산부 교통비 지원 업무 시스템</h1>
+	<div id="skip_to_container">
+		<!-- skip navigation -->
+		<a href="#content">내용 바로가기</a>
+		<a href="#nav">서비스메뉴 바로가기</a>
+	</div>
+	<hr class="hide" />	
+
+	<!-- header -->
+	<div id="header">
+		<div class="hd_top">
+			<div class="container">
+				<div id="logo">
+					<a href="#">
+						<img src="../assets/images/logo.jpg" alt="서울특별시 임산부 교통비 지원 업무 시스템">
+					</a>
+				</div>
+				<div class="hd_rt">
+					<span class="hd_welcome"><span class="name">홍길동</span><span class="area">(서울시)</span>님 반갑습니다.</span>
+					<ul class="hd_links">
+						<li><a href="javascript:;">회원정보변경</a></li>
+						<li><a href="javascript:;">로그아웃</a></li>
+						<li class="alram"><a href="javascript:;"><span class="sound_only">알림</span><span class="count">6</span></a></li>
+						<li class="alram"><a href="javascript:;"><span class="sound_only">알림</span><span class="count">10+</span></a></li><!-- 10초과일 때 (10+) -->
+					</ul>
+					
+				</div>
+			</div>
+		</div>
+		<div class="hd_bottom">
+			<div class="container">
+				<ul id="nav">
+					<li><a href="javascript:;">신청접수</a>
+						<ul>
+							<li><a href="javascript:;">신청접수 현황</a></li>
+							<li><a href="javascript:;">신규신청</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">사용현황</a>
+						<ul>
+							<li><a href="javascript:;">사용내역</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">정산현황</a>
+						<ul>
+							<li><a href="javascript:;">정산내역</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">커뮤니티</a>
+						<ul>
+							<li><a href="javascript:;">공지사항</a></li>
+							<li><a href="javascript:;">자주하는 질문</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">통계</a>
+						<ul>
+							<li><a href="javascript:;">신청현황</a></li>
+							<li><a href="javascript:;">바우처 지급 현황</a></li>
+							<li><a href="javascript:;">바우처 불용 현황</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">사용자</a>
+						<ul>
+							<li><a href="javascript:;">사용자 관리</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<span class="nav_bg"></span>
+		</div>
+	</div>
+	<!-- //header -->	
+
+	<!-- content -->
+	<div id="content">
+		<div class="main_content container">
+			
+			<div id="layer_open_btns">
+				<button type="button" onclick="$('.card_print').show();">카드공문인쇄</button>
+			</div>
+
+		</div>
+	</div>
+	<!-- //content -->
+
+
+			<!-- 카드공문인쇄 -->
+			<div class="layer_form card_print" style="display: none;">
+				<div class="layer_box" style="max-width:720px;">
+					<div class="layer_cnt">
+						<div class="lf_title">
+							<div class="lf_tit_img">
+								<span class="item"><img src="../assets/images/lf_tit_img_kb.jpg" alt="kb국민카드"></span>
+								<span class="item"><img src="../assets/images/lf_tit_img_bc.jpg" alt="비씨카드"></span>
+								<span class="item"><img src="../assets/images/lf_tit_img_ss.jpg" alt="samsung card"></span>
+								<span class="item"><img src="../assets/images/lf_tit_img_sh.jpg" alt="신한카드"></span>
+								<span class="item"><img src="../assets/images/lf_tit_img_hn.jpg" alt="하나카드"></span>
+							</div>
+							<a href="javascript:;" class="lf_close" onclick="layerHide('card_print')">팝업닫기</a>
+						</div>
+						<div class="lf_content">
+							<div class="card_cnt">
+								<div class="card_ctop">
+									<div class="item"></div>
+									<div class="item">일 자 : 2022년 8월 5일</div>
+									<div class="item">수 신 : 서울특별시</div>
+									<div class="item">참 조 :</div>
+									<div class="item">제 목 : 임산부 교통비 지원금의 정산 및 청구의 건</div>
+								</div>
+								<div class="card_cbottom">
+									<p>1. 귀 기관의 일익 번창하심을 기원합니다.<br/>
+									2. 임산부 교통비 지원금을 아래와 같이 청구하오니 청구월 말일까지 해당 계좌로 입금하여 주시기 바랍니다.</p>
+									<p class="align_center">- 아 &nbsp;&nbsp; 래 -</p>
+									<p><strong>가. 정산기간</strong>  :  2022년 7월 1일부터 2022년 7월 31일<br/>
+									<strong>나. 계좌번호</strong>  :  신한은행 123-125-1852385<br/>
+									<strong>다. 예  금  주</strong>  :  삼성카드(주)<br/>
+									<strong>라. 청구금액</strong>  :  49,000,000원<br/>
+									<strong>마. 청구내역</strong></p>
+								</div>
+								<table class="list_table md nbb nhv mgt20">
+									<thead>
+										<tr>
+											<th>정산월</th>
+											<th>사용자수</th>
+											<th>거래건수</th>
+											<th>지원금액</th>
+											<th>취소<br/>거래건수</th>
+											<th>취소<br/>지원금액</th>
+											<th>지원금<br/>계</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>2022.07</td>
+											<td>23,000</td>
+											<td>45,125,125</td>
+											<td>45,125,125</td>
+											<td>45,125,125</td>
+											<td>45,125,125</td>
+											<td>45,125,125</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="cc_csign">
+									<span class="sign">삼성카드 주식회사<br/>대표이사</span>
+									<span class="stamp"><img src="../assets/images/stamp_ss.jpg" alt=""></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<span class="layer_bg" onclick="layerHide('card_print')"></span>
+				<span class="blank"></span>
+			</div>
+			<!-- //카드공문인쇄 -->
+
+
+	<div id="footer">
+		<div class="container">
+			<span class="ft_copy">COPYRIGHT Ⓒ 2021 상생소비지원금 ALL RIGHTS RESERVED.</span>
+		</div>
+	</div>
+</div>
+<script src="../assets/js/jquery-ui.min.js"></script>
+<script src="../assets/js/common.js"></script>
+</body>
+</html>	 

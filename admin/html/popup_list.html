@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=1200"/>
+<link rel="canonical" href="">
+<link rel="shortcut icon" type="image/x-icon" href="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta property="og:title" content=""/>
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content=""/>
+<meta property="og:description" content="" />
+<title>서울특별시 임산부 교통비 지원 업무 시스템</title>
+<link rel="stylesheet" type="text/css" href="../assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../assets/css/content.css" />
+<link rel="stylesheet" type="text/css" href="../assets/css/jquery-ui.css" />
+<script src="../assets/js/jquery-1.11.3.min.js"></script>
+<script src="../assets/js/apexcharts.js"></script>
+</head>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+	<h1 id="header_h1">서울특별시 임산부 교통비 지원 업무 시스템</h1>
+	<div id="skip_to_container">
+		<!-- skip navigation -->
+		<a href="#content">내용 바로가기</a>
+		<a href="#nav">서비스메뉴 바로가기</a>
+	</div>
+	<hr class="hide" />	
+
+	<!-- header -->
+	<div id="header">
+		<div class="hd_top">
+			<div class="container">
+				<div id="logo">
+					<a href="#">
+						<img src="../assets/images/logo.jpg" alt="서울특별시 임산부 교통비 지원 업무 시스템">
+					</a>
+				</div>
+				<div class="hd_rt">
+					<span class="hd_welcome"><span class="name">홍길동</span><span class="area">(서울시)</span>님 반갑습니다.</span>
+					<ul class="hd_links">
+						<li><a href="javascript:;">회원정보변경</a></li>
+						<li><a href="javascript:;">로그아웃</a></li>
+						<li class="alram"><a href="javascript:;"><span class="sound_only">알림</span><span class="count">6</span></a></li>
+						<li class="alram"><a href="javascript:;"><span class="sound_only">알림</span><span class="count">10+</span></a></li><!-- 10초과일 때 (10+) -->
+					</ul>
+					
+				</div>
+			</div>
+		</div>
+		<div class="hd_bottom">
+			<div class="container">
+				<ul id="nav">
+					<li><a href="javascript:;">신청접수</a>
+						<ul>
+							<li><a href="javascript:;">신청접수 현황</a></li>
+							<li><a href="javascript:;">신규신청</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">사용현황</a>
+						<ul>
+							<li><a href="javascript:;">사용내역</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">정산현황</a>
+						<ul>
+							<li><a href="javascript:;">정산내역</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">커뮤니티</a>
+						<ul>
+							<li><a href="javascript:;">공지사항</a></li>
+							<li><a href="javascript:;">자주하는 질문</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">통계</a>
+						<ul>
+							<li><a href="javascript:;">신청현황</a></li>
+							<li><a href="javascript:;">바우처 지급 현황</a></li>
+							<li><a href="javascript:;">바우처 불용 현황</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">사용자</a>
+						<ul>
+							<li><a href="javascript:;">사용자 관리</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<span class="nav_bg"></span>
+		</div>
+	</div>
+	<!-- //header -->	
+
+	<!-- content -->
+	<div id="content">
+		<div class="sub_content container">
+			
+			<div class="pg_title">팝업관리</div>
+
+			<div class="search_form">
+				<form action="">
+					<div class="sf_inner">
+						<table>
+							<colgroup>
+								<col style="width:108px;">
+								<col style="width:481px;">
+								<col style="width:98px;">
+								<col style="">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>게시기간</th>
+									<td>
+										<div class="date_cwrap">
+											<div class="date_ip clearfix mgr10">
+												<input type="text" class="dc_start datepicker sm" readonly="">
+												<span class="dash">-</span>
+												<input type="text" class="dc_end datepicker sm" readonly="">
+											</div>
+											<div class="date_control">
+												<div class="date_sel date_sel1">
+													<button type="button" data-rel="1">1개월</button>
+													<button type="button" data-rel="6">6개월</button>
+												</div>
+											</div>
+										</div>
+									</td>
+									<th>팝업제목</th>
+									<td>
+										<input type="text" class="lg2">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<a href="javascript:;" class="sform_submit"><span>검색</span></a>
+					</div>
+				</form>
+			</div>
+			
+			<div class="list_wrap mgt40">
+				<div class="list_top clearfix">
+					<div class="list_btns">
+						<div class="design_select xs">
+							<input type="hidden">
+							<a href="javascript:;" class="ds_value type1">10개</a>
+							<div class="ds_options" style="display: none;">
+								<div id="" class="ds_cnt">
+									<ul class="ds_list">
+										<li><a href="javascript:;" class="ds_option" data-rel="10개">10개</a></li>
+										<li><a href="javascript:;" class="ds_option" data-rel="20개">20개</a></li>
+										<li><a href="javascript:;" class="ds_option" data-rel="30개">30개</a></li>
+										<li><a href="javascript:;" class="ds_option" data-rel="50개">50개</a></li>
+									</ul>
+								</div>
+								<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+							</div>
+						</div>
+						<a href="javascript:;" class="btn" onclick="layerShow('add_popup_layer')">팝업등록</a>
+					</div>
+				</div>
+
+				<div class="list_box">
+					<table class="list_table fixed">
+						<colgroup>
+							<col style="width:90px;">
+							<col style="">
+							<col style="width:140px;">
+							<col style="width:115px;">
+							<col style="width:135px;">
+							<col style="width:115px;">
+							<col style="width:135px;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>번호</th>
+								<th>팝업제목</th>
+								<th>사이트종류</th>
+								<th>게시여부</th>
+								<th>게시기간</th>
+								<th>등록일</th>
+								<th>등록자</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>3</td>
+								<td class="subject"><a href="javascript:;" onclick="layerShow('detail_popup_layer')">2022년 신규사업안내 2022년 신규사업안내 2022년 신규사업안내 2022년 신규사업안내 2022년 신규사업안내</a></td>
+								<td>전체</td>
+								<td>게시</td>
+								<td>2022-05-14 ~<br/>2022-05-14</td>
+								<td>2022-05-14</td>
+								<td>서울시</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td class="subject"><a href="javascript:;" onclick="layerShow('detail_popup_layer')">2022년 신규사업안내</a></td>
+								<td>전체</td>
+								<td>게시</td>
+								<td>2022-05-14 ~<br/>2022-05-14</td>
+								<td>2022-05-14</td>
+								<td>서울시</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td class="subject"><a href="javascript:;" onclick="layerShow('detail_popup_layer')">2022년 신규사업안내</a></td>
+								<td>전체</td>
+								<td>게시</td>
+								<td>2022-05-14 ~<br/>2022-05-14</td>
+								<td>2022-05-14</td>
+								<td>서울시</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="list_bottom clearfix">
+						<div class="list_total">총건수 : <strong>42건</strong>이 조회되었습니다.</div>
+					</div>
+
+					<div id="" class="page_nav">
+						<a href="" class="pg_start">처음</a>
+						<a href="" class="pg_prev">이전</a>
+						<a href="" class="pg_page">1<span class="sound_only">페이지</span></a>
+						<span class="sound_only">열린</span><strong class="pg_current">2</strong><span class="sound_only">페이지</span>
+						<a href="" class="pg_page">3<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_page">4<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_page">5<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_page">6<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_page">7<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_page">8<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_page">9<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_page">10<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_next">다음</a>
+						<a href="" class="pg_end">맨끝</a>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- //content -->
+
+
+<!-- 팝업등록 -->
+<div class="layer_form add_popup_layer" style="display: none;">
+	<div class="layer_box" style="max-width:1100px;">
+		<div class="layer_cnt">
+			<div class="lf_title">
+				팝업등록
+				<a href="javascript:;" class="lf_close" onclick="layerHide('add_popup_layer');">팝업닫기</a>
+			</div>
+			<div class="lf_content">
+				
+				<form method="post" action="">
+					<div class="form_box">
+						<span class="form_rt_txt2"><span class="req">*</span> 는 필수 입력 사항입니다.</span>
+						<div class="form_table">
+							<table>
+								<colgroup>
+									<col style="width:15%;">
+									<col style="width:35%;">
+									<col style="width:15%;">
+									<col style="width:35%;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th><span class="req">팝업제목<span></th>
+										<td colspan="3"><input type="text" class="xl"></td>
+									</tr>
+									<tr>
+										<th><span class="req">게시기간</th>
+										<td colspan="3">
+											<div class="date_cwrap">
+												<div class="date_ip clearfix mgr10">
+													<input type="text" class="dc_start datepicker sm" readonly="">
+													<span class="dash">-</span>
+													<input type="text" class="dc_end datepicker sm" readonly="">
+												</div>
+												<div class="date_control">
+													<div class="date_sel date_sel2">
+														<button type="button" data-rel="1">1개월</button>
+														<button type="button" data-rel="3">3개월</button>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th><span class="req">사용여부<span></th>
+										<td>
+											<div class="design_select md">
+												<input type="hidden" value="사용">
+												<a href="javascript:;" class="ds_value type1">사용</a>
+												<div class="ds_options" style="display: none;">
+													<div id="" class="ds_cnt">
+														<ul class="ds_list">
+															<li><a href="javascript:;" class="ds_option" data-rel="사용">사용</a></li>
+															<li><a href="javascript:;" class="ds_option" data-rel="미사용">미사용</a></li>
+														</ul>
+													</div>
+													<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+												</div>
+											</div>
+										</td>
+										<th><span class="req">사이트종류<span></th>
+										<td>
+											<div class="design_select md">
+												<input type="hidden" value="전체">
+												<a href="javascript:;" class="ds_value type1">전체</a>
+												<div class="ds_options" style="display: none;">
+													<div id="" class="ds_cnt">
+														<ul class="ds_list">
+															<li><a href="javascript:;" class="ds_option" data-rel="옵션명1">옵션명1</a></li>
+															<li><a href="javascript:;" class="ds_option" data-rel="옵션명2">옵션명2</a></li>
+														</ul>
+													</div>
+													<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th><span class="req">넓이(px)<span></th>
+										<td>
+											<input type="text" class="md">
+											<span class="error_txt mgt10">숫자만 입력하세요.</span>
+										</td>
+										<th><span class="req">높이(px)<span></th>
+										<td>
+											<input type="text" class="md">
+											<span class="error_txt mgt10">숫자만 입력하세요.</span>
+										</td>
+									</tr>
+									<tr>
+										<th>우선순위</th>
+										<td>
+											<div class="design_select md">
+												<input type="hidden" value="선택">
+												<a href="javascript:;" class="ds_value type1">선택</a>
+												<div class="ds_options" style="display: none;">
+													<div id="" class="ds_cnt">
+														<ul class="ds_list">
+															<li><a href="javascript:;" class="ds_option" data-rel="1">1</a></li>
+															<li><a href="javascript:;" class="ds_option" data-rel="2">2</a></li>
+															<li><a href="javascript:;" class="ds_option" data-rel="3">3</a></li>
+														</ul>
+													</div>
+													<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+												</div>
+											</div>
+										</td>
+										<th>링크(url)</th>
+										<td>
+											<input type="text" class="xl">
+										</td>
+									</tr>
+									<tr>
+										<th><span class="req">팝업이미지<span></th>
+										<td colspan="3">
+											<div class="file_upload">
+												<label class="file_label btn btn1"><input type="file" onchange="addFile(this);" multiple />파일찾기</label>
+												<div class="file_list"></div>
+											</div>
+											<span class="error_txt mgt10">이미지는 최대 10MB이하의JPG, PNG, GIF 파일만 첨부가능합니다. </span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="lf_btns">
+						<a href="javascript:;" class="btn submit" onclick="layerHide('add_popup_layer');">저장</a>
+						<a href="javascript:;" class="btn gline" onclick="layerHide('add_popup_layer');">취소</a>
+					</div>
+				</form>
+			</div>
+			
+		</div>
+	</div>
+	<span class="layer_bg" onclick="layerHide('add_popup_layer');"></span>
+	<span class="blank"></span>
+</div>
+<!-- //팝업등록 -->
+
+<!-- 팝업상세 -->
+<div class="layer_form detail_popup_layer" style="display: none;">
+	<div class="layer_box" style="max-width:1100px;">
+		<div class="layer_cnt">
+			<div class="lf_title">
+				팝업상세
+				<a href="javascript:;" class="lf_close" onclick="layerHide('detail_popup_layer');">팝업닫기</a>
+			</div>
+			<div class="lf_content">
+				
+				<form method="post" action="">
+					<div class="form_box">
+						<span class="form_rt_txt2"><span class="req">*</span> 는 필수 입력 사항입니다.</span>
+						<div class="form_table">
+							<table>
+								<colgroup>
+									<col style="width:15%;">
+									<col style="width:35%;">
+									<col style="width:15%;">
+									<col style="width:35%;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th><span class="req">팝업제목<span></th>
+										<td colspan="3"><input type="text" class="xl" value="2022년 신규사업 안내"></td>
+									</tr>
+									<tr>
+										<th><span class="req">게시기간</th>
+										<td colspan="3">
+											<div class="date_cwrap">
+												<div class="date_ip clearfix mgr10">
+													<input type="text" class="dc_start datepicker sm" readonly="" value="2022-05-15">
+													<span class="dash">-</span>
+													<input type="text" class="dc_end datepicker sm" readonly="" value="2022-08-15">
+												</div>
+												<div class="date_control">
+													<div class="date_sel date_sel2">
+														<button type="button" data-rel="1">1개월</button>
+														<button type="button" data-rel="3">3개월</button>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th><span class="req">사용여부<span></th>
+										<td>
+											<div class="design_select md">
+												<input type="hidden" value="사용">
+												<a href="javascript:;" class="ds_value type1">사용</a>
+												<div class="ds_options" style="display: none;">
+													<div id="" class="ds_cnt">
+														<ul class="ds_list">
+															<li><a href="javascript:;" class="ds_option" data-rel="사용">사용</a></li>
+															<li><a href="javascript:;" class="ds_option" data-rel="미사용">미사용</a></li>
+														</ul>
+													</div>
+													<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+												</div>
+											</div>
+										</td>
+										<th><span class="req">사이트종류<span></th>
+										<td>
+											<div class="design_select md">
+												<input type="hidden" value="전체">
+												<a href="javascript:;" class="ds_value type1">전체</a>
+												<div class="ds_options" style="display: none;">
+													<div id="" class="ds_cnt">
+														<ul class="ds_list">
+															<li><a href="javascript:;" class="ds_option" data-rel="옵션명1">옵션명1</a></li>
+															<li><a href="javascript:;" class="ds_option" data-rel="옵션명2">옵션명2</a></li>
+														</ul>
+													</div>
+													<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th><span class="req">넓이(px)<span></th>
+										<td>
+											<input type="text" class="md">
+											<span class="error_txt mgt10">숫자만 입력하세요.</span>
+										</td>
+										<th><span class="req">높이(px)<span></th><!-- 기획서에 있어서 넣긴했는데 높이 지정 안하면 배너 이미지가 비율적으로 줄어들어서  높이 지정 안하는것을 추천 -->
+										<td>
+											<input type="text" class="md">
+											<span class="error_txt mgt10">숫자만 입력하세요.</span>
+										</td>
+									</tr>
+									<tr>
+										<th>우선순위</th>
+										<td>
+											<div class="design_select md">
+												<input type="hidden" value="1">
+												<a href="javascript:;" class="ds_value type1">1</a>
+												<div class="ds_options" style="display: none;">
+													<div id="" class="ds_cnt">
+														<ul class="ds_list">
+															<li><a href="javascript:;" class="ds_option" data-rel="1">1</a></li>
+															<li><a href="javascript:;" class="ds_option" data-rel="2">2</a></li>
+															<li><a href="javascript:;" class="ds_option" data-rel="3">3</a></li>
+														</ul>
+													</div>
+													<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+												</div>
+											</div>
+										</td>
+										<th>링크(url)</th>
+										<td>
+											<input type="text" class="xl">
+										</td>
+									</tr>
+									<tr>
+										<th><span class="req">팝업이미지<span></th>
+										<td colspan="3">
+											<div class="file_upload">
+												<label class="file_label btn btn1"><input type="file" onchange="addFile(this);" multiple />파일찾기</label>
+												<div class="file_list">
+													<div id="file0" class="filebox filethum">
+														<span class="thum" style="background-image:url('../assets/images/thum1.png')">thum1.jpg</span>
+														<a href="javascript:;" class="delete" onclick="deleteFile(0);"></a>
+													</div>
+												</div>
+											</div>
+											<span class="error_txt mgt10">이미지는 최대 10MB이하의JPG, PNG, GIF 파일만 첨부가능합니다. </span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="lf_btns">
+						<a href="javascript:;" class="btn submit" onclick="layerHide('detail_popup_layer');">저장</a>
+						<a href="javascript:;" class="btn gline" onclick="layerHide('detail_popup_layer');">취소</a>
+					</div>
+				</form>
+			</div>
+			
+		</div>
+	</div>
+	<span class="layer_bg" onclick="layerHide('detail_popup_layer');"></span>
+	<span class="blank"></span>
+</div>
+<!-- //팝업상세 -->
+
+	<div id="footer">
+		<div class="container">
+			<span class="ft_copy">COPYRIGHT Ⓒ 2021 상생소비지원금 ALL RIGHTS RESERVED.</span>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- alert -->
+<div class="layer_form alert_layer" style="display: none;">
+	<div class="layer_box" style="max-width:480px;">
+		<div class="layer_cnt">
+			<div class="lf_title">
+				<span class="alert_sbj"></span>
+				<a href="javascript:;" class="lf_close" onclick="layerHide('alert_layer')">팝업닫기</a>
+			</div>
+			<div class="lf_content">
+				<p class="alert_msg"></p>
+				<div class="lf_btns">
+					<a href="javascript:;" class="btn submit" onclick="layerHide('alert_layer')">확인</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<span class="layer_bg" onclick="layerHide('alert_layer')"></span>
+	<span class="blank"></span>
+</div>
+<!-- //alert -->
+<script>
+let fileNo = 0;
+let filesArr = new Array();
+
+// 첨부파일 추가
+function addFile(obj){
+    let maxFileCnt = 5;   // 첨부파일 최대 개수
+    let attFileCnt = $(obj).closest('.file_upload').find('.filebox').length;    // 기존 추가된 첨부파일 개수
+    let remainFileCnt = maxFileCnt - attFileCnt;    // 추가로 첨부가능한 개수
+    let curFileCnt = obj.files.length;  // 현재 선택된 첨부파일 개수
+    // 첨부파일 개수 확인
+    if (curFileCnt > remainFileCnt) {
+		$('.alert_layer').show();
+		$('.alert_layer .alert_sbj').text('알림');
+		$('.alert_layer .alert_msg').text("첨부파일은 최대 " + maxFileCnt + "개 까지 첨부 가능합니다.");
+    } else {
+        for (const file of obj.files) {
+            // 첨부파일 검증
+            if (validation(file)) {
+                // 파일 배열에 담기
+                let reader = new FileReader();
+                reader.onload = function (e) {
+                    filesArr.push(file);
+
+					 // 목록 추가
+					let htmlData = '';
+					htmlData += '<div id="file' + fileNo + '" class="filebox filethum">';
+					htmlData += '   <span class="thum" style="background-image:url(' + e.target.result + ')">' + file.name + '</span>';
+					htmlData += '   <a href="javascript:;" class="delete" onclick="deleteFile(' + fileNo + ');"></a>';
+					htmlData += '</div>';
+					$(obj).closest('.file_upload').find('.file_list').append(htmlData);
+					fileNo++;
+                };
+                reader.readAsDataURL(file);
+
+               
+            } else {
+                continue;
+            }
+        }
+    }
+    // 초기화
+    document.querySelector("input[type=file]").value = "";
+}
+
+function readURL(input) {
+	if (input.files && input.files[0]) {
+		var reader = new FileReader();
+		var target = $(input).closest('.profile').find('.profile_upcnt');
+		var ext = $(input).val().split('.').pop().toLowerCase();
+
+		if($.inArray(ext, ['gif','png','jpg','jpeg']) == -1) {
+			alert('gif,png,jpg,jpeg만 등록가능합니다.');
+			return;
+		}
+		reader.onload = function(e) {
+			target.css('background-image', 'url(' + e.target.result + ')');
+		}
+		reader.readAsDataURL(input.files[0]);
+	}
+}
+
+//첨부파일 검증
+function validation(obj){
+    const fileTypes = ['image/gif', 'image/jpeg', 'image/png', 'image/jpg'];
+	console.log(obj.type);
+    if (obj.name.length > 100) {
+		$('.alert_layer').show();
+		$('.alert_layer .alert_sbj').text('알림');
+		$('.alert_layer .alert_msg').text("파일명이 100자 이상인 파일은 제외되었습니다.");
+        return false;
+    } else if (obj.size > (100 * 1024 * 1024)) {
+		$('.alert_layer').show();
+		$('.alert_layer .alert_sbj').text('알림');
+		$('.alert_layer .alert_msg').text("최대 파일 용량인 100MB를 초과한 파일은 제외되었습니다.");
+        return false;
+    } else if (obj.name.lastIndexOf('.') == -1) {
+		$('.alert_layer').show();
+		$('.alert_layer .alert_sbj').text('알림');
+		$('.alert_layer .alert_msg').text("확장자가 없는 파일은 제외되었습니다.");
+        return false;
+    } else if (!fileTypes.includes(obj.type)) {
+		$('.alert_layer').show();
+		$('.alert_layer .alert_sbj').text('알림');
+		$('.alert_layer .alert_msg').text("첨부가 불가능한 파일은 제외되었습니다.");
+        return false;
+    } else {
+        return true;
+    }
+}
+
+//첨부파일 삭제
+function deleteFile(num) {
+    document.querySelector("#file" + num).remove();
+    filesArr[num].is_delete = true;
+}
+
+//폼 전송
+/*
+function submitForm() {
+    // 폼데이터 담기
+    let form = document.querySelector("form");
+    let formData = new FormData(form);
+    for (let i = 0; i < filesArr.length; i++) {
+        // 삭제되지 않은 파일만 폼데이터에 담기
+        if (!filesArr[i].is_delete) {
+            formData.append("attach_file", filesArr[i]);
+        }
+    }
+
+    $.ajax({
+        method: 'POST',
+        url: '/register',
+        dataType: 'json',
+        data: formData,
+        async: true,
+        timeout: 30000,
+        cache: false,
+        headers: {'cache-control': 'no-cache', 'pragma': 'no-cache'},
+        success: function () {
+            alert("파일업로드 성공");
+        },
+        error: function (xhr, desc, err) {
+            alert('에러가 발생 하였습니다.');
+            return;
+        }
+    })
+}
+*/
+</script>
+
+<script src="../assets/js/jquery-ui.min.js"></script>
+<script src="../assets/js/common.js"></script>
+</body>
+</html>	 

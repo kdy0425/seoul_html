@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=1200"/>
+<link rel="canonical" href="">
+<link rel="shortcut icon" type="image/x-icon" href="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta property="og:title" content=""/>
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content=""/>
+<meta property="og:description" content="" />
+<title>서울특별시 임산부 교통비 지원 업무 시스템</title>
+<link rel="stylesheet" type="text/css" href="../assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../assets/css/content.css" />
+<link rel="stylesheet" type="text/css" href="../assets/css/jquery-ui.css" />
+<script src="../assets/js/jquery-1.11.3.min.js"></script>
+<script src="../assets/js/slick.js"></script>
+<script src="../assets/js/polyfill.min.js"></script>
+<script src="../assets/js/classList.js"></script>
+<script src="../assets/js/resize-observer.js"></script>
+<script src="../assets/js/findindex_polyfill_mdn.js"></script>
+<script src="../assets/js/umd.js"></script>
+<script src="../assets/js/apexcharts.js"></script>
+</head>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+	<h1 id="header_h1">서울특별시 임산부 교통비 지원 업무 시스템</h1>
+	<div id="skip_to_container">
+		<!-- skip navigation -->
+		<a href="#content">내용 바로가기</a>
+		<a href="#nav">서비스메뉴 바로가기</a>
+	</div>
+	<hr class="hide" />	
+
+	<!-- header -->
+	<div id="header">
+		<div class="hd_top">
+			<div class="container">
+				<div id="logo">
+					<a href="#">
+						<img src="../assets/images/logo.jpg" alt="서울특별시 임산부 교통비 지원 업무 시스템">
+					</a>
+				</div>
+				<div class="hd_rt">
+					<span class="hd_welcome"><span class="name">홍길동</span><span class="area">(서울시)</span>님 반갑습니다.</span>
+					<ul class="hd_links">
+						<li><a href="javascript:;">회원정보변경</a></li>
+						<li><a href="javascript:;">로그아웃</a></li>
+						<li class="alram"><a href="javascript:;"><span class="sound_only">알림</span><span class="count">6</span></a></li>
+						<li class="alram"><a href="javascript:;"><span class="sound_only">알림</span><span class="count">10+</span></a></li><!-- 10초과일 때 (10+) -->
+					</ul>
+					
+				</div>
+			</div>
+		</div>
+		<div class="hd_bottom">
+			<div class="container">
+				<ul id="nav">
+					<li><a href="javascript:;">신청접수</a>
+						<ul>
+							<li><a href="javascript:;">신청접수 현황</a></li>
+							<li><a href="javascript:;">신규신청</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">사용현황</a>
+						<ul>
+							<li><a href="javascript:;">사용내역</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">정산현황</a>
+						<ul>
+							<li><a href="javascript:;">정산내역</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">커뮤니티</a>
+						<ul>
+							<li><a href="javascript:;">공지사항</a></li>
+							<li><a href="javascript:;">자주하는 질문</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">통계</a>
+						<ul>
+							<li><a href="javascript:;">신청현황</a></li>
+							<li><a href="javascript:;">바우처 지급 현황</a></li>
+							<li><a href="javascript:;">바우처 불용 현황</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">사용자</a>
+						<ul>
+							<li><a href="javascript:;">사용자 관리</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<span class="nav_bg"></span>
+		</div>
+	</div>
+	<!-- //header -->	
+
+	<!-- content -->
+	<div id="content">
+
+		<!-- 팝업슬라이드 -->
+		<div class="layer_form popup_slide" style="display:block;">
+			<div class="layer_box" style="max-width:720px;">
+				<div class="layer_cnt">
+					<div class="pop_slide">
+						<div class="slide"><img src="../assets/images/dummy/thum1.png" alt=""></div>
+						<div class="slide"><img src="../assets/images/dummy/thum1.png" alt=""></div>
+						<div class="slide"><img src="../assets/images/dummy/thum1.png" alt=""></div>
+						<div class="slide"><img src="../assets/images/dummy/thum1.png" alt=""></div>
+					</div>
+					<div class="pop_btns clearfix">
+						<label class="checkbox"><input type="checkbox"><span></span>오늘 하루 열지 않음</label>
+						<button type="button" class="pop_close" onclick="layerHide('popup_slide');">닫기</button>
+					</div>
+				</div>
+			</div>
+			<span class="layer_bg" onclick="layerHide('popup_slide');"></span>
+			<span class="blank"></span>
+		</div>
+		<script>
+		$('.pop_slide').slick({
+			dots: true,
+			infinite: true,
+			speed: 500,
+			autoplay: true,
+			autoplaySpeed: 5000,
+			slidesToShow: 1,
+			adaptiveHeight: true,
+		 
+		});
+		</script>
+		<!-- //팝업슬라이드 -->
+
+		<!-- 팝업 -->
+		<!-- <div class="layer_form banner_popup_layer" style="display: block;">
+			<div class="layer_box" style="max-width:380px;">
+				<div class="layer_cnt">
+					<div class="lf_content">
+						<div class="banner_popup">
+							<div class="img"><img src="../assets/images/thum2.png" alt=""></div>
+							<div class="img"><img src="../assets/images/thum1.png" alt=""></div>
+							<div class="img"><img src="../assets/images/thum2.png" alt=""></div>
+						</div>
+						<script>
+						$('.banner_popup').slick({
+						  dots: true,
+						  arrows: true,
+						  infinite: true,
+						  adaptiveHeight: true
+						});
+						</script>
+						<div class="banner_bottom clearfix">
+							<label class="checkbox"><input type="checkbox"><span></span>일주일간 보이지 않기</label>
+							<button type="button" class="banner_close" onclick="layerHide('banner_popup_layer')">닫기</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<span class="layer_bg" onclick="layerHide('banner_popup_layer')"></span>
+			<span class="blank"></span>
+		</div> -->
+		<!-- //팝업 -->
+
+		<div class="main_content container">
+			<div class="main_row">
+				<div class="main_box">
+					<h2><a href="javascript:;">신청접수 현황</a></h2>
+					<div class="mb_cnt">
+						<div class="apply_status">
+							<a href="javascript:;" class="apply">
+								<span class="tit">접수</span>
+								<span class="count"><strong>12,800</strong>건</span>
+							</a>
+							<a href="javascript:;" class="comp">
+								<span class="tit">처리</span>
+								<span class="count"><strong>11,731</strong>건</span>
+							</a>
+							<a href="javascript:;" class="unc">
+								<span class="tit">미처리</span>
+								<span class="count"><strong>1,069</strong>건</span>
+							</a>
+						</div>
+						<span class="rp">2022.04.29 기준 한달</span>
+					</div>
+				</div>
+
+				<div class="main_box main_target_status">
+					<h2>대상자 현황</h2>
+					<div class="mb_cnt">
+						<div class="target_status">
+							<div class="row now">
+								<span class="tit">현재</span>
+								<div class="cnt">
+									<div class="item">
+										<span class="count"><strong>38,443</strong>명</span>
+									</div>
+								</div>
+							</div>
+							<div class="row end">
+								<span class="tit">종료예정</span>
+								<div class="cnt">
+									<div class="item">
+										<span class="date">2022-04-30</span>
+										<span class="count"><strong>102</strong>명</span>
+									</div>
+									<div class="item">
+										<span class="date">2022-05-01</span>
+										<span class="count"><strong>148</strong>명</span>
+									</div>
+									<div class="item">
+										<span class="date">2022-05-02</span>
+										<span class="count"><strong>123,454</strong>명</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<span class="rp">2022.04.29 기준</span>
+					</div>
+				</div>
+
+				<a href="javascript:;" class="app_accept"><span>신규 신청 접수</span></a>
+			</div>
+
+			<div class="main_row">
+				<div class="main_box">
+					<h2>일별 신청 현황</h2>
+					<div class="mb_cnt">
+						<div id="chart1" class="chart_area"></div>
+						<ul class="chart_legend">
+							<li><span class="color" style="background-color:#5b76d0;"></span>신청</li>
+							<li><span class="color" style="background-color:#30b456;"></span>승인</li>
+							<li><span class="color" style="background-color:#f39369;"></span>거절</li>
+						</ul>
+						<script>//https://apexcharts.com/
+							var options = {
+							  series: [{
+							  name: '신청',
+							  data: [44, 55, 57, 56, 61]
+							}, {
+							  name: '승인',
+							  data: [76, 85, 101, 98, 87]
+							}, {
+							  name: '거절',
+							  data: [35, 41, 36, 26, 45]
+							}],
+							  chart: {
+							  type: 'bar',
+							  height: 190,
+							  toolbar: {
+								show: false,
+							  },
+							},
+							colors: ['#5b76d0', '#30b456', '#f39369'],
+							plotOptions: {
+							  bar: {
+								horizontal: false,
+								columnWidth: '55%',
+								endingShape: 'rounded'
+							  },
+							},
+							dataLabels: {
+							  enabled: false
+							},
+							stroke: {
+							  show: true,
+							  width: 2,
+							  colors: ['transparent']
+							},
+							xaxis: {
+							  categories: ['2022-05-04', '2022-05-05', '2022-05-06', '2022-05-07', '2022-05-08'],
+							},
+							plotOptions: {
+								bar: {
+								  dataLabels: {
+									orientation: 'vertical',
+									position: 'center' // bottom/center/top
+								  }
+								}
+							  },
+							  dataLabels: {
+								style: {
+								  colors: ['#fff']
+								},
+								offsetY: 0, // play with this value
+							  },
+							fill: {
+							  opacity: 1
+							},
+							 legend: {
+								show: false,
+							 },
+							tooltip: {
+							  y: {
+								formatter: function (val) {
+								  return  val + "건"
+								}
+							  }
+							}
+							};
+							var chart = new ApexCharts(document.querySelector("#chart1"), options);
+							chart.render();
+						</script>
+					</div>
+				</div>
+
+				<div class="main_box">
+					<h2><a href="javascript:;">공지사항</a></h2>
+					<div class="mb_cnt">
+						<ul class="lst">
+							<li><a href="javascript:;" class="subject">임산부 교통비 지원 사업 공지사항입니다. 임산부 교통비 지원 사업임산부 교통비 지원 사업</a><span class="date">2022-05-08</span></li>
+							<li><a href="javascript:;" class="subject">임산부 교통비 지원 사업 공지사항입니다.</a><span class="date">2022-05-08</span></li>
+							<li><a href="javascript:;" class="subject">임산부 교통비 지원 사업 공지사항입니다.</a><span class="date">2022-05-08</span></li>
+							<li><a href="javascript:;" class="subject">임산부 교통비 지원 사업 공지사항입니다.</a><span class="date">2022-05-08</span></li>
+							<li><a href="javascript:;" class="subject">임산부 교통비 지원 사업 공지사항입니다.</a><span class="date">2022-05-08</span></li>
+							<li><a href="javascript:;" class="subject">임산부 교통비 지원 사업 공지사항입니다.</a><span class="date">2022-05-08</span></li>
+							<li><a href="javascript:;" class="subject">임산부 교통비 지원 사업 공지사항입니다.</a><span class="date">2022-05-08</span></li>
+							<!-- <li class="lst_empty">내역이 없습니다</li> -->
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="main_row">
+				<div class="main_box">
+					<h2>지역별 신청 현황</h2>
+					<div class="mb_cnt">
+						<div id="chart2" class="chart_area"></div>
+						<ul class="chart_legend align_left">
+							<li><span class="color" style="background-color:#068258;"></span>강남구
+							</li><li><span class="color" style="background-color:#ff9dd4;"></span>강동구
+							</li><li><span class="color" style="background-color:#7a21ff;"></span>강북구
+							</li><li><span class="color" style="background-color:#c08755;"></span>강서구
+							</li><li><span class="color" style="background-color:#7fc4ff;"></span>관악구
+							</li><li><span class="color" style="background-color:#870000;"></span>광진구
+							</li><li><span class="color" style="background-color:#335bec;"></span>구로구
+							</li><li><span class="color" style="background-color:#1b588c;"></span>금천구
+							</li><li><span class="color" style="background-color:#7c0078;"></span>노원구
+							</li><li><span class="color" style="background-color:#bb8eff;"></span>도봉구
+							</li><li><span class="color" style="background-color:#ffc3c3;"></span>동대문구
+							</li><li><span class="color" style="background-color:#0083f2;"></span>동작구
+							</li><li><span class="color" style="background-color:#523113;"></span>마포구
+							</li><li><span class="color" style="background-color:#9d4e00;"></span>서대문구
+							</li><li><span class="color" style="background-color:#00cb86;"></span>서초구
+							</li><li><span class="color" style="background-color:#e53535;"></span>성동구
+							</li><li><span class="color" style="background-color:#766590;"></span>성북구
+							</li><li><span class="color" style="background-color:#e7409e;"></span>송파구
+							</li><li><span class="color" style="background-color:#fea700;"></span>양천구
+							</li><li><span class="color" style="background-color:#132b82;"></span>영등포구
+							</li><li><span class="color" style="background-color:#a9acf1;"></span>용산구
+							</li><li><span class="color" style="background-color:#ff8106;"></span>은평구
+							</li><li><span class="color" style="background-color:#202136;"></span>종로구
+							</li><li><span class="color" style="background-color:#5f65df;"></span>중구
+							</li><li><span class="color" style="background-color:#ff7a7a;"></span>중랑구</li>
+						</ul>
+						<script>
+							var options = {
+							  series: [44, 55, 13, 43, 22,44, 55, 13, 43, 22,44, 55, 13, 43, 22,44, 55, 13, 43, 22,44, 55, 13, 43, 22],
+							  chart: {
+							  type: 'pie',
+							  height: 290,
+							  toolbar: {
+								show: false,
+							  },
+							},
+							stroke: {
+							  width: 0,
+							  colors: ['#fff']
+							},
+							labels: ['강남구', '강동구', '강북구', '강서구', '관악구', '광진구', '구로구', '금천구', '노원구', '도봉구', '동대문구', '동작구', '마포구', '서대문구', '서초구', '성동구', '성북구', '송파구', '양천구', '영등포구', '용산구', '은평구', '종로구', '중구', '중랑구'],
+							colors: ['#068258', '#ff9dd4', '#7a21ff', '#c08755', '#7fc4ff', '#870000', '#335bec', '#1b588c', '#7c0078', '#bb8eff', '#ffc3c3', '#0083f2', '#523113', '#9d4e00', '#00cb86', '#e53535', '#766590', '#e7409e', '#fea700', '#132b82', '#a9acf1', '#ff8106', '#202136', '#5f65df', '#ff7a7a'],
+							 legend: {
+								show: false,
+							 },
+							};
+							var chart = new ApexCharts(document.querySelector("#chart2"), options);
+							chart.render();
+						</script>
+					</div>
+				</div>
+
+				<div class="main_box">
+					<h2>월별 신청 현황</h2>
+					<div class="mb_cnt">
+						<div id="chart3" class="chart_area"></div>
+						<ul class="chart_legend align_left">
+							<li><span class="color" style="background-color:#8294c6;"></span>승인금액
+							</li><li><span class="color" style="background-color:#485fab;"></span>승인건수</li>
+						</ul>
+						<script>
+							var options = {
+							  series: [{
+							  name: '승인금액',
+							  type: 'column',
+							  data: [440, 505, 414, 671, 227]
+							}, {
+							  name: '승인건수',
+							  type: 'line',
+							  data: [222, 444, 333, 555, 666]
+							}],
+							  chart: {
+							  height: 350,
+							  type: 'line',
+							   toolbar: {
+								show: false,
+							  },
+							},
+							plotOptions: {
+							  bar: {
+								horizontal: false,
+								columnWidth: '35%',
+								endingShape: 'rounded'
+							  },
+							},
+							colors: ['#8294c6', '#485fab'],
+							stroke: {
+							  width: [0, 4]
+							},
+							 legend: {
+								show: false,
+							 },
+							dataLabels: {
+							  enabled: true,
+							  enabledOnSeries: [1]
+							},
+							labels: ['2022년 1월', '2022년 2월', '2022년 3월', '2022년 4월', '2022년 5월' ],
+						
+							};
+
+							var chart = new ApexCharts(document.querySelector("#chart3"), options);
+							chart.render();
+						</script>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- //content -->
+
+
+<!-- 접수완료 -->
+<div class="layer_form appcomp_layer" style="display: none;">
+	<div class="layer_box" style="max-width:480px;">
+		<div class="layer_cnt">
+			<div class="lf_content">
+				<div class="apply_comp">
+					신청서가 정상적으로 접수되었습니다.
+				</div>
+			</div>
+			<div class="lf_btns">
+				<a href="javascript:;" class="btn gline" onclick="layerHide('appcomp_layer')">목록으로</a>
+				<a href="javascript:;" class="btn submit" onclick="layerHide('appcomp_layer')">다음신청서 불러오기</a>
+			</div>
+		</div>
+	</div>
+	<span class="layer_bg" onclick="layerHide('appcomp_layer')"></span>
+	<span class="blank"></span>
+</div>
+<!-- //접수완료 -->
+
+<!-- 거절 사유 입력 -->
+<div class="layer_form refusal_reason" style="display: none;">
+	<div class="layer_box" style="max-width:480px;">
+		<div class="layer_cnt">
+			<div class="lf_title">
+				거절 사유 입력
+				<a href="javascript:;" class="lf_close" onclick="layerHide('refusal_reason')">팝업닫기</a>
+			</div>
+			<div class="lf_content">
+				<div class="form_row">
+					
+					<div class="row">
+						<div class="fr_tit">거절사유</div>
+						<div class="fr_cnt">
+							<div class="ip_group">
+								<div class="design_select">
+									<input type="hidden">
+									<a href="javascript:;" class="ds_value type1">선택</a>
+									<div id="" class="ds_options" style="display: none;">
+										<div id="reasonSelect" class="ds_cnt">
+											<ul class="ds_list">
+												<li><a href="javascript:;" class="ds_option" data-rel="서울시 거주자 아님">서울시 거주자 아님</a></li>
+												<li><a href="javascript:;" class="ds_option" data-rel="서울시 거주 6개월 미만">서울시 거주 6개월 미만</a></li>
+											</ul>
+										</div>
+										<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+									</div>
+								</div>
+							</div>
+							<script>
+							$('#reasonSelect .ds_option').click(function(){
+								let reasonVal = $(this).attr('data-rel');
+								if(reasonVal =="서울시 거주자 아님"){
+									$('#reasonDatepicker').val('');
+									$('#reasonDatepicker').attr("disabled",true); 
+									$('#reasonDatepicker').attr("readonly",false); 
+								}else if(reasonVal !=="서울시 거주자 아님"){
+									$('#reasonDatepicker').attr("disabled",false); 
+									$('#reasonDatepicker').attr("readonly",true); 
+								}
+							});
+							</script>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="fr_tit">전입일</div>
+						<div class="fr_cnt">
+							<div class="ip_group">
+								<input type="text" id="reasonDatepicker" class="datepicker" readonly="">
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="fr_tit">거절상세사유</div>
+						<div class="fr_cnt">
+							<div class="ip_group">
+								<textarea name="" id=""></textarea>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="lf_btns">
+				<a href="javascript:;" class="btn red" onclick="layerHide('refusal_reason')">거절</a>
+				<a href="javascript:;" class="btn gline" onclick="layerHide('refusal_reason')">닫기</a>
+			</div>
+		</div>
+	</div>
+	<span class="layer_bg" onclick="layerHide('refusal_reason')"></span>
+	<span class="blank"></span>
+</div>
+<!-- //거절 사유 입력 -->
+
+<!-- 유의사항 -->
+<div class="layer_form precautions_layer" style="display: none;">
+	<div class="layer_box" style="max-width:480px;">
+		<div class="layer_cnt">
+			<div class="lf_title">
+				유의사항
+				<a href="javascript:;" class="lf_close" onclick="layerHide('precautions_layer')">팝업닫기</a>
+			</div>
+			<div class="lf_content">
+				<p class="ly_txt1">아래의 사유에 해당 될 경우, 사유가 발생한 달 이후부터 부정 사용이 적발된 달까지의 지원금 전부를 환수할 수 있습니다.</p>
+				<ul class="ly_dash1 mgt20">
+					<li>- 지원금 지급요건 중의 하나 이상이 허위로 밝혀질 경우</li>
+					<li>- 카드를 타인에게 양도·대여한 것이 확인된 경우</li>
+					<li>- 카드가 목적과 달리 부적정하게 사용된 것이 확인된 경우</li>
+				</ul>
+			</div>
+			<div class="lf_btns">
+				<a href="javascript:;" class="btn submit">확인</a>
+			</div>
+		</div>
+	</div>
+	<span class="layer_bg" onclick="layerHide('precautions_layer')"></span>
+	<span class="blank"></span>
+</div>
+<!-- //유의사항 -->
+
+	<div id="footer">
+		<div class="container">
+			<span class="ft_copy">COPYRIGHT Ⓒ 2021 상생소비지원금 ALL RIGHTS RESERVED.</span>
+			<div class="login_ft_txt">
+					ㆍ사업안내 : 여성가족정책실 02-2133-5162, 5304<br/>
+					ㆍ시스템 이용안내 : 1833-6942, 070-7464-1321, 1344 
+			</div>
+		</div>
+	</div>
+</div>
+<script src="../assets/js/jquery-ui.min.js"></script>
+<script src="../assets/js/common.js"></script>
+</body>
+</html>	 

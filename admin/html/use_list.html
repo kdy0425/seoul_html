@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=1200"/>
+<link rel="canonical" href="">
+<link rel="shortcut icon" type="image/x-icon" href="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta property="og:title" content=""/>
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content=""/>
+<meta property="og:description" content="" />
+<title>서울특별시 임산부 교통비 지원 업무 시스템</title>
+<link rel="stylesheet" type="text/css" href="../assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../assets/css/content.css" />
+<link rel="stylesheet" type="text/css" href="../assets/css/jquery-ui.css" />
+<script src="../assets/js/jquery-1.11.3.min.js"></script>
+<script src="../assets/js/apexcharts.js"></script>
+</head>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+	<h1 id="header_h1">서울특별시 임산부 교통비 지원 업무 시스템</h1>
+	<div id="skip_to_container">
+		<!-- skip navigation -->
+		<a href="#content">내용 바로가기</a>
+		<a href="#nav">서비스메뉴 바로가기</a>
+	</div>
+	<hr class="hide" />	
+
+	<!-- header -->
+	<div id="header">
+		<div class="hd_top">
+			<div class="container">
+				<div id="logo">
+					<a href="#">
+						<img src="../assets/images/logo.jpg" alt="서울특별시 임산부 교통비 지원 업무 시스템">
+					</a>
+				</div>
+				<div class="hd_rt">
+					<span class="hd_welcome"><span class="name">홍길동</span><span class="area">(서울시)</span>님 반갑습니다.</span>
+					<ul class="hd_links">
+						<li><a href="javascript:;">회원정보변경</a></li>
+						<li><a href="javascript:;">로그아웃</a></li>
+						<li class="alram"><a href="javascript:;"><span class="sound_only">알림</span><span class="count">6</span></a></li>
+						<li class="alram"><a href="javascript:;"><span class="sound_only">알림</span><span class="count">10+</span></a></li><!-- 10초과일 때 (10+) -->
+					</ul>
+					
+				</div>
+			</div>
+		</div>
+		<div class="hd_bottom">
+			<div class="container">
+				<ul id="nav">
+					<li><a href="javascript:;">신청접수</a>
+						<ul>
+							<li><a href="javascript:;">신청접수 현황</a></li>
+							<li><a href="javascript:;">신규신청</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">사용현황</a>
+						<ul>
+							<li><a href="javascript:;">사용내역</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">정산현황</a>
+						<ul>
+							<li><a href="javascript:;">정산내역</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">커뮤니티</a>
+						<ul>
+							<li><a href="javascript:;">공지사항</a></li>
+							<li><a href="javascript:;">자주하는 질문</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">통계</a>
+						<ul>
+							<li><a href="javascript:;">신청현황</a></li>
+							<li><a href="javascript:;">바우처 지급 현황</a></li>
+							<li><a href="javascript:;">바우처 불용 현황</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">사용자</a>
+						<ul>
+							<li><a href="javascript:;">사용자 관리</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<span class="nav_bg"></span>
+		</div>
+	</div>
+	<!-- //header -->	
+
+	<!-- content -->
+	<div id="content">
+		<div class="sub_content container">
+			
+			<div class="pg_title">사용내역</div>
+
+			<div class="search_form">
+				<form action="">
+					<div class="sf_inner">
+						<table>
+							<colgroup>
+								<col style="width:108px;">
+								<col style="width:321px;">
+								<col style="width:90px;">
+								<col style="width:156px;">
+								<col style="width:88px;">
+								<col style="">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>사용기간</th>
+									<td colspan="5">
+										<div class="date_cwrap">
+											<div class="date_ip clearfix mgr10">
+												<input type="text" class="dc_start datepicker sm" readonly="">
+												<span class="dash">-</span>
+												<input type="text" class="dc_end datepicker sm" readonly="">
+											</div>
+											<div class="date_control">
+												<div class="date_sel date_sel1">
+													<button type="button" data-rel="1">1개월</button>
+													<button type="button" data-rel="3">3개월</button>
+													<button type="button" data-rel="6">6개월</button>
+													<button type="button" data-rel="12">12개월</button>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>주민등록번호</th>
+									<td>	<input type="text" placeholder="‘-’없이 13자리 입력" class="lg" maxlength="13"></td>
+									<th>수급자명</th>
+									<td>	<input type="text" placeholder=""  class="sm"></td>
+									<th>연락처</th>
+									<td>	<input type="text" placeholder="‘-’없이 숫자만 입력" class="lg" maxlength="11"></td>
+								</tr>
+								<tr>
+									<th>관할기관</th>
+									<td>
+										<div id="ipGu" class="design_select sm">
+											<input type="hidden">
+											<a href="javascript:;" class="ds_value type1">선택하세요</a>
+											<div class="ds_options" style="display: none;">
+												<div id="" class="ds_cnt">
+													<ul class="ds_list">
+														<li><a href="javascript:;" class="ds_option" data-rel="선택하세요">선택하세요</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="종로구">종로구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="중구">중구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="용산구">용산구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="성동구">성동구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="광진구">광진구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="동대문구">동대문구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="중랑구">중랑구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="성북구">성북구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="강북구">강북구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="도봉구">도봉구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="노원구">노원구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="은평구">은평구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="서대문구">서대문구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="마포구">마포구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="양천구">양천구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="강서구">강서구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="구로구">구로구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="금천구">금천구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="영등포구">영등포구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="동작구">동작구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="관악구">관악구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="서초구">서초구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="강남구">강남구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="송파구">송파구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="강동구">강동구</a></li>
+													</ul>
+												</div>
+												<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+											</div>
+										</div>
+										<script>
+											//구 변경했을때 동 초기화
+											$('#ipGu .ds_option').click(function(){
+												let ipVal = $('#ipGu input[type="hidden"]').val(),
+												ipSelect = $(this).attr('data-rel');
+												if( ipVal !== ipSelect){
+													$('#ipDong input[type="hidden"]').val('');
+													$('#ipDong .ds_value').text('선택');
+													$('#ipDong .ds_list .ds_option').removeClass('active');
+												}
+												if(ipSelect){
+													$('#ipDong').removeClass('disabled');
+												}
+											});
+										</script>
+										<div id="ipDong" class="design_select disabled md"><!-- 비활성화 class -> disabled -->
+											<input type="hidden">
+											<a href="javascript:;" class="ds_value type1">선택</a>
+											<div class="ds_options" style="display: none;">
+												<div id="" class="ds_cnt">
+													<ul class="ds_list">
+														<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터">논현동 주민센터</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터2">논현동 주민센터2</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터3">논현동 주민센터3</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터4">논현동 주민센터4</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터5">논현동 주민센터5</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터6">논현동 주민센터6</a></li>
+													</ul>
+												</div>
+												<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+											</div>
+										</div>
+									</td>
+									<th>카드사</th>
+									<td>
+										<div class="design_select sm">
+											<input type="hidden">
+											<a href="javascript:;" class="ds_value type1">전체</a>
+											<div class="ds_options" style="display: none;">
+												<div id="" class="ds_cnt">
+													<ul class="ds_list">
+														<li><a href="javascript:;" class="ds_option" data-rel="전체">전체</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="카드사1">카드사1</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="카드사2">카드사2</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="카드사3">카드사3</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="카드사4">카드사4</a></li>
+													</ul>
+												</div>
+												<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+											</div>
+										</div>
+									</td>
+									<th>매입구분</th>
+									<td>
+										<div class="design_select lg">
+											<input type="hidden">
+											<a href="javascript:;" class="ds_value type1">전체</a>
+											<div class="ds_options" style="display: none;">
+												<div id="" class="ds_cnt">
+													<ul class="ds_list">
+														<li><a href="javascript:;" class="ds_option" data-rel="전체">전체</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="매입구분1">매입구분1</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="매입구분2">매입구분2</a></li>
+													</ul>
+												</div>
+												<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<a href="javascript:;" class="sform_submit"><span>검색</span></a>
+					</div>
+				</form>
+			</div>
+			
+			<div class="list_wrap mgt40">
+				<div class="list_top clearfix">
+					<div class="list_total">
+						<div class="item">
+							<span class="tit">총건수:</span>
+							<span class="cnt">42건</span>
+						</div>
+						<div class="item">
+							<span class="tit">총금액:</span>
+							<span class="cnt">40,200,200원</span>
+						</div>
+					</div>
+					<div class="list_btns">
+						<div class="design_select xs">
+							<input type="hidden">
+							<a href="javascript:;" class="ds_value type1">10개</a>
+							<div class="ds_options" style="display: none;">
+								<div id="" class="ds_cnt">
+									<ul class="ds_list">
+										<li><a href="javascript:;" class="ds_option" data-rel="10개">10개</a></li>
+										<li><a href="javascript:;" class="ds_option" data-rel="20개">20개</a></li>
+										<li><a href="javascript:;" class="ds_option" data-rel="30개">30개</a></li>
+										<li><a href="javascript:;" class="ds_option" data-rel="50개">50개</a></li>
+									</ul>
+								</div>
+								<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+							</div>
+						</div>
+						<a href="javascript:;" class="btn excel"><span>엑셀다운로드</span></a>
+					</div>
+				</div>
+
+				<div class="list_box">
+					<div id="" class="table_wrap">
+						<table class="list_table">
+							<thead>
+								<tr>
+									<th>승인일자</th>
+									<th>승인번호</th>
+									<th>카드번호</th>
+									<th>매입상태</th>
+									<th>매입일자</th>
+									<th>회원명</th>
+									<th>가맹점명</th>
+									<th>결제금액</th>
+									<th>바우처금액</th>
+									<th>관할기관</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>2022.05.09<br/>15:03:24</td>
+									<td>10030140</td>
+									<td>KB카드<br/>9412********1234</td>
+									<td>매입</td>
+									<td>2022.05.12<br/>20394020294</td>
+									<td>김태희<br/>(90.01.01)</td>
+									<td>티머니</td>
+									<td>100,245</td>
+									<td>100,245</td>
+									<td>서울시 강남구<br/>논현2동주민센터</td>
+								</tr>
+								<tr class="red">
+									<td>2022.05.09<br/>15:03:24</td>
+									<td>10030140</td>
+									<td>KB카드<br/>9412********1234</td>
+									<td>매입</td>
+									<td>2022.05.12<br/>20394020294</td>
+									<td>김태희<br/>(90.01.01)</td>
+									<td>티머니</td>
+									<td>100,245</td>
+									<td>100,245</td>
+									<td>서울시 강남구<br/>논현2동주민센터</td>
+								</tr>
+								<tr class="red">
+									<td>2022.05.09<br/>15:03:24</td>
+									<td>10030140</td>
+									<td>KB카드<br/>9412********1234</td>
+									<td>매입</td>
+									<td>2022.05.12<br/>20394020294</td>
+									<td>김태희<br/>(90.01.01)</td>
+									<td>티머니</td>
+									<td>100,245</td>
+									<td>100,245</td>
+									<td>서울시 강남구<br/>논현2동주민센터</td>
+								</tr>
+								<tr>
+									<td>2022.05.09<br/>15:03:24</td>
+									<td>10030140</td>
+									<td>KB카드<br/>9412********1234</td>
+									<td>매입</td>
+									<td>2022.05.12<br/>20394020294</td>
+									<td>김태희<br/>(90.01.01)</td>
+									<td>티머니</td>
+									<td>100,245</td>
+									<td>100,245</td>
+									<td>서울시 강남구<br/>논현2동주민센터</td>
+								</tr>
+								<tr>
+									<td>2022.05.09<br/>15:03:24</td>
+									<td>10030140</td>
+									<td>KB카드<br/>9412********1234</td>
+									<td>매입</td>
+									<td>2022.05.12<br/>20394020294</td>
+									<td>김태희<br/>(90.01.01)</td>
+									<td>티머니</td>
+									<td>100,245</td>
+									<td>100,245</td>
+									<td>서울시 강남구<br/>논현2동주민센터</td>
+								</tr>
+								<tr>
+									<td>2022.05.09<br/>15:03:24</td>
+									<td>10030140</td>
+									<td>KB카드<br/>9412********1234</td>
+									<td>매입</td>
+									<td>2022.05.12<br/>20394020294</td>
+									<td>김태희<br/>(90.01.01)</td>
+									<td>티머니</td>
+									<td>100,245</td>
+									<td>100,245</td>
+									<td>서울시 강남구<br/>논현2동주민센터</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div id="" class="page_nav">
+						<a href="" class="pg_start">처음</a>
+						<a href="" class="pg_prev">이전</a>
+						<a href="" class="pg_page">1<span class="sound_only">페이지</span></a>
+						<span class="sound_only">열린</span><strong class="pg_current">2</strong><span class="sound_only">페이지</span>
+						<a href="" class="pg_page">3<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_page">4<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_page">5<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_page">6<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_page">7<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_page">8<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_page">9<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_page">10<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_next">다음</a>
+						<a href="" class="pg_end">맨끝</a>
+					</div>
+				</div>
+			</div>
+			
+
+		</div>
+	</div>
+	<!-- //content -->
+
+	<div id="footer">
+		<div class="container">
+			<span class="ft_copy">COPYRIGHT Ⓒ 2021 상생소비지원금 ALL RIGHTS RESERVED.</span>
+		</div>
+	</div>
+</div>
+<script src="../assets/js/jquery-ui.min.js"></script>
+<script src="../assets/js/common.js"></script>
+</body>
+</html>	 

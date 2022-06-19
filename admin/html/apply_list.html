@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=1200"/>
+<link rel="canonical" href="">
+<link rel="shortcut icon" type="image/x-icon" href="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta property="og:title" content=""/>
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content=""/>
+<meta property="og:description" content="" />
+<title>서울특별시 임산부 교통비 지원 업무 시스템</title>
+<link rel="stylesheet" type="text/css" href="../assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../assets/css/content.css" />
+<link rel="stylesheet" type="text/css" href="../assets/css/jquery-ui.css" />
+<script src="../assets/js/jquery-1.11.3.min.js"></script>
+<script src="../assets/js/apexcharts.js"></script>
+</head>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+	<h1 id="header_h1">서울특별시 임산부 교통비 지원 업무 시스템</h1>
+	<div id="skip_to_container">
+		<!-- skip navigation -->
+		<a href="#content">내용 바로가기</a>
+		<a href="#nav">서비스메뉴 바로가기</a>
+	</div>
+	<hr class="hide" />	
+
+	<!-- header -->
+	<div id="header">
+		<div class="hd_top">
+			<div class="container">
+				<div id="logo">
+					<a href="#">
+						<img src="../assets/images/logo.jpg" alt="서울특별시 임산부 교통비 지원 업무 시스템">
+					</a>
+				</div>
+				<div class="hd_rt">
+					<span class="hd_welcome"><span class="name">홍길동</span><span class="area">(서울시)</span>님 반갑습니다.</span>
+					<ul class="hd_links">
+						<li><a href="javascript:;">회원정보변경</a></li>
+						<li><a href="javascript:;">로그아웃</a></li>
+						<li class="alram"><a href="javascript:;"><span class="sound_only">알림</span><span class="count">6</span></a></li>
+						<li class="alram"><a href="javascript:;"><span class="sound_only">알림</span><span class="count">10+</span></a></li><!-- 10초과일 때 (10+) -->
+					</ul>
+					
+				</div>
+			</div>
+		</div>
+		<div class="hd_bottom">
+			<div class="container">
+				<ul id="nav">
+					<li><a href="javascript:;">신청접수</a>
+						<ul>
+							<li><a href="javascript:;">신청접수 현황</a></li>
+							<li><a href="javascript:;">신규신청</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">사용현황</a>
+						<ul>
+							<li><a href="javascript:;">사용내역</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">정산현황</a>
+						<ul>
+							<li><a href="javascript:;">정산내역</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">커뮤니티</a>
+						<ul>
+							<li><a href="javascript:;">공지사항</a></li>
+							<li><a href="javascript:;">자주하는 질문</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">통계</a>
+						<ul>
+							<li><a href="javascript:;">신청현황</a></li>
+							<li><a href="javascript:;">바우처 지급 현황</a></li>
+							<li><a href="javascript:;">바우처 불용 현황</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">사용자</a>
+						<ul>
+							<li><a href="javascript:;">사용자 관리</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<span class="nav_bg"></span>
+		</div>
+	</div>
+	<!-- //header -->	
+
+	<!-- content -->
+	<div id="content">
+		<div class="sub_content container">
+			
+			<div class="pg_title">신청접수현황</div>
+
+			<div class="search_form">
+				<form action="">
+					<div class="sf_inner">
+						<table>
+							<colgroup>
+								<col style="width:108px;">
+								<col style="width:321px;">
+								<col style="width:122px;">
+								<col style="width:156px;">
+								<col style="width:88px;">
+								<col style="">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>기간</th>
+									<td colspan="5">
+										<div class="design_select sm">
+											<input type="hidden" value="신청일자">
+											<a href="javascript:;" class="ds_value type1">신청일자</a>
+											<div class="ds_options" style="display: none;">
+												<div id="" class="ds_cnt">
+													<ul class="ds_list">
+														<li><a href="javascript:;" class="ds_option" data-rel="신청일자">신청일자</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="옵션명1">옵션명1</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="옵션명2">옵션명2</a></li>
+													</ul>
+												</div>
+												<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+											</div>
+										</div>
+										<div class="date_cwrap">
+											<div class="date_ip clearfix mgr10">
+												<input type="text" class="dc_start datepicker sm" readonly="">
+												<span class="dash">-</span>
+												<input type="text" class="dc_end datepicker sm" readonly="">
+											</div>
+											<div class="date_control">
+												<div class="date_sel date_sel1">
+													<button type="button" data-rel="1">1개월</button>
+													<button type="button" data-rel="3">3개월</button>
+													<button type="button" data-rel="6">6개월</button>
+													<button type="button" data-rel="12">12개월</button>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>주민등록번호</th>
+									<td>	<input type="text" placeholder="‘-’없이 13자리 입력" class="lg" maxlength="13"></td>
+									<th>수급자명</th>
+									<td>	<input type="text" placeholder=""  class="sm"></td>
+									<th>연락처</th>
+									<td>	<input type="text" placeholder="‘-’없이 숫자만 입력" class="lg" maxlength="11"></td>
+								</tr>
+								<tr>
+									<th>관할기관</th>
+									<td>
+										<div id="ipGu" class="design_select sm">
+											<input type="hidden">
+											<a href="javascript:;" class="ds_value type1">선택하세요</a>
+											<div class="ds_options" style="display: none;">
+												<div id="" class="ds_cnt">
+													<ul class="ds_list">
+														<li><a href="javascript:;" class="ds_option" data-rel="선택하세요">선택하세요</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="종로구">종로구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="중구">중구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="용산구">용산구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="성동구">성동구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="광진구">광진구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="동대문구">동대문구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="중랑구">중랑구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="성북구">성북구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="강북구">강북구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="도봉구">도봉구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="노원구">노원구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="은평구">은평구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="서대문구">서대문구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="마포구">마포구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="양천구">양천구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="강서구">강서구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="구로구">구로구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="금천구">금천구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="영등포구">영등포구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="동작구">동작구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="관악구">관악구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="서초구">서초구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="강남구">강남구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="송파구">송파구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="강동구">강동구</a></li>
+													</ul>
+												</div>
+												<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+											</div>
+										</div>
+										<script>
+											//구 변경했을때 동 초기화
+											$('#ipGu .ds_option').click(function(){
+												let ipVal = $('#ipGu input[type="hidden"]').val(),
+												ipSelect = $(this).attr('data-rel');
+												if( ipVal !== ipSelect){
+													$('#ipDong input[type="hidden"]').val('');
+													$('#ipDong .ds_value').text('선택');
+													$('#ipDong .ds_list .ds_option').removeClass('active');
+												}
+												if(ipSelect){
+													$('#ipDong').removeClass('disabled');
+												}
+											});
+										</script>
+										<div id="ipDong" class="design_select disabled md"><!-- 비활성화 class -> disabled -->
+											<input type="hidden">
+											<a href="javascript:;" class="ds_value type1">선택</a>
+											<div class="ds_options" style="display: none;">
+												<div id="" class="ds_cnt">
+													<ul class="ds_list">
+														<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터">논현동 주민센터</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터2">논현동 주민센터2</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터3">논현동 주민센터3</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터4">논현동 주민센터4</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터5">논현동 주민센터5</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터6">논현동 주민센터6</a></li>
+													</ul>
+												</div>
+												<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+											</div>
+										</div>
+									</td>
+									<th>신청카드사</th>
+									<td>
+										<div class="design_select sm">
+											<input type="hidden">
+											<a href="javascript:;" class="ds_value type1">전체</a>
+											<div class="ds_options" style="display: none;">
+												<div id="" class="ds_cnt">
+													<ul class="ds_list">
+														<li><a href="javascript:;" class="ds_option" data-rel="전체">전체</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="카드사1">카드사1</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="카드사2">카드사2</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="카드사3">카드사3</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="카드사4">카드사4</a></li>
+													</ul>
+												</div>
+												<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+											</div>
+										</div>
+									</td>
+									<th>신청구분</th>
+									<td>
+										<div class="design_select sm">
+											<input type="hidden">
+											<a href="javascript:;" class="ds_value type1">전체</a>
+											<div class="ds_options" style="display: none;">
+												<div id="" class="ds_cnt">
+													<ul class="ds_list">
+														<li><a href="javascript:;" class="ds_option" data-rel="전체">전체</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="매입구분1">매입구분1</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="매입구분2">매입구분2</a></li>
+													</ul>
+												</div>
+												<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>요양기관</th>
+									<td><input type="text" class="lg" placeholder="요양기관명/요양기관기호"></td>
+									<th>청소년임신여부</th>
+									<td colspan="3">
+										<div class="sf_labels">
+											<label class="checkbox inline"><input type="checkbox"><span></span>임신</label>
+											<label class="checkbox inline"><input type="checkbox"><span></span>비임신</label>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<a href="javascript:;" class="sform_submit"><span>검색</span></a>
+					</div>
+				</form>
+			</div>
+
+			<div class="tap_btns active_control clearfix mgt40">
+				<a href="javascript:;" class="black active">전체<span>(100건)</span></a>
+				<a href="javascript:;" class="orange">미처리<span>(100건)</span></a>
+				<a href="javascript:;" class="blue">접수완료<span>(100건)</span></a>
+				<a href="javascript:;" class="green">재접수요청<span>(100건)</span></a>
+				<a href="javascript:;" class="red">접수거절<span>(100건)</span></a>
+			</div>
+			
+			<div class="list_wrap mgt40">
+				<div class="list_top clearfix">
+					<div class="list_btns">
+						<a href="javascript:;" class="btn excel"><span>엑셀다운로드</span></a>
+					</div>
+				</div>
+
+				<style>
+					#layer_open_btns{position:fixed;left:5%;top:50%;transform:translate(0,-50%);z-index:999999999999;}
+					#layer_open_btns button{margin:10px;padding:3px 5px;display:block;}
+				</style>
+				<div id="layer_open_btns">
+					<button type="button" onclick="$('.lds_outer').fadeIn();">로딩 레이어 시작</button>
+					<button type="button" onclick="$('.lds_outer').fadeOut();">로딩 레이어 종료</button>
+				</div>
+
+				<div class="list_box">
+					<div id="" class="table_wrap">
+						<!-- 로딩 레이어 -->
+						<div class="lds_outer" style="display:none;"><!-- 로딩 레이어 -->
+							<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+						</div>
+
+						<table class="list_table mgt20">
+							<thead>
+								<tr>
+									<th>신청일자</th>
+									<th>성명<br/>생년월일</th>
+									<th>연락처</th>
+									<th>주소</th>
+									<th>관할기관</th>
+									<th>임신확인일<br/>분만예정일</th>
+									<th>신청카드사</th>
+									<th>바우처 종료일<br/>청소년여부</th>
+									<th>신청상태</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>2022.05.09<br/>15:03:24</td>
+									<td>김태희<br/>(90.01.01)</td>
+									<td>010-1234-5678</td>
+									<td>(06052) 서울특별시 강남구 논현로 706<br/>아이케슬빌딩5층</td>
+									<td>서울시 강남구<br/>논현2동주민센터</td>
+									<td>2022.04.01<br/>2022.11.07</td>
+									<td>신한카드</td>
+									<td>-</td>
+									<td><span class="status orange">미처리</span></td>
+								</tr>
+								<tr>
+									<td>2022.05.09<br/>15:03:24</td>
+									<td>김태희<br/>(90.01.01)</td>
+									<td>010-1234-5678</td>
+									<td>(06052) 서울특별시 강남구 논현로 706<br/>아이케슬빌딩5층</td>
+									<td>서울시 강남구<br/>논현2동주민센터</td>
+									<td>2022.04.01<br/>2022.11.07</td>
+									<td>신한카드</td>
+									<td>-</td>
+									<td><span class="status blue">접수완료</span></td>
+								</tr>
+								<tr>
+									<td>2022.05.09<br/>15:03:24</td>
+									<td>김태희<br/>(90.01.01)</td>
+									<td>010-1234-5678</td>
+									<td>(06052) 서울특별시 강남구 논현로 706<br/>아이케슬빌딩5층</td>
+									<td>서울시 강남구<br/>논현2동주민센터</td>
+									<td>2022.04.01<br/>2022.11.07</td>
+									<td>신한카드</td>
+									<td>-</td>
+									<td><span class="status green">재접수요청</span></td>
+								</tr>
+								<tr>
+									<td>2022.05.09<br/>15:03:24</td>
+									<td>김태희<br/>(90.01.01)</td>
+									<td>010-1234-5678</td>
+									<td>(06052) 서울특별시 강남구 논현로 706<br/>아이케슬빌딩5층</td>
+									<td>서울시 강남구<br/>논현2동주민센터</td>
+									<td>2022.04.01<br/>2022.11.07</td>
+									<td>신한카드</td>
+									<td>-</td>
+									<td><span class="status red">접수거절</span></td>
+								</tr>
+								<tr>
+									<td>2022.05.09<br/>15:03:24</td>
+									<td>김태희<br/>(90.01.01)</td>
+									<td>010-1234-5678</td>
+									<td>(06052) 서울특별시 강남구 논현로 706<br/>아이케슬빌딩5층</td>
+									<td>서울시 강남구<br/>논현2동주민센터</td>
+									<td>2022.04.01<br/>2022.11.07</td>
+									<td>신한카드</td>
+									<td>-</td>
+									<td><span class="status orange">미처리</span></td>
+								</tr>
+								<tr>
+									<td>2022.05.09<br/>15:03:24</td>
+									<td>김태희<br/>(90.01.01)</td>
+									<td>010-1234-5678</td>
+									<td>(06052) 서울특별시 강남구 논현로 706<br/>아이케슬빌딩5층</td>
+									<td>서울시 강남구<br/>논현2동주민센터</td>
+									<td>2022.04.01<br/>2022.11.07</td>
+									<td>신한카드</td>
+									<td>-</td>
+									<td><span class="status orange">미처리</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div id="" class="page_nav">
+						<a href="" class="pg_start">처음</a>
+						<a href="" class="pg_prev">이전</a>
+						<a href="" class="pg_page">1<span class="sound_only">페이지</span></a>
+						<span class="sound_only">열린</span><strong class="pg_current">2</strong><span class="sound_only">페이지</span>
+						<a href="" class="pg_page">3<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_page">4<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_page">5<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_page">6<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_page">7<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_page">8<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_page">9<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_page">10<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_next">다음</a>
+						<a href="" class="pg_end">맨끝</a>
+					</div>
+				</div>
+			</div>
+			
+
+		</div>
+	</div>
+	<!-- //content -->
+
+
+			<!-- 자료요청 목적 확인 -->
+			<div class="layer_form data_check" style="display: ;">
+				<div class="layer_box" style="max-width:480px;">
+					<div class="layer_cnt">
+						<div class="lf_title">
+							자료요청 목적 확인
+							<a href="javascript:;" class="lf_close" onclick="layerHide('data_check')">팝업닫기</a>
+						</div>
+						<div class="lf_content">
+							<div class="form_box">
+								<div class="form_table sm">
+									<table>
+										<colgroup>
+											<col style="width:25%;">
+											<col style="">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>기관명</th>
+												<td>강남구 논현2동주민센터</td>
+											</tr>
+											<tr>
+												<th>ID</th>
+												<td>non122(홍길동)</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+							<div class="form_box">
+								<div class="form_title">자료 요청 목적</div>
+								<div class="form_row">
+									<div class="row">
+										<div class="fr_cnt">
+											<div class="ip_group">
+												<div class="design_select xl">
+													<input type="hidden" value="데이터 확인">
+													<a href="javascript:;" class="ds_value type1">데이터 확인</a>
+													<div class="ds_options" style="display: none;">
+														<div id="" class="ds_cnt">
+															<ul class="ds_list">
+																<li><a href="javascript:;" class="ds_option" data-rel="옵션명1">옵션명1</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="옵션명2">옵션명2</a></li>
+															</ul>
+														</div>
+														<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+													</div>
+												</div>
+											</div>
+											<div class="ip_group">
+												<textarea name="" id=""></textarea>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="lf_btns">
+								<a href="javascript:;" class="btn submit" onclick="layerHide('data_check')">확인</a>
+								<a href="javascript:;" class="btn gline" onclick="layerHide('data_check')">취소</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<span class="layer_bg" onclick="layerHide('data_check')"></span>
+				<span class="blank"></span>
+			</div>
+			<!-- //거절 사유 입력 -->
+
+	<div id="footer">
+		<div class="container">
+			<span class="ft_copy">COPYRIGHT Ⓒ 2021 상생소비지원금 ALL RIGHTS RESERVED.</span>
+		</div>
+	</div>
+</div>
+<script src="../assets/js/jquery-ui.min.js"></script>
+<script src="../assets/js/common.js"></script>
+</body>
+</html>	 

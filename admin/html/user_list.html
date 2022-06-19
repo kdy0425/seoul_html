@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=1200"/>
+<link rel="canonical" href="">
+<link rel="shortcut icon" type="image/x-icon" href="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta property="og:title" content=""/>
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content=""/>
+<meta property="og:description" content="" />
+<title>서울특별시 임산부 교통비 지원 업무 시스템</title>
+<link rel="stylesheet" type="text/css" href="../assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../assets/css/content.css" />
+<link rel="stylesheet" type="text/css" href="../assets/css/jquery-ui.css" />
+<script src="../assets/js/jquery-1.11.3.min.js"></script>
+<script src="../assets/js/apexcharts.js"></script>
+</head>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+	<h1 id="header_h1">서울특별시 임산부 교통비 지원 업무 시스템</h1>
+	<div id="skip_to_container">
+		<!-- skip navigation -->
+		<a href="#content">내용 바로가기</a>
+		<a href="#nav">서비스메뉴 바로가기</a>
+	</div>
+	<hr class="hide" />	
+
+	<!-- header -->
+	<div id="header">
+		<div class="hd_top">
+			<div class="container">
+				<div id="logo">
+					<a href="#">
+						<img src="../assets/images/logo.jpg" alt="서울특별시 임산부 교통비 지원 업무 시스템">
+					</a>
+				</div>
+				<div class="hd_rt">
+					<span class="hd_welcome"><span class="name">홍길동</span><span class="area">(서울시)</span>님 반갑습니다.</span>
+					<ul class="hd_links">
+						<li><a href="javascript:;">회원정보변경</a></li>
+						<li><a href="javascript:;">로그아웃</a></li>
+						<li class="alram"><a href="javascript:;"><span class="sound_only">알림</span><span class="count">6</span></a></li>
+						<li class="alram"><a href="javascript:;"><span class="sound_only">알림</span><span class="count">10+</span></a></li><!-- 10초과일 때 (10+) -->
+					</ul>
+					
+				</div>
+			</div>
+		</div>
+		<div class="hd_bottom">
+			<div class="container">
+				<ul id="nav">
+					<li><a href="javascript:;">신청접수</a>
+						<ul>
+							<li><a href="javascript:;">신청접수 현황</a></li>
+							<li><a href="javascript:;">신규신청</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">사용현황</a>
+						<ul>
+							<li><a href="javascript:;">사용내역</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">정산현황</a>
+						<ul>
+							<li><a href="javascript:;">정산내역</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">커뮤니티</a>
+						<ul>
+							<li><a href="javascript:;">공지사항</a></li>
+							<li><a href="javascript:;">자주하는 질문</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">통계</a>
+						<ul>
+							<li><a href="javascript:;">신청현황</a></li>
+							<li><a href="javascript:;">바우처 지급 현황</a></li>
+							<li><a href="javascript:;">바우처 불용 현황</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">사용자</a>
+						<ul>
+							<li><a href="javascript:;">사용자 관리</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<span class="nav_bg"></span>
+		</div>
+	</div>
+	<!-- //header -->	
+
+	<!-- content -->
+	<div id="content">
+		<div class="sub_content container">
+			
+			<div class="pg_title">사용자 관리</div>
+
+			<div class="search_form">
+				<form action="">
+					<div class="sf_inner">
+						<table>
+							<colgroup>
+								<col style="width:108px;">
+								<col style="width:251px;">
+								<col style="width:90px;">
+								<col style="width:186px;">
+								<col style="width:88px;">
+								<col style="">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>아이디</th>
+									<td><input type="text" class="md"></td>
+									<th>담당자명</th>
+									<td><input type="text" class="md"></td>
+									<th>관할기관</th>
+									<td>
+										<div class="ipGu design_select sm">
+											<input type="hidden">
+											<a href="javascript:;" class="ds_value type1">선택하세요</a>
+											<div class="ds_options" style="display: none;">
+												<div id="" class="ds_cnt">
+													<ul class="ds_list">
+														<li><a href="javascript:;" class="ds_option" data-rel="선택하세요">선택하세요</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="종로구">종로구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="중구">중구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="용산구">용산구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="성동구">성동구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="광진구">광진구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="동대문구">동대문구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="중랑구">중랑구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="성북구">성북구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="강북구">강북구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="도봉구">도봉구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="노원구">노원구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="은평구">은평구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="서대문구">서대문구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="마포구">마포구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="양천구">양천구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="강서구">강서구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="구로구">구로구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="금천구">금천구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="영등포구">영등포구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="동작구">동작구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="관악구">관악구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="서초구">서초구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="강남구">강남구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="송파구">송파구</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="강동구">강동구</a></li>
+													</ul>
+												</div>
+												<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+											</div>
+										</div>
+										<script>
+											//구 변경했을때 동 초기화
+											$('.ipGu .ds_option').click(function(){
+												let ipVal = $('.ipGu input[type="hidden"]').val(),
+												ipSelect = $(this).attr('data-rel');
+												if( ipVal !== ipSelect){
+													$('.ipDong input[type="hidden"]').val('');
+													$('.ipDong .ds_value').text('선택');
+													$('.ipDong .ds_list .ds_option').removeClass('active');
+												}
+												if(ipSelect){
+													$('.ipDong').removeClass('disabled');
+												}
+											});
+										</script>
+										<div class="ipDong design_select disabled md"><!-- 비활성화 class -> disabled -->
+											<input type="hidden">
+											<a href="javascript:;" class="ds_value type1">선택</a>
+											<div class="ds_options" style="display: none;">
+												<div id="" class="ds_cnt">
+													<ul class="ds_list">
+														<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터">논현동 주민센터</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터2">논현동 주민센터2</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터3">논현동 주민센터3</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터4">논현동 주민센터4</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터5">논현동 주민센터5</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터6">논현동 주민센터6</a></li>
+													</ul>
+												</div>
+												<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>승인여부</th>
+									<td>
+										<div class="sf_labels">
+											<label class="radiobox inline"><input type="radio" name="radio1"><span></span>전체</label>
+											<label class="radiobox inline"><input type="radio" name="radio1"><span></span>승인</label>
+											<label class="radiobox inline"><input type="radio" name="radio1"><span></span>미승인</label>
+										</div>
+									</td>
+									<th>사용여부</th>
+									<td colspan="3">
+										<div class="design_select md">
+											<input type="hidden">
+											<a href="javascript:;" class="ds_value type1">전체</a>
+											<div class="ds_options" style="display: none;">
+												<div id="" class="ds_cnt">
+													<ul class="ds_list">
+														<li><a href="javascript:;" class="ds_option" data-rel="전체">전체</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="사용">사용</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="미사용">미사용</a></li>
+													</ul>
+												</div>
+												<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<a href="javascript:;" class="sform_submit"><span>검색</span></a>
+					</div>
+				</form>
+			</div>
+			
+			<div class="list_wrap mgt40">
+				<div class="list_top clearfix">
+					<div class="list_btns">
+						<div class="design_select xs">
+							<input type="hidden">
+							<a href="javascript:;" class="ds_value type1">10개</a>
+							<div class="ds_options" style="display: none;">
+								<div id="" class="ds_cnt">
+									<ul class="ds_list">
+										<li><a href="javascript:;" class="ds_option" data-rel="10개">10개</a></li>
+										<li><a href="javascript:;" class="ds_option" data-rel="20개">20개</a></li>
+										<li><a href="javascript:;" class="ds_option" data-rel="30개">30개</a></li>
+										<li><a href="javascript:;" class="ds_option" data-rel="50개">50개</a></li>
+									</ul>
+								</div>
+								<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+							</div>
+						</div>
+						<a href="javascript:;" class="btn" onclick="layerShow('add_user_layer')">사용자 등록</a>
+					</div>
+				</div>
+
+				<div class="list_box">
+					<div id="" class="table_wrap">
+						<table class="list_table fixed">
+							<colgroup>
+								<col style="width:150px;">
+								<col style=";">
+								<col style="width:110px;">
+								<col style="width:140px;">
+								<col style="width:140px;">
+								<col style="width:180px;">
+								<col style="width:110px;">
+								<col style="width:110px;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>관할기관</th>
+									<th>성명</th>
+									<th>내선번호</th>
+									<th>핸드폰번호</th>
+									<th>최근접속일시</th>
+									<th>사용여부</th>
+									<th>승인여부</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a href="javascript:;" onclick="layerShow('view_user_layer')" class="underline">choo13</a></td>
+									<td>강남구 논현2동주민센터</td>
+									<td>이영웅</td>
+									<td>02-123-1234</td>
+									<td>010-1234-1234</td>
+									<td></td>
+									<td>미사용</td>
+									<td>승인</td>
+								</tr>
+								<tr>
+									<td><a href="javascript:;" onclick="layerShow('view_user_layer')" class="underline">choo13</a></td>
+									<td>강남구 논현2동주민센터</td>
+									<td>이영웅</td>
+									<td>02-123-1234</td>
+									<td>010-1234-1234</td>
+									<td>2022-05-15 11:11:11</td>
+									<td>사용</td>
+									<td>승인</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div id="" class="page_nav">
+						<a href="" class="pg_start">처음</a>
+						<a href="" class="pg_prev">이전</a>
+						<a href="" class="pg_page">1<span class="sound_only">페이지</span></a>
+						<span class="sound_only">열린</span><strong class="pg_current">2</strong><span class="sound_only">페이지</span>
+						<a href="" class="pg_page">3<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_page">4<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_page">5<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_page">6<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_page">7<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_page">8<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_page">9<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_page">10<span class="sound_only">페이지</span></a>
+						<a href="" class="pg_next">다음</a>
+						<a href="" class="pg_end">맨끝</a>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- //content -->
+
+<!-- 사용자 등록 -->
+<div class="layer_form add_user_layer" style="display: none;">
+	<div class="layer_box" style="max-width:1100px;">
+		<div class="layer_cnt">
+			<div class="lf_title">
+				사용자 등록
+				<a href="javascript:;" class="lf_close" onclick="layerHide('add_user_layer');">팝업닫기</a>
+			</div>
+			<div class="lf_content">
+				
+				<form method="post" action="">
+					<div class="form_box">
+						<div class="form_title">기관정보</div>
+						<span class="form_rt_txt"><span class="req">*</span> 는 필수 입력 사항입니다.</span>
+						<div class="form_table">
+							<table>
+								<colgroup>
+									<col style="width:180px;">
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th><span class="req">아이디</span></th>
+										<td>
+											<div class="ip_group">
+												<input type="text" class="lg">
+												<button type="button" class="btn btn1">중복확인</button>
+											</div>
+											<span class="error_txt">영문, 숫자만 가능합니다(6~12자)</span>
+										</td>
+									</tr>
+									<tr>
+										<th><span class="req">비밀번호</span></th>
+										<td>
+											<div class="ip_group">
+												<input type="password" class="lg">
+											</div>
+											<span class="error_txt">영문, 숫자, 특수문자 조합 8~20자</span>
+										</td>
+									</tr>
+									<tr>
+										<th><span class="req">비밀번호 확인</span></th>
+										<td>
+											<div class="ip_group">
+												<input type="password" class="lg">
+											</div>
+											<span class="error_txt">영문, 숫자, 특수문자 조합 8~20자</span>
+										</td>
+									</tr>
+									<tr>
+										<th><span class="req">기관정보</span></th>
+										<td>
+											<div class="ip_group">
+												<div class="ipGu design_select md"><!-- common.js 18 -->
+													<input type="hidden">
+													<a href="javascript:;" class="ds_value type1">선택</a>
+													<div class="ds_options" style="display: none;">
+														<div id="" class="ds_cnt">
+															<ul class="ds_list">
+																<li><a href="javascript:;" class="ds_option" data-rel="종로구">종로구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="중구">중구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="용산구">용산구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="성동구">성동구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="광진구">광진구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="동대문구">동대문구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="중랑구">중랑구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="성북구">성북구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="강북구">강북구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="도봉구">도봉구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="노원구">노원구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="은평구">은평구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="서대문구">서대문구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="마포구">마포구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="양천구">양천구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="강서구">강서구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="구로구">구로구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="금천구">금천구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="영등포구">영등포구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="동작구">동작구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="관악구">관악구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="서초구">서초구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="강남구">강남구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="송파구">송파구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="강동구">강동구</a></li>
+															</ul>
+														</div>
+														<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+													</div>
+													<script>
+													//구 변경했을때 동 초기화
+													$('.ipGu .ds_option').click(function(){
+														let ipVal = $('.ipGu input[type="hidden"]').val(),
+														ipSelect = $(this).attr('data-rel');
+														if( ipVal !== ipSelect){
+															$('.ipDong input[type="hidden"]').val('');
+															$('.ipDong .ds_value').text('선택');
+															$('.ipDong .ds_list .ds_option').removeClass('active');
+														}
+														if(ipSelect){
+															$('.ipDong').removeClass('disabled');
+														}
+													});
+													</script>
+												</div>
+
+												<div class="ipDong design_select disabled md"><!-- common.js 18 --><!-- 비활성화 class -> disabled -->
+													<input type="hidden">
+													<a href="javascript:;" class="ds_value type1">선택</a>
+													<div class="ds_options" style="display: none;">
+														<div id="" class="ds_cnt">
+															<ul class="ds_list">
+																<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터">논현동 주민센터</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터2">논현동 주민센터2</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터3">논현동 주민센터3</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터4">논현동 주민센터4</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터5">논현동 주민센터5</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터6">논현동 주민센터6</a></li>
+															</ul>
+														</div>
+														<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+													</div>
+												</div>
+
+											</div>
+											<span class="error_txt">소속 기관을 선택하세요.</span>
+										</td>
+									</tr>
+									<tr>
+										<th><span class="req">주소</span></th>
+										<td>
+											<div class="ip_group">
+												<input type="text" class="md" readonly=""><button type="button" class="btn btn1">우편번호</button>
+											</div>
+											<div class="ip_group">
+												<input type="text" class="md2" readonly="">
+												<input type="text" class="md2" placeholder="상세주소를 입력해 주세요">
+											</div>
+											<span class="error_txt">기관 주소를 입력하세요.</span>
+										</td>
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="form_box">
+						<div class="form_title">담당자 정보</div>
+						<span class="form_rt_txt"><span class="req">*</span> 는 필수 입력 사항입니다.</span>
+						<div class="form_table">
+							<table>
+								<colgroup>
+									<col style="width:130px;">
+									<col style="width:390px;">
+									<col style="width:130px;">
+									<col style=";">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th><span class="req">담당자명</span></th>
+										<td>
+											<div class="ip_group">
+												<input type="text" class="md">
+											</div>
+										</td>
+										<th>부서명</th>
+										<td>
+											<div class="ip_group">
+												<input type="text" class="md">
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th><span class="req">핸드폰번호</span></th>
+										<td>
+											<div class="ip_group">
+												<div class="design_select xs"><!-- common.js 18 -->
+													<input type="hidden">
+													<a href="javascript:;" class="ds_value type1">선택</a>
+													<div class="ds_options" style="display: none;">
+														<div id="" class="ds_cnt">
+															<ul class="ds_list">
+																<li><a href="javascript:;" class="ds_option" data-rel="010">010</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="011">011</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="016">016</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="017">017</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="019">019</a></li>
+															</ul>
+														</div>
+														<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+													</div>
+												</div>
+												<span class="dash">-</span>
+												<input type="text" class="xs" maxlength="4">
+												<span class="dash">-</span>
+												<input type="text" class="xs" maxlength="4">
+											</div>
+										</td>
+										<th><span class="req">내선번호</span></th>
+										<td>
+											<div class="ip_group">
+												<div class="design_select xs"><!-- common.js 18 -->
+													<input type="hidden">
+													<a href="javascript:;" class="ds_value type1">선택</a>
+													<div class="ds_options" style="display: none;">
+														<div id="" class="ds_cnt">
+															<ul class="ds_list">
+																<li><a href="javascript:;" class="ds_option" data-rel="070">070</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="02">02</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="031">031</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="032">032</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="033">033</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="041">041</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="042">042</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="043">043</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="044">044</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="051">051</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="052">052</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="053">053</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="054">054</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="055">055</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="061">061</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="062">062</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="063">063</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="064">064</a></li>
+															</ul>
+														</div>
+														<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+													</div>
+												</div>
+												<span class="dash">-</span>
+												<input type="text" class="xs" maxlength="4">
+												<span class="dash">-</span>
+												<input type="text" class="xs" maxlength="4">
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>팩스번호</th>
+										<td colspan="3">
+											<div class="ip_group">
+												<div class="design_select xs"><!-- common.js 18 -->
+													<input type="hidden">
+													<a href="javascript:;" class="ds_value type1">선택</a>
+													<div class="ds_options" style="display: none;">
+														<div id="" class="ds_cnt">
+															<ul class="ds_list">
+																<li><a href="javascript:;" class="ds_option" data-rel="070">070</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="02">02</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="031">031</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="032">032</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="033">033</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="041">041</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="042">042</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="043">043</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="044">044</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="051">051</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="052">052</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="053">053</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="054">054</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="055">055</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="061">061</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="062">062</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="063">063</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="064">064</a></li>
+															</ul>
+														</div>
+														<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+													</div>
+												</div>
+												<span class="dash">-</span>
+												<input type="text" class="xs" maxlength="4">
+												<span class="dash">-</span>
+												<input type="text" class="xs" maxlength="4">
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th><span class="req">이메일</span></th>
+										<td colspan="3">
+											<div class="ip_group">
+												<input type="text" class="sm">
+												<span class="at">@</span>
+												<input type="text" class="emailArea sm" readonly="">
+												<div class="design_select sm"><!-- common.js 18 -->
+													<input type="hidden">
+													<a href="javascript:;" class="ds_value type1">선택하세요</a>
+													<div class="emailSelect ds_options" style="display: none;">
+														<div id="" class="ds_cnt">
+															<ul class="ds_list">
+																<li><a href="javascript:;" class="ds_option" data-rel="직접입력">직접입력</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="naver.com">naver.com</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="daum.net">daum.net</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="gmail.com">gmail.com</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="yahoo.com">yahoo.com</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="hanmail.net">hanmail.net</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="nate.com">nate.com</a></li>
+															</ul>
+														</div>
+														<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+													</div>
+												</div>
+												<script>
+												$('.emailSelect .ds_option').click(function(){
+													let emailVal = $(this).attr('data-rel');
+													if(emailVal !=="직접입력"){
+														$('.emailArea').val(emailVal);
+														$('.emailArea').attr("readonly",true); 
+														console.log('1')
+													}else if(emailVal =="직접입력"){
+														$('.emailArea').val('');
+														$('.emailArea').attr("readonly",false); 
+														console.log('2')
+													}
+												});
+												</script>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th><span class="req">IP</span></th>
+										<td colspan="3">
+											<div class="ip_group">
+												<input type="text" class="lg" placeholder="예) 111.111.111.111">
+											</div>
+											<span class="error_txt">네이버 검색창에서 “내아이피” 로 조회한 IP입력</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="txt_box">
+							<span class="item">※ 사용자등록후 핸드폰번호로 사용자등록 알림톡이 전송됩니다.</span>
+						</div>
+					</div>
+
+					<div class="lf_btns">
+						<a href="javascript:;" class="btn submit" onclick="layerHide('add_user_layer');">가입</a>
+						<a href="javascript:;" class="btn gline" onclick="layerHide('add_user_layer');">취소</a>
+					</div>
+				</form>
+			</div>
+			
+		</div>
+	</div>
+	<span class="layer_bg" onclick="layerHide('add_user_layer');"></span>
+	<span class="blank"></span>
+</div>
+<!-- //사용자 등록 -->
+
+<!-- 사용자 조회 -->
+<div class="layer_form view_user_layer" style="display: none;">
+	<div class="layer_box" style="max-width:1100px;">
+		<div class="layer_cnt">
+			<div class="lf_title">
+				사용자 조회
+				<a href="javascript:;" class="lf_close" onclick="layerHide('view_user_layer');">팝업닫기</a>
+			</div>
+			<div class="lf_content">
+				
+				<form method="post" action="">
+					<div class="form_box">
+						<div class="form_title">기관정보</div>
+						<span class="form_rt_txt"><span class="req">*</span> 는 필수 입력 사항입니다.</span>
+						<div class="form_table">
+							<table>
+								<colgroup>
+									<col style="width:180px;">
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th><span class="req">아이디</span></th>
+										<td>aaa1234</td>
+									</tr>
+									<tr>
+										<th><span class="req">비밀번호</span></th>
+										<td>
+											<div class="ip_group">
+												<input type="password" class="lg">
+											</div>
+											<span class="error_txt">영문, 숫자, 특수문자 조합 8~20자</span>
+										</td>
+									</tr>
+									<tr>
+										<th><span class="req">비밀번호 확인</span></th>
+										<td>
+											<div class="ip_group">
+												<input type="password" class="lg">
+											</div>
+											<span class="error_txt">영문, 숫자, 특수문자 조합 8~20자</span>
+										</td>
+									</tr>
+									<tr>
+										<th><span class="req">기관정보</span></th>
+										<td>
+											<div class="ip_group">
+												<div class="ipGu design_select md"><!-- common.js 18 -->
+													<input type="hidden" value="강남구">
+													<a href="javascript:;" class="ds_value type1">강남구</a>
+													<div class="ds_options" style="display: none;">
+														<div id="" class="ds_cnt">
+															<ul class="ds_list">
+																<li><a href="javascript:;" class="ds_option" data-rel="종로구">종로구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="중구">중구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="용산구">용산구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="성동구">성동구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="광진구">광진구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="동대문구">동대문구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="중랑구">중랑구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="성북구">성북구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="강북구">강북구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="도봉구">도봉구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="노원구">노원구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="은평구">은평구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="서대문구">서대문구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="마포구">마포구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="양천구">양천구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="강서구">강서구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="구로구">구로구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="금천구">금천구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="영등포구">영등포구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="동작구">동작구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="관악구">관악구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="서초구">서초구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="강남구">강남구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="송파구">송파구</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="강동구">강동구</a></li>
+															</ul>
+														</div>
+														<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+													</div>
+													<script>
+													//구 변경했을때 동 초기화
+													$('.ipGu .ds_option').click(function(){
+														let ipVal = $('.ipGu input[type="hidden"]').val(),
+														ipSelect = $(this).attr('data-rel');
+														if( ipVal !== ipSelect){
+															$('.ipDong input[type="hidden"]').val('');
+															$('.ipDong .ds_value').text('선택');
+															$('.ipDong .ds_list .ds_option').removeClass('active');
+														}
+														if(ipSelect){
+															$('.ipDong').removeClass('disabled');
+														}
+													});
+													</script>
+												</div>
+
+												<div class="ipDong design_select md"><!-- common.js 18 --><!-- 비활성화 class -> disabled -->
+													<input type="hidden" value="논현동 주민센터2">
+													<a href="javascript:;" class="ds_value type1">논현동 주민센터2</a>
+													<div class="ds_options" style="display: none;">
+														<div id="" class="ds_cnt">
+															<ul class="ds_list">
+																<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터">논현동 주민센터</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터2">논현동 주민센터2</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터3">논현동 주민센터3</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터4">논현동 주민센터4</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터5">논현동 주민센터5</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="논현동 주민센터6">논현동 주민센터6</a></li>
+															</ul>
+														</div>
+														<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+													</div>
+												</div>
+
+											</div>
+											<span class="error_txt">소속 기관을 선택하세요.</span>
+										</td>
+									</tr>
+									<tr>
+										<th><span class="req">주소</span></th>
+										<td>
+											<div class="ip_group">
+												<input type="text" class="md" readonly="" value="06052"><button type="button" class="btn btn1">우편번호</button>
+											</div>
+											<div class="ip_group">
+												<input type="text" class="md2" readonly="" value="서울특별시 강남구 논현로 706">
+												<input type="text" class="md2" placeholder="상세주소를 입력해 주세요" value="아이캐슬빌딩 5층">
+											</div>
+											<span class="error_txt">기관 주소를 입력하세요.</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="form_box">
+						<div class="form_title">담당자 정보</div>
+						<span class="form_rt_txt"><span class="req">*</span> 는 필수 입력 사항입니다.</span>
+						<div class="form_table">
+							<table>
+								<colgroup>
+									<col style="width:130px;">
+									<col style="width:390px;">
+									<col style="width:130px;">
+									<col style=";">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th><span class="req">담당자명</span></th>
+										<td>
+											<div class="ip_group">
+												<input type="text" class="md" value="이영웅">
+											</div>
+										</td>
+										<th>부서명</th>
+										<td>
+											<div class="ip_group">
+												<input type="text" class="md" value="민원3팀">
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th><span class="req">핸드폰번호</span></th>
+										<td>
+											<div class="ip_group">
+												<div class="design_select xs"><!-- common.js 18 -->
+													<input type="hidden" value="010">
+													<a href="javascript:;" class="ds_value type1">010</a>
+													<div class="ds_options" style="display: none;">
+														<div id="" class="ds_cnt">
+															<ul class="ds_list">
+																<li><a href="javascript:;" class="ds_option" data-rel="010">010</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="011">011</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="016">016</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="017">017</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="019">019</a></li>
+															</ul>
+														</div>
+														<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+													</div>
+												</div>
+												<span class="dash">-</span>
+												<input type="text" class="xs" maxlength="4" value="1234">
+												<span class="dash">-</span>
+												<input type="text" class="xs" maxlength="4" value="1234">
+											</div>
+										</td>
+										<th><span class="req">내선번호</span></th>
+										<td>
+											<div class="ip_group">
+												<div class="design_select xs"><!-- common.js 18 -->
+													<input type="hidden" value="02">
+													<a href="javascript:;" class="ds_value type1">02</a>
+													<div class="ds_options" style="display: none;">
+														<div id="" class="ds_cnt">
+															<ul class="ds_list">
+																<li><a href="javascript:;" class="ds_option" data-rel="070">070</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="02">02</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="031">031</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="032">032</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="033">033</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="041">041</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="042">042</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="043">043</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="044">044</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="051">051</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="052">052</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="053">053</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="054">054</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="055">055</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="061">061</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="062">062</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="063">063</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="064">064</a></li>
+															</ul>
+														</div>
+														<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+													</div>
+												</div>
+												<span class="dash">-</span>
+												<input type="text" class="xs" maxlength="4" value="1234">
+												<span class="dash">-</span>
+												<input type="text" class="xs" maxlength="4" value="1234">
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>팩스번호</th>
+										<td colspan="3">
+											<div class="ip_group">
+												<div class="design_select xs"><!-- common.js 18 -->
+													<input type="hidden">
+													<a href="javascript:;" class="ds_value type1">선택</a>
+													<div class="ds_options" style="display: none;">
+														<div id="" class="ds_cnt">
+															<ul class="ds_list">
+																<li><a href="javascript:;" class="ds_option" data-rel="070">070</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="02">02</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="031">031</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="032">032</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="033">033</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="041">041</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="042">042</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="043">043</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="044">044</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="051">051</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="052">052</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="053">053</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="054">054</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="055">055</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="061">061</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="062">062</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="063">063</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="064">064</a></li>
+															</ul>
+														</div>
+														<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+													</div>
+												</div>
+												<span class="dash">-</span>
+												<input type="text" class="xs" maxlength="4" value="1234">
+												<span class="dash">-</span>
+												<input type="text" class="xs" maxlength="4" value="1234">
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th><span class="req">이메일</span></th>
+										<td colspan="3">
+											<div class="ip_group">
+												<input type="text" class="sm" value="aaa1234">
+												<span class="at">@</span>
+												<input type="text" class="emailArea sm" value="naver.com">
+												<div class="design_select sm"><!-- common.js 18 -->
+													<input type="hidden" value="직접입력">
+													<a href="javascript:;" class="ds_value type1">직접입력</a>
+													<div class="emailSelect ds_options" style="display: none;">
+														<div id="" class="ds_cnt">
+															<ul class="ds_list">
+																<li><a href="javascript:;" class="ds_option" data-rel="직접입력">직접입력</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="naver.com">naver.com</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="daum.net">daum.net</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="gmail.com">gmail.com</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="yahoo.com">yahoo.com</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="hanmail.net">hanmail.net</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="nate.com">nate.com</a></li>
+															</ul>
+														</div>
+														<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+													</div>
+												</div>
+												<script>
+												$('.emailSelect .ds_option').click(function(){
+													let emailVal = $(this).attr('data-rel');
+													if(emailVal !=="직접입력"){
+														$('.emailArea').val(emailVal);
+														$('.emailArea').attr("readonly",true); 
+														console.log('1')
+													}else if(emailVal =="직접입력"){
+														$('.emailArea').val('');
+														$('.emailArea').attr("readonly",false); 
+														console.log('2')
+													}
+												});
+												</script>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th><span class="req">IP<span></th>
+										<td colspan="3">
+											<div class="ip_group">
+												<input type="text" class="lg" placeholder="예) 111.111.111.111" value="111.111.111.11">
+											</div>
+											<span class="error_txt">네이버 검색창에서 “내아이피” 로 조회한 IP입력</span>
+										</td>
+									</tr>
+									<tr>
+										<th>수정자ID</th>
+										<td></td>
+										<th>수정일</th>
+										<td></td>
+									</tr>
+									<tr>
+										<th>로그인실패횟수</th>
+										<td colspan="3">1회</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="lf_btns">
+						<a href="javascript:;" class="btn black" onclick="layerHide('view_user_layer');">로그인실패 초기화</a>
+						<a href="javascript:;" class="btn black" onclick="layerHide('view_user_layer');">비밀번호 초기화</a>
+						<a href="javascript:;" class="btn red" onclick="layerHide('view_user_layer');">탈퇴</a>
+						<a href="javascript:;" class="btn submit" onclick="layerHide('view_user_layer');">수정</a>
+					</div>
+				</form>
+			</div>
+			
+		</div>
+	</div>
+	<span class="layer_bg" onclick="layerHide('view_user_layer');"></span>
+	<span class="blank"></span>
+</div>
+<!-- //사용자 등록2 -->
+
+<!-- 사용자 승인 -->
+<div class="layer_form detail_user_layer" style="display: ;">
+	<div class="layer_box" style="max-width:1100px;">
+		<div class="layer_cnt">
+			<div class="lf_title">
+				사용자 승인
+				<a href="javascript:;" class="lf_close" onclick="layerHide('detail_user_layer');">팝업닫기</a>
+			</div>
+			<div class="lf_content">
+				
+				<form method="post" action="">
+					<div class="form_box">
+						<div class="form_title">기관정보</div>
+						<span class="form_rt_txt"><span class="req">*</span> 는 필수 입력 사항입니다.</span>
+						<div class="form_table sm">
+							<table>
+								<colgroup>
+									<col style="width:180px;">
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th><span class="req">아이디</span></th>
+										<td>aaa1234</td>
+									</tr>
+									<tr>
+										<th><span class="req">기관정보</span></th>
+										<td>강남구 논현2동주민센터</td>
+									</tr>
+									<tr>
+										<th><span class="req">주소</span></th>
+										<td>(06052)<br/>서울특별시 강남구 논현로 706 아이캐슬빌딩 5층</td>
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="form_box">
+						<div class="form_title">담당자 정보</div>
+						<div class="form_table sm">
+							<table>
+								<colgroup>
+									<col style="width:130px;">
+									<col style="width:390px;">
+									<col style="width:130px;">
+									<col style=";">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th><span class="req">담당자명</span></th>
+										<td>이영웅</td>
+										<th>부서명</th>
+										<td>민원3팀</td>
+									</tr>
+									<tr>
+										<th><span class="req">핸드폰번호</span></th>
+										<td>010-1234-1234</td>
+										<th><span class="req">내선번호</span></th>
+										<td>02-1234-1234</td>
+									</tr>
+									<tr>
+										<th>팩스번호</th>
+										<td></td>
+										<th><span class="req">이메일</span></th>
+										<td>aaa@naver.com</td>
+									</tr>
+									<tr>
+										<th><span class="req">IP</span></th>
+										<td colspan="3">111.111.111.11</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="txt_box">
+							<span class="item">※ 사용자등록후 핸드폰번호로 사용자등록 알림톡이 전송됩니다.</span>
+						</div>
+					</div>
+
+					<div class="lf_btns">
+						<a href="javascript:;" class="btn submit" onclick="layerShow('appcomp_layer');">승인</a>
+						<a href="javascript:;" class="btn red" onclick="layerShow('refusal_reason');">거절</a>
+						<a href="javascript:;" class="btn gline" onclick="layerHide('detail_user_layer');">취소</a>
+					</div>
+				</form>
+			</div>
+			
+		</div>
+	</div>
+	<span class="layer_bg" onclick="layerHide('detail_user_layer');"></span>
+	<span class="blank"></span>
+</div>
+<!-- //사용자 승인 -->
+
+
+<!-- 승인완료 -->
+<div class="layer_form appcomp_layer" style="display: none;">
+	<div class="layer_box" style="max-width:480px;">
+		<div class="layer_cnt">
+			<div class="lf_content">
+				<div class="apply_comp">
+					신청서가 정상적으로 접수되었습니다.
+				</div>
+				<div class="lf_btns">
+					<a href="javascript:;" class="btn gline" onclick="layerHide('layer_form')">목록으로</a>
+					<a href="javascript:;" class="btn submit" onclick="layerHide('layer_form')">다음신청서 불러오기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<span class="layer_bg" onclick="layerHide('layer_form')"></span>
+	<span class="blank"></span>
+</div>
+<!-- //승인완료 -->
+
+<!-- 거절 사유 입력 -->
+<div class="layer_form refusal_reason" style="display: none;">
+	<div class="layer_box" style="max-width:480px;">
+		<div class="layer_cnt">
+			<div class="lf_title">
+				거절 사유 입력
+				<a href="javascript:;" class="lf_close" onclick="layerHide('refusal_reason')">팝업닫기</a>
+			</div>
+			<div class="lf_content">
+				<div class="form_row">
+					
+					<div class="row">
+						<div class="fr_tit">거절사유</div>
+						<div class="fr_cnt">
+							<div class="ip_group">
+								<div class="design_select">
+									<input type="hidden">
+									<a href="javascript:;" class="ds_value type1">선택</a>
+									<div id="" class="ds_options" style="display: none;">
+										<div id="reasonSelect" class="ds_cnt">
+											<ul class="ds_list">
+												<li><a href="javascript:;" class="ds_option" data-rel="서울시 거주자 아님">서울시 거주자 아님</a></li>
+												<li><a href="javascript:;" class="ds_option" data-rel="서울시 거주 6개월 미만">서울시 거주 6개월 미만</a></li>
+											</ul>
+										</div>
+										<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+									</div>
+								</div>
+							</div>
+							<script>
+							$('#reasonSelect .ds_option').click(function(){
+								let reasonVal = $(this).attr('data-rel');
+								if(reasonVal =="서울시 거주자 아님"){
+									$('#reasonDatepicker').val('');
+									$('#reasonDatepicker').attr("disabled",true); 
+									$('#reasonDatepicker').attr("readonly",false); 
+								}else if(reasonVal !=="서울시 거주자 아님"){
+									$('#reasonDatepicker').attr("disabled",false); 
+									$('#reasonDatepicker').attr("readonly",true); 
+								}
+							});
+							</script>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="fr_tit">전입일</div>
+						<div class="fr_cnt">
+							<div class="ip_group">
+								<input type="text" id="reasonDatepicker" class="datepicker" readonly="">
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="fr_tit">거절상세사유</div>
+						<div class="fr_cnt">
+							<div class="ip_group">
+								<textarea name="" id=""></textarea>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="lf_btns">
+					<a href="javascript:;" class="btn red" onclick="layerHide('layer_form');">거절</a>
+					<a href="javascript:;" class="btn gline" onclick="layerHide('refusal_reason')">닫기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<span class="layer_bg" onclick="layerHide('refusal_reason')"></span>
+	<span class="blank"></span>
+</div>
+<!-- //거절 사유 입력 -->
+
+	<div id="footer">
+		<div class="container">
+			<span class="ft_copy">COPYRIGHT Ⓒ 2021 상생소비지원금 ALL RIGHTS RESERVED.</span>
+		</div>
+	</div>
+</div>
+<script src="../assets/js/jquery-ui.min.js"></script>
+<script src="../assets/js/common.js"></script>
+</body>
+</html>	 

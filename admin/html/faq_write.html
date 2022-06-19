@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=1200"/>
+<link rel="canonical" href="">
+<link rel="shortcut icon" type="image/x-icon" href="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta property="og:title" content=""/>
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content=""/>
+<meta property="og:description" content="" />
+<title>서울특별시 임산부 교통비 지원 업무 시스템</title>
+<link rel="stylesheet" type="text/css" href="../assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../assets/css/content.css" />
+<link rel="stylesheet" type="text/css" href="../assets/css/jquery-ui.css" />
+<script src="../assets/js/jquery-1.11.3.min.js"></script>
+<script src="../assets/js/apexcharts.js"></script>
+</head>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+	<h1 id="header_h1">서울특별시 임산부 교통비 지원 업무 시스템</h1>
+	<div id="skip_to_container">
+		<!-- skip navigation -->
+		<a href="#content">내용 바로가기</a>
+		<a href="#nav">서비스메뉴 바로가기</a>
+	</div>
+	<hr class="hide" />	
+
+	<!-- header -->
+	<div id="header">
+		<div class="hd_top">
+			<div class="container">
+				<div id="logo">
+					<a href="#">
+						<img src="../assets/images/logo.jpg" alt="서울특별시 임산부 교통비 지원 업무 시스템">
+					</a>
+				</div>
+				<div class="hd_rt">
+					<span class="hd_welcome"><span class="name">홍길동</span><span class="area">(서울시)</span>님 반갑습니다.</span>
+					<ul class="hd_links">
+						<li><a href="javascript:;">회원정보변경</a></li>
+						<li><a href="javascript:;">로그아웃</a></li>
+						<li class="alram"><a href="javascript:;"><span class="sound_only">알림</span><span class="count">6</span></a></li>
+						<li class="alram"><a href="javascript:;"><span class="sound_only">알림</span><span class="count">10+</span></a></li><!-- 10초과일 때 (10+) -->
+					</ul>
+					
+				</div>
+			</div>
+		</div>
+		<div class="hd_bottom">
+			<div class="container">
+				<ul id="nav">
+					<li><a href="javascript:;">신청접수</a>
+						<ul>
+							<li><a href="javascript:;">신청접수 현황</a></li>
+							<li><a href="javascript:;">신규신청</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">사용현황</a>
+						<ul>
+							<li><a href="javascript:;">사용내역</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">정산현황</a>
+						<ul>
+							<li><a href="javascript:;">정산내역</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">커뮤니티</a>
+						<ul>
+							<li><a href="javascript:;">공지사항</a></li>
+							<li><a href="javascript:;">자주하는 질문</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">통계</a>
+						<ul>
+							<li><a href="javascript:;">신청현황</a></li>
+							<li><a href="javascript:;">바우처 지급 현황</a></li>
+							<li><a href="javascript:;">바우처 불용 현황</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">사용자</a>
+						<ul>
+							<li><a href="javascript:;">사용자 관리</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<span class="nav_bg"></span>
+		</div>
+	</div>
+	<!-- //header -->	
+
+	<!-- content -->
+	<div id="content">
+		<div class="sub_content container">
+			
+			<div class="pg_title">자주 묻는 질문 등록</div>
+			
+			<form method="post" action="" enctype="multipart/form-data">
+			<div class="form_box">
+				<div class="form_table">
+					<table>
+						<colgroup>
+							<col style="width:180px;">
+							<col style="width:400px;">
+							<col style="width:180px;">
+							<col style="width:420px;">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th><span class="req">사이트종류</span></th>
+								<td>
+									<div class="ip_group">
+										<div class="design_select md">
+											<input type="hidden">
+											<a href="javascript:;" class="ds_value type1">전체</a>
+											<div class="ds_options" style="display: none;"> 
+												<div id="" class="ds_cnt">
+													<ul class="ds_list">
+														<li><a href="javascript:;" class="ds_option" data-rel="전체">전체</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="업무시스템">업무시스템</a></li>
+													</ul>
+												</div>
+												<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+											</div>
+										</div>
+									</div>
+								</td>
+								<th><span class="req">게시여부</span></th>
+								<td>
+									<div class="ft_labels">
+										<label class="radiobox inline"><input type="radio" name="radio1"><span></span>게시</label>
+										<label class="radiobox inline"><input type="radio" name="radio1"><span></span>미게시</label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th><span class="req">구분</span></th>
+								<td colspan="3">
+									<div class="ip_group">
+										<div class="design_select md">
+											<input type="hidden">
+											<a href="javascript:;" class="ds_value type1">구분</a>
+											<div class="ds_options" style="display: none;"> 
+												<div id="" class="ds_cnt">
+													<ul class="ds_list">
+														<li><a href="javascript:;" class="ds_option" data-rel="바우처신청">바우처신청</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="사용내역">사용내역</a></li>
+													</ul>
+												</div>
+												<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th><span class="req">제목</span></th>
+								<td colspan="3">
+									<input type="text" class="xl">
+								</td>
+							</tr>
+							<tr>
+								<th><span class="req">글내용</span></th>
+								<td colspan="3">
+									<textarea name="" id="" class="edit"></textarea>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="form_btn">
+				<a href="#" class="btn submit md">등록</a>
+				<a href="#" class="btn line md">목록</a>
+			</div>
+			</form>
+
+		</div>
+	</div>
+	<!-- //content -->
+
+	<div id="footer">
+		<div class="container">
+			<span class="ft_copy">COPYRIGHT Ⓒ 2021 상생소비지원금 ALL RIGHTS RESERVED.</span>
+		</div>
+	</div>
+</div>
+
+<script src="../assets/js/jquery-ui.min.js"></script>
+<script src="../assets/js/common.js"></script>
+</body>
+</html>	 
