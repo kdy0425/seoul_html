@@ -161,6 +161,8 @@
 										<th>사용종료일</th>
 										<th>바우처 생성일</th>
 										<th>카드사</th>
+										<th>신청상태</th>
+										<th>취소상태</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -171,6 +173,8 @@
 										<td><span class="mb_th">사용종료일</span><span class="mb_td">2023.10.09</span></td>
 										<td><span class="mb_th">바우처 생성일</span><span class="mb_td">2022.10.10</span></td>
 										<td><span class="mb_th">카드사</span><span class="mb_td">삼성카드</span></td>
+										<td><span class="mb_th">신청상태</span><span class="mb_td"><span class="status red">반려 <button type="button" class="dt_btn" onclick="layerShow('return_reason')">자세히 보기</button></span>(서울시 거주 6개월 미만)</span></td>
+										<td><span class="mb_th">취소상태</span><span class="mb_td"></span></td>
 									</tr>
 									<tr>
 										<td><span class="mb_th">신청일자</span><span class="mb_td">2022.07.02</span></td>
@@ -179,6 +183,8 @@
 										<td><span class="mb_th">사용종료일</span><span class="mb_td">2023.10.09</span></td>
 										<td><span class="mb_th">바우처 생성일</span><span class="mb_td">2022.10.10</span></td>
 										<td><span class="mb_th">카드사</span><span class="mb_td">삼성카드</span></td>
+										<td><span class="mb_th">신청상태</span><span class="mb_td"><span class="status blue">접수</span></span></td>
+										<td><span class="mb_th">취소상태</span><span class="mb_td"></span></td>
 									</tr>
 									<tr>
 										<td><span class="mb_th">신청일자</span><span class="mb_td">2022.07.02</span></td>
@@ -187,6 +193,8 @@
 										<td><span class="mb_th">사용종료일</span><span class="mb_td">2023.10.09</span></td>
 										<td><span class="mb_th">바우처 생성일</span><span class="mb_td">2022.10.10</span></td>
 										<td><span class="mb_th">카드사</span><span class="mb_td">삼성카드</span></td>
+										<td><span class="mb_th">신청상태</span><span class="mb_td"><span class="status blue">접수</span></span></td>
+										<td><span class="mb_th">취소상태</span><span class="mb_td"></span></td>
 									</tr>
 									<tr>
 										<td><span class="mb_th">신청일자</span><span class="mb_td">2022.07.02</span></td>
@@ -195,8 +203,10 @@
 										<td><span class="mb_th">사용종료일</span><span class="mb_td">2023.10.09</span></td>
 										<td><span class="mb_th">바우처 생성일</span><span class="mb_td">2022.10.10</span></td>
 										<td><span class="mb_th">카드사</span><span class="mb_td">삼성카드</span></td>
+										<td><span class="mb_th">신청상태</span><span class="mb_td"><span class="status blue">접수</span></span></td>
+										<td><span class="mb_th">취소상태</span><span class="mb_td"></span></td>
 									</tr>
-									<tr><td colspan="6" class="list_empty"><span class="empty_txt">지원금 신청 내역이 없습니다.</span></td></tr>
+									<tr><td colspan="8" class="list_empty"><span class="empty_txt">지원금 신청 내역이 없습니다.</span></td></tr>
 								</tbody>
 							</table>
 						</div>
@@ -207,6 +217,30 @@
 		</div>
 	</div>
 	<!-- //content -->
+
+<!-- 반려내용 -->
+<div class="layer_form return_reason" style="display: none;">
+	<div class="layer_box" style="max-width:520px;">
+		<div class="layer_cnt">
+			<div class="lf_title">
+				반려내용
+				<a href="javascript:;" class="lf_close" onclick="layerHide('return_reason')">팝업닫기</a>
+			</div>
+			<div class="lf_content">
+				<div class="lf_alert_msg">
+					서울시 거주 6개월 미만<br/>
+					서울시 거주 6개월 미만서울시 거주 6개월 미만 6개월 미만<br/>
+					서울시 거주 6개월 미만
+				</div>
+				<div class="btn_form">
+					<a href="javascript:;" class="btn submit" onclick="layerHide('return_reason');">확인</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<span class="layer_bg" onclick="layerHide('return_reason');"></span>
+</div>
+<!-- //반려내용 -->
 
 
 	<div id="footer">
