@@ -38,17 +38,13 @@ $('.ds_options .ds_close,.ds_options .ds_bg').click(function(event){
 
 //레이어팝업 */
 function layerShow(thisClass){
-    //$('.contLayer').hide();
     $('.'+thisClass).show();
-	
-	if($('.'+thisClass).hasClass('fixed_layer')){
-		$('html,body').css('overflow-y' , 'hidden');
-	}
+	$('html,body').css('overflow-y' , 'hidden');
 }
 function layerHide(thisClass){
     $('.'+thisClass).hide();
 	
-	if($('.layer_form.fixed_layer:visible').length == 0 ){
+	if($('.layer_form:visible').length == 0 ){
 		$('html,body').css('overflow-y' , 'auto');
 	}
 }

@@ -130,7 +130,7 @@
 
 
 	<!-- 팝업슬라이드 -->
-	<div class="layer_form popup_slide" style="display:block;">
+	<div class="layer_form popup_slide" style="display:none;">
 		<div class="layer_box" style="max-width:720px;">
 			<div class="layer_cnt">
 				<div class="pop_slide">
@@ -148,6 +148,9 @@
 		<span class="layer_bg" onclick="layerHide('popup_slide');"></span>
 	</div>
 	<script>
+	$(document).ready(function(){
+		layerShow('popup_slide');
+	});
 	$('.pop_slide').slick({
 		dots: true,
 		infinite: true,
