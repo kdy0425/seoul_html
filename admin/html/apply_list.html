@@ -423,6 +423,68 @@
 			
 
 		</div>
+
+		<!-- 임신주차계산기 -->
+		<div class="calc_pregnancy">
+			<a href="javascript:;" class="calc_btn" onclick="$('.calc_layer').toggle()">임신주차<br/>계산기</a>
+
+			<div class="layer_box calc_layer" style="display:none;">
+				<div class="layer_cnt">
+					<div class="lf_title">
+						임신주차계산기
+						<a href="javascript:;" class="lf_close" onclick="layerHide('calc_layer')">팝업닫기</a>
+					</div>
+					<div class="lf_content">
+						<div class="form_table2">
+							<table>
+								<colgroup>
+									<col style="width:119px;">
+									<col style=";">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>기준일</th>
+										<td><input type="text" class="datepicker align_center" readonly=""></td>
+									</tr>
+									<tr>
+										<th>출산예정일</th>
+										<td><input type="text" class="datepicker align_center" readonly=""></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="calc_text">
+							<div>
+								기준일 기준 현재 임신 <strong class="text_red">12주차 4일</strong> 입니다. 
+							</div>
+						</div>
+						<div class="calc_text">
+							<div>
+								기준일 기준 현재  임신 <strong class="text_red">11주차 4일</strong> 입니다.<br/>
+								임신 12주차의 기준일은 <strong class="text_blue">2022년06월27일</strong> 입니다. 
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script>
+			$(document).on('click', function(e){    
+				if(!$(e.target).closest('div').hasClass("calc_pregnancy")){
+					$('.calc_layer').hide();
+				}
+			});
+
+			$(window).scroll(function(){ 
+				let height = $(document).scrollTop(); 
+				if(height <= 130){ 
+				  $('.calc_pregnancy').removeClass('fixed'); 
+				}else if(height > 130){ 
+				  $('.calc_pregnancy').addClass('fixed'); 
+				} 
+			  });
+			</script>
+		</div>
+		<!-- //임신주차계산기 -->
 	</div>
 	<!-- //content -->
 
