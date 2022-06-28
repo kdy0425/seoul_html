@@ -764,13 +764,17 @@ background-repeat:no-repeat;background-position:center center;background-image:u
 .list_faq .item .faq_a .a_btns .modify:hover{background-color:#384f9c;}
 .list_faq .item .faq_a .a_btns .remove:hover{background-color:#c43939;}
 
-.calc_pregnancy{position:absolute;left:50%;top:160px;margin-left:600px;z-index:10;}
-.calc_pregnancy.fixed{position:fixed;top:30px;}
-.calc_pregnancy .calc_btn{display:block;width:85px;height:120px;border-radius:10px;border:1px solid #7489d1;text-align:center;background-color:#fff;padding-top:66px;color:#5b76d0;font-size:15px;font-weight:600;line-height:1.2;
-background-repeat:no-repeat;background-position:center top 21px;background-image:url('../images/calc_btn.jpg');transition:all 0.2s;}
-.calc_pregnancy .calc_btn:hover{box-shadow:0 0 10px rgba(0,0,0,.15)}
+.quick_area{position:absolute;left:50%;top:160px;margin-left:630px;z-index:10;}
+.quick_area.fixed{position:fixed;top:30px;}
+.quick_area .quick_btn{display:block;width:85px;height:120px;border-radius:10px;border:1px solid #7489d1;text-align:center;background-color:#fff;padding-top:66px;color:#5b76d0;font-size:15px;font-weight:600;line-height:1.2;
+background-repeat:no-repeat;background-position:center top 21px;transition:all 0.2s;}
+.quick_area .quick_btn:hover{box-shadow:0 0 10px rgba(0,0,0,.15)}
+.quick_area .quick_btn + .quick_btn{margin-top:10px;}
+.quick_area .quick_btn.live{background-image:url('../images/live_btn.jpg');background-position:center top 20px;}
+.quick_area .quick_btn.pregnancy{background-image:url('../images/calc_btn.jpg');}
+.quick_area .quick_btn.birth{background-image:url('../images/birth_btn.jpg');background-position:center top 15px;}
 
-.calc_layer{position:absolute;right:95px;top:0;z-index:10;text-align:left;width:440px;border:1px solid #333;border-radius:3px;background-color:#fff;}
+.calc_layer{position:absolute;z-index:100;right:95px;top:0;z-index:10;text-align:left;width:440px;border:1px solid #333;border-radius:3px;background-color:#fff;}
 .calc_layer .lf_title{color:#333;font-size:18px;font-weight:600;padding:17px 30px;border-bottom:1px solid #d0d0d0;}
 .calc_layer .lf_close{position:absolute;right:15px;top:14px;width:30px;height:30px;text-indent:-999em;overflow:hidden;background-position:center center;background-size:18px;background-repeat:no-repeat;background-image:url('../images/icon_close.png');}
 .calc_layer .layer_cnt{}
@@ -782,7 +786,7 @@ background-repeat:no-repeat;background-position:center top 21px;background-image
 .calc_layer .lf_btns .btn.red{color:#fff;background-color:#d64f4f;border:1px solid #d64f4f;}
 .calc_layer .lf_btns .btn.gline{color:#000;background-color:#fff;border:1px solid #d0d0d0;}
 .calc_layer .lf_btns .btn.black{color:#fff;background-color:#000;border:1px solid #000;}
-
+.layer_bg2{position:fixed;left:0;top:0;width:100%;height:100%;z-index:9;}
 .form_table2{}
 .form_table2 table{width:100%;border-collapse:collapse;table-layout:fixed;}
 .form_table2 tbody{}
@@ -795,20 +799,3 @@ background-repeat:no-repeat;background-position:center top 21px;background-image
 .calc_text{display:flex;align-items:center;justify-content:center;margin-top:20px;background-color:#f8f8f8;text-align:center;min-height:100px;padding:29px;font-weight:600;color:#333;font-size:15px;line-height:1.4;}
 .calc_text strong{font-weight:600;}
 
-<div class="layer_form calc_layer" style="display: block;">
-				<div class="layer_box" style="max-width:480px;">
-					<div class="layer_cnt">
-						<div class="lf_content">
-							<div class="apply_comp">
-								신청서가 정상적으로 접수되었습니다.
-							</div>
-						</div>
-						<div class="lf_btns">
-							<a href="javascript:;" class="btn gline" onclick="layerHide('appcomp_layer')">목록으로</a>
-							<a href="javascript:;" class="btn submit" onclick="layerHide('appcomp_layer')">다음신청서 불러오기</a>
-						</div>
-					</div>
-				</div>
-				<span class="layer_bg" onclick="layerHide('appcomp_layer')"></span>
-				<span class="blank"></span>
-			</div>

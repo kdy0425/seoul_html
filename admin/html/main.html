@@ -445,15 +445,18 @@
 		</div>
 
 
-		<!-- 임신주차계산기 -->
-		<div class="calc_pregnancy">
-			<a href="javascript:;" class="calc_btn" onclick="$('.calc_layer').toggle()">임신주차<br/>계산기</a>
+		<!-- 퀵배너 -->
+		<div class="quick_area">
+			<a href="javascript:;" class="quick_btn live" >거주기간<br/>계산기</a>
+			<a href="javascript:;" class="quick_btn pregnancy" >임신주차<br/>계산기</a>
+			<a href="javascript:;" class="quick_btn birth" >출산개월<br/>계산기</a>
 
+			<!-- 임신주차계산기 -->
 			<div class="layer_box calc_layer" style="display:none;">
 				<div class="layer_cnt">
 					<div class="lf_title">
 						임신주차계산기
-						<a href="javascript:;" class="lf_close" onclick="layerHide('calc_layer')">팝업닫기</a>
+						<a href="javascript:;" class="lf_close" onclick="layerHide('calc_layer');$('.layer_bg2').hide();">팝업닫기</a>
 					</div>
 					<div class="lf_content">
 						<div class="form_table2">
@@ -488,24 +491,35 @@
 					</div>
 				</div>
 			</div>
+			<!-- //임신주차계산기 -->
+			<span class="layer_bg2" style="display:none;"></span>
+
 			<script>
-			$(document).on('click', function(e){    
-				if(!$(e.target).closest('div').hasClass("calc_pregnancy")){
+			$('.quick_btn.pregnancy').click(function(){
+				if($('.calc_layer').is(':visible')){
 					$('.calc_layer').hide();
+					$('.layer_bg2').hide();
+				}else{
+					$('.calc_layer').show();
+					$('.layer_bg2').show();
 				}
+			});
+			$('.layer_bg2').click(function(){
+				$('.layer_box').hide();
+				$('.layer_bg2').hide();
 			});
 
 			$(window).scroll(function(){ 
 				let height = $(document).scrollTop(); 
 				if(height <= 130){ 
-				  $('.calc_pregnancy').removeClass('fixed'); 
+				  $('.quick_area').removeClass('fixed'); 
 				}else if(height > 130){ 
-				  $('.calc_pregnancy').addClass('fixed'); 
+				  $('.quick_area').addClass('fixed'); 
 				} 
 			  });
 			</script>
 		</div>
-		<!-- //임신주차계산기 -->
+		<!-- //퀵배너 -->
 
 	</div>
 	<!-- //content -->
