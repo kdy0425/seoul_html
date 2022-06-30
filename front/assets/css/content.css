@@ -1598,3 +1598,69 @@ background-repeat:no-repeat;background-position:center center;background-size:co
 	.apply_how .box .content .inbox .item .cnt p + .link{margin-top:4px;}
 	.apply_how .box .content .inbox .item .cnt .link + .ct{margin-top:4px;}
 }
+
+
+.terms_page .center_title{margin-bottom:30px;}
+
+.terms_content{color:#333;word-break:keep-all;line-height:1.6;padding-top:35px;border-top:1px solid #e8e8e8;}
+.terms_content .tc_tit{font-size:2.2rem;font-weight:500;color:#db626d;text-align:center;}
+.terms_content .tc_stit{margin-top:35px;}
+.terms_content .tc_section{margin-top:65px;}
+.terms_content .tc_section + .tc_section{margin-top:60px;}
+
+.terms_content .section_tit{display:block;font-size:2.4rem;font-weight:600;margin-bottom:10px;}
+.terms_content .ol1{}
+.terms_content .ol1 .ol1_li{}
+.terms_content .ol1 .ol1_li + .ol1_li{margin-top:5px;}
+.terms_content .ol1 .ol1_li .ol1_li_tit{display:block;text-indent:-17px;padding-left:17px;}
+.terms_content .ol1 .ol1_li .ol1_li_cnt{padding-left:17px;margin-top:8px;margin-bottom:15px;}
+
+.terms_content .ol2{}
+.terms_content .ol2 .ol2_li{}
+.terms_content .ol2 .ol2_li .ol2_li_tit{font-size:1.8rem;display:block;margin-bottom:5px;}
+.terms_content .ol2 .ol2_li .ol2_li_tit strong{font-weight:600;}
+.terms_content .ol2 .ol2_li .ol2_li_cnt{padding-left:17px;}
+
+.terms_content .ol2 .ol2_li + .ol2_li{margin-top:16px;}
+.terms_content p{}
+.terms_content p strong{font-weight:600;font-size:1.5rem;}
+.terms_content .table{margin-top:10px;}
+.terms_content table{width:100%;border-collapse:collapse;border-top:1px solid #666;}
+.terms_content table thead{}
+.terms_content table thead th{background-color:#f8f8f8;text-align:center;vertical-align:middle;color:#333;height:61px;padding:20px 10px;border-bottom:1px solid #d0d0d0;}
+.terms_content table tbody{}
+.terms_content table tbody td{background-color:#fff;text-align:center;vertical-align:middle;color:#333;height:61px;padding:18px 10px;border-bottom:1px solid #d0d0d0;}
+.terms_content .st{display:block;color:#666;text-indent:-16px;padding-left:16px;margin-top:10px;}
+.terms_content a{text-decoration:underline;}
+.terms_content a:hover{color:#000;}
+
+.terms_content p + .dash{margin-top:5px;}
+.terms_content p + p{margin-top:5px;}
+.terms_content .dash{}
+.terms_content .dash li{text-indent:-9px;padding-left:9px;}
+.terms_content .dash li + li{margin-top:2px;}
+.terms_content .dot{}
+.terms_content .dot li{text-indent:-9px;padding-left:9px;}
+.terms_content .dot li + li{margin-top:2px;}
+.terms_content .item{}
+.terms_content .item + .item{margin-top:15px;}
+
+@media screen and (max-width: 1220px) {
+	.terms_page .center_title{margin-bottom:20px;}
+	.terms_content{padding-top:25px;}
+	.terms_content .tc_tit{font-size:1.8rem;}
+	.terms_content .tc_stit{margin-top:25px;}
+	.terms_content .tc_section{margin-top:35px;}
+	.terms_content .tc_section + .tc_section{margin-top:30px;}
+
+	.terms_content .section_tit{font-size:1.9rem;}
+
+	.terms_content .ol2 .ol2_li .ol2_li_tit{font-size:1.6rem;}
+
+	.terms_content .table{margin:10px -16px 0;padding:0 16px;overflow-x:auto;}
+	.terms_content table{white-space:nowrap;}
+	.terms_content table thead{}
+	.terms_content table thead th{height:41px;padding:8px 5px;font-size:1.3rem;}
+	.terms_content table tbody{}
+	.terms_content table tbody td{height:41px;padding:8px 5px;font-size:1.25rem;}
+}
