@@ -972,7 +972,7 @@ background-repeat:no-repeat;background-position:center center;background-size:co
 }
 
 .certify_btns{display:flex;}
-.certify_btns > a{flex:1 1;background-color:#f8f8f8;padding:38px;border:2px solid #f8f8f8;text-align:center;}
+.certify_btns > a{flex:1 1;background-color:#f8f8f8;width:200px;padding:38px 5px;border:2px solid #f8f8f8;text-align:center;}
 .certify_btns > a:hover{border:2px solid #db626d;}
 .certify_btns > a + a{margin-left:20px;}
 .certify_btns .tit{display:block;color:#000;font-size:1.8rem;font-weight:600;}
@@ -981,13 +981,17 @@ background-repeat:no-repeat;background-position:center center;background-size:co
 background-position:center center;background-size:contain;background-repeat:no-repeat;}
 .certify_btns .phone .tit:after{background-image:url('../images/icon_phone.png');}
 .certify_btns .card .tit:after{background-image:url('../images/icon_card.png');}
+.certify_btns .ipin .tit:after{background-image:url('../images/icon_ipin.png');background-size:auto 34px;}
+.certift_txt{color:#000000;display:block;margin-top:20px;word-break:keep-all;text-indent:-10px;padding-left:10px;}
+strong{color:#db626d;font-weight:600;}
 @media screen and (max-width: 1220px) {
 	.certify_btns{display:block;}
-	.certify_btns > a{display:block;padding:20px;border:0;}
+	.certify_btns > a{display:block;padding:20px 10px;border:0;width:auto;}
 	.certify_btns > a:hover{border:0;}
 	.certify_btns > a + a{margin-left:0;margin-top:10px;}
 	.certify_btns .txt{margin-top:20px;}
 	.certify_btns .tit:after{margin-top:16px;height:32px;}
+	.certify_btns .ipin .tit:after{background-size:auto 28px;}
 }
 
 .support_ltop{padding:40px 0;text-align:center;background-color:#f8f8f8;margin-bottom:50px;}
