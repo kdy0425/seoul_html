@@ -1668,3 +1668,39 @@ background-repeat:no-repeat;background-position:center center;background-size:co
 	.terms_content table tbody{}
 	.terms_content table tbody td{height:41px;padding:8px 5px;font-size:1.25rem;}
 }
+
+.table_btn1{border:1px solid #666666;color:#333;font-size:1.3rem;padding:2px 9px;}
+.lf_down{margin:30px 20px 20px;}
+.lf_down .item{}
+.lf_down .item + .item{margin-top:25px;}
+.lf_down .item a{color:#db626d;text-decoration:underline;font-size:1.6rem;font-weight:600;}
+@media screen and (max-width: 1220px) {
+	.table_btn1{padding:1px 6px;}
+	.lf_down{margin:10px;}
+	.lf_down .item{}
+	.lf_down .item + .item{margin-top:15px;}
+	.lf_down .item a{font-size:1.5rem;}
+}
+
+.file_upbox{display:flex;align-items:center;min-height:40px;}
+.file_upbox .checkbox{}
+.file_upbox .file_label{margin-left:20px;position:relative;overflow:hidden;border:1px solid #666;color:#333;font-size:1.3rem;padding:5px 17px;}
+.file_upbox .file_label input{position:absolute;left:-9999999em;width:10px;}
+.file_upbox .file_info{margin-left:11px;color:#666;font-size:1.3rem;}
+.file_upbox .file_rule{margin-left:14px;color:#666;font-size:1.3rem;}
+.file_list{}
+.file_list .item{margin-top:17px;}
+.file_list .item + .item{margin-top:13px;}
+.file_list .item:last-child{margin-bottom:5px;}
+.file_list .item .name{display:inline-block;color:#db626d;font-size:1.4rem;font-weight:600;margin-right:10px;}
+.file_list .item .remove{width:20px;height:20px;text-indent:-999em;overflow:hidden;border:1px solid #999999;background-color:#fff;
+background-repeat:no-repeat;background-position:center center;background-size:8px;background-image:url('../images/icon_close3.png');}
+@media screen and (max-width: 1220px) {
+	.file_upbox{display:block;min-height:auto;text-align:center;}
+	.file_upbox .checkbox{}
+	.file_upbox .file_ctr{margin-top:10px;}
+	.file_upbox .file_label{margin-left:0;display:inline-block;font-size:1.3rem;padding:5px 17px;}
+	.file_upbox .file_info{margin-top:5px;display:inline-block;}
+	.file_upbox .file_rule{margin-left:0;margin-top:10px;display:block;word-break:keep-all;}
+	.file_list{text-align:center;}
+}

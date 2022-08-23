@@ -215,6 +215,23 @@
 												<span class="ip_rule pregnancy_calc"> <strong>현재 임신</strong> 11주차 3일 <strong>입니다.</strong><br class="mobile inline"/> 임신 3개월(12주) 이후부터 신청이 가능합니다.</span>
 											</td>
 										</tr>
+										<tr>
+											<th><span>증빙서류</span></th>
+											<td>
+												<div class="file_upbox">
+													<label class="checkbox"><input type="checkbox" id="fileCheck"><span></span>제출</label>
+													<div class="file_ctr">
+														<label class="file_label" style="display:none;"><input type="file">파일첨부</label>
+														<span class="file_info" style="display:none;">0/5(0MB)</span>
+													</div>
+													<span class="file_rule" style="display:none;">임신/출산을 증명하는 파일을 등록해주세요. (파일은 5개까지 최대 5MB 가능)</span>
+												</div>
+												<div class="file_list" style="display:none;">
+													<div class="item"><span class="name">산부인과_임신증명서.jpg</span><button type="button" class="remove">삭제</button></div>
+													<div class="item"><span class="name">주민등록등본.pdf</span><button type="button" class="remove">삭제</button></div>
+												</div>
+											</td>
+										</tr>
 									</tbody>
 								</table>
 								<script>//월일
@@ -225,6 +242,14 @@
 								for (let i = 1; i <= 31; i++) {
 								  $(".select_day").append("<option value='" + i + "'>" + i + "일" + "</option>");
 								}
+
+								$('#fileCheck').change(function(){
+									if($(this).is(":checked")){
+										$('.file_upbox .file_label, .file_upbox .file_info, .file_upbox .file_info, .file_upbox .file_rule, .file_list').show();
+									}else{
+										$('.file_upbox .file_label, .file_upbox .file_info, .file_upbox .file_info, .file_upbox .file_rule, .file_list').hide();
+									}
+								});
 								</script>
 							</div>
 						</div>
