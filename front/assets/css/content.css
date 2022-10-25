@@ -1151,7 +1151,8 @@ strong{color:#db626d;font-weight:600;}
 .cnt_table1 table tbody tr td .bill{display:block;color:#db626d;word-break:keep-all;}
 .cnt_table1 table tbody tr td .sv_cnt_tit + .dot{margin-top:5px;}
 .cnt_table1 table tbody tr td .dot + .bill{margin-top:4px;}
-.cnt_table1 table tbody tr td .stxt{color:#666;margin-top:5px;display:block;}
+.cnt_table1 table tbody tr td .stxt{color:#666;margin-top:4px;display:block;}
+.cnt_table1 table tbody tr td .stxt + .stxt{margin-top:1px;}
 .cnt_table1 table tbody tr td a{text-decoration:underline;}
 .cnt_table1 table tbody tr td a:hover{color:#000;}
 .cnt_table1 table tbody tr.color th{border-top:3px solid #0c82e9;border-left:3px solid #0c82e9;border-bottom:3px solid #0c82e9;background-color:#dcedfc;}
@@ -1160,6 +1161,12 @@ strong{color:#db626d;font-weight:600;}
 .cnt_table1 table tbody tr.color td .dot li strong{color:#1284e8;font-weight:500;}
 .cnt_table1 table tbody tr.color td .dot li .stxt{text-indent:0;}
 .cnt_table1 table tbody tr.color td .dot li + li{margin-top:15px;}
+.cnt_table1 table tbody tr td .dot li.local .tit{margin-bottom:2px;}
+.cnt_table1 table tbody tr td .dot li.local .tit span{display:inline-block;background-color:#d862aa;color:#fff;border-radius:4px;padding:2px 5px;text-indent:0;}
+.cnt_table1 table tbody tr td .dot li.foreigner .tit{margin-bottom:2px;}
+.cnt_table1 table tbody tr td .dot li.foreigner .tit span{display:inline-block;background-color:#6b59af;color:#fff;border-radius:4px;padding:2px 5px;text-indent:0;}
+.cnt_table1 table tbody tr td .dot li.local strong{color:#d862aa;}
+.cnt_table1 table tbody tr td .dot li.foreigner strong{color:#6b59af;}
 
 @media screen and (max-width: 1220px) {
 	.cnt_table1{}
@@ -1173,6 +1180,7 @@ strong{color:#db626d;font-weight:600;}
 	.cnt_table1 table tbody tr.color th{border-bottom:0;border-right:3px solid #0c82e9;}
 	.cnt_table1 table tbody tr.color td{padding:16px;border-top:0;border-left:3px solid #0c82e9;}
 	.cnt_table1 table tbody tr td .stxt{margin-top:6px;}
+	.cnt_table1 table tbody tr td .stxt + .stxt{margin-top:1px;}
 	.cnt_table1 table tbody tr.color td .dot li + li{margin-top:8px;}
 }
 
@@ -1558,7 +1566,7 @@ background-repeat:no-repeat;background-position:center center;background-size:co
 .apply_how .box + .box{margin-left:20px;}
 .apply_how .box .title{background-color:#db626d;padding:18px 15px;color:#fff;font-size:1.6rem;font-weight:600;text-align:center;margin:0 -1px;}
 .apply_how .box .title span{display:inline-block;font-size:1.4rem;font-weight:400;margin:2px 0 0 5px;}
-.apply_how .box .content{padding:35px 40px;}
+.apply_how .box .content{padding:35px 25px;}
 .apply_how .box .content .inbox{}
 .apply_how .box .content .inbox + .inbox{margin-top:40px;}
 .apply_how .box .content .inbox .in_tit{display:block;text-align:center;margin-bottom:15px;}
