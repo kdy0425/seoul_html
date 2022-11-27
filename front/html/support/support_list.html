@@ -163,6 +163,7 @@
 										<th>카드사</th>
 										<th>신청상태</th>
 										<th>취소상태</th>
+										<th>증빙서류</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -175,6 +176,7 @@
 										<td><span class="mb_th">카드사</span><span class="mb_td">삼성카드</span></td>
 										<td><span class="mb_th">신청상태</span><span class="mb_td"><span class="status red">반려 <button type="button" class="dt_btn" onclick="layerShow('return_reason')">자세히 보기</button></span>(서울시 거주 6개월 미만)</span></td>
 										<td><span class="mb_th">취소상태</span><span class="mb_td"></span></td>
+										<td><span class="mb_th">증빙서류</span><span class="mb_td"><a href="javascript:;" class="table_btn1" onclick="layerShow('down_layer')">다운로드</a></span></td>
 									</tr>
 									<tr>
 										<td><span class="mb_th">신청일자</span><span class="mb_td">2022.07.02</span></td>
@@ -185,6 +187,7 @@
 										<td><span class="mb_th">카드사</span><span class="mb_td">삼성카드</span></td>
 										<td><span class="mb_th">신청상태</span><span class="mb_td"><span class="status blue">접수</span></span></td>
 										<td><span class="mb_th">취소상태</span><span class="mb_td"></span></td>
+										<td><span class="mb_th">증빙서류</span><span class="mb_td"><a href="javascript:;" class="table_btn1" onclick="layerShow('down_layer')">다운로드</a></span></td>
 									</tr>
 									<tr>
 										<td><span class="mb_th">신청일자</span><span class="mb_td">2022.07.02</span></td>
@@ -195,6 +198,7 @@
 										<td><span class="mb_th">카드사</span><span class="mb_td">삼성카드</span></td>
 										<td><span class="mb_th">신청상태</span><span class="mb_td"><span class="status blue">접수</span></span></td>
 										<td><span class="mb_th">취소상태</span><span class="mb_td"></span></td>
+										<td><span class="mb_th">증빙서류</span><span class="mb_td"><a href="javascript:;" class="table_btn1" onclick="layerShow('down_layer')">다운로드</a></span></td>
 									</tr>
 									<tr>
 										<td><span class="mb_th">신청일자</span><span class="mb_td">2022.07.02</span></td>
@@ -205,6 +209,7 @@
 										<td><span class="mb_th">카드사</span><span class="mb_td">삼성카드</span></td>
 										<td><span class="mb_th">신청상태</span><span class="mb_td"><span class="status blue">접수</span></span></td>
 										<td><span class="mb_th">취소상태</span><span class="mb_td"></span></td>
+										<td><span class="mb_th">증빙서류</span><span class="mb_td"></span></td>
 									</tr>
 									<tr><td colspan="8" class="list_empty"><span class="empty_txt">지원금 신청 내역이 없습니다.</span></td></tr>
 								</tbody>
@@ -241,6 +246,27 @@
 	<span class="layer_bg" onclick="layerHide('return_reason');"></span>
 </div>
 <!-- //반려내용 -->
+
+
+<!-- 다운로드 -->
+<div class="layer_form down_layer" style="display: none;">
+	<div class="layer_box" style="width:500px;">
+		<div class="layer_cnt">
+			<div class="lf_title">
+				다운로드
+				<a href="javascript:;" class="lf_close" onclick="layerHide('down_layer')">팝업닫기</a>
+			</div>
+			<div class="lf_content">
+				<div class="lf_down">
+					<div class="item"><a href="javascript:;">산부인과_임신증명서.jpg</a></div>
+					<div class="item"><a href="javascript:;">주민등록등본.pdf</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<span class="layer_bg" onclick="layerHide('down_layer');"></span>
+</div>
+<!-- //다운로드 -->
 
 
 	<div id="footer">

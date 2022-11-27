@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="referrer" content="always">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no,address=no,email=no">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,viewport-fit:cover">
+<!-- No cache -->
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache; no-store; no-save">
+<!-- Summary -->
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta property="og:title" content=""/>
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content=""/>
+<meta property="og:description" content="" />
+<title>서울특별시 임산부 교통비 지원 사업</title>
+<link rel="stylesheet" type="text/css" href="../../assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/content.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css" />
+<script src="../../assets/js/jquery-1.11.3.min.js"></script>
+<script src="../../assets/js/slick.js"></script>
+<script src="../../assets/js/jquery-ui.min.js"></script>
+</head>
+<body>
+
+<!-- wrap -->
+<div id="popup_content">
+	<!-- content -->
+	<div id="content">
+		<h3 class="pp_title">엄마 북(Book)돋움 서비스 신청</h3>
+		<a href="javascript:;" class="pp_close" onclick="layerHide('apply_comp')">팝업닫기</a>
+		<div class="pp_content">
+
+			<div id="" class="pop_box_wrap support_form_wrap">
+				<form method="post" action="">
+				<div class="pop_box mom_book_check">
+					<div class="cnt_txt">
+						엄마 북(Book)돋움 서비스는<br/>문의전화 :
+					</div>
+				</div>
+
+				<div class="pop_box new_terms">
+					<div class="pop_terms_wrap">
+						<div class="pop_terms_item">
+							<div class="terms_title">
+								<label><input id="chk3" class="chk" type="checkbox"><span></span></label>
+								<a href="javascript:;">개인정보의 제3자 제공 동의</a>
+							</div>
+							<div class="terms_cnt">
+								<p>본 사업 신청과 관련하여 아래와 같이 귀하의 개인정보를 제3자로부터 제공 받기 위하여「개인정보보호법」제17조(개인정보의 제공)에 따라 관련 사항을 알려드리오니 동의하여 주시기 바랍니다.<br><br>
+								본 사업 신청에 있어 신청․자격요건 확인 등 사업의 진행을 위하여 하단과 같이 개인정보를 제3자에게 제공하고자 합니다.</p>
+								<div class="terms_table">
+									<table>
+										<thead>
+											<tr>
+												<th>개인정보를 제공받는 자</th>
+												<th>개인정보의 이용 목적</th>
+												<th>제공항목</th>
+												<th>보유 및 이용기간</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>서울특별시 25개 자치구 및 동주민센터 (신청자 주소지 관할)</td>
+												<td>임산부 교통비 바우처 대상자 자격 조회</td>
+												<td>성명, 주민등록번호, 휴대전화번호, 주소, CI</td>
+												<td>3년</td>
+											</tr>
+											<!-- <tr>
+												<td>신한카드, KB국민카드, BC카드, 삼성카드, 우리카드, 하나카드</td>
+												<td>임산부 교통비 바우처 지급 및 사용내역 조회</td>
+												<td>성명, 휴대전화번호, CI</td>
+												<td>3년</td>
+											</tr> -->
+											<tr>
+												<td>트라이언소프트(주)</td>
+												<td>임산부 교통비 지원신청 시스템 운영 및 유지보수</td>
+												<td>성명, 주민등록번호, 휴대전화번호, 주소, CI</td>
+												<td>3년</td>
+											</tr>
+											<tr>
+												<td>NICE평가정보(주)</td>
+												<td>실명인증, 본인확인</td>
+												<td>성명, 주민등록번호, 휴대전화번호, 생년월일, 성별</td>
+												<td>별도 저장하지 않음</td>
+											</tr>
+											<tr>
+												<td>비지에프네트웍스(주)</td>
+												<td>알림톡, 문자메시지 발송</td>
+												<td>휴대전화번호</td>
+												<td>별도 저장하지 않음</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p>단, 신청인은 개인 정보의 제3자 제공·조회에 대한 동의를 거부할 권리가 있습니다. 그러나 동의를 거부할 경우 대상자 자격 확인이 불가하여 임산부 교통비 지원을 받을 수 없습니다. </p>
+							</div>
+						</div>
+					</div>
+					<script>
+						$('.pop_terms_item a').click(function(){
+							if($(this).closest('.pop_terms_item').hasClass('active')){
+								$(this).closest('.pop_terms_item').removeClass('active');
+								$('.pop_terms_item .terms_cnt').slideUp();
+							}else{
+								$('.pop_terms_item').removeClass('active');
+								$(this).closest('.pop_terms_item').addClass('active');
+								$('.pop_terms_item .terms_cnt').slideUp();
+								$(this).closest('.pop_terms_item').find('.terms_cnt').slideDown();
+							}
+						});
+					</script>
+				</div>
+
+				<div class="pop_box">
+					<div class="fb_title">배송지 정보</div>
+					<div class="rt_box">
+						<label class="checkbox"><input type="checkbox"><span></span>주소지 정보와 동일합니다.</label>
+					</div>
+					<div class="pop_table">
+						<table>
+							<colgroup>
+								<col style="width:180px;">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th><span class="req">성명</span></th>
+									<td>
+										<div class="ip_group">
+											<input type="text" class="md" value="송혜교" readonly="">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><span class="req">휴대전화번호</span></th>
+									<td>
+										<div class="ip_group phone">
+											<select name="" id="" class="xs">
+												<option value="">선택</option>
+												<option value="">010</option>
+												<option value="">011</option>
+												<option value="">016</option>
+												<option value="">017</option>
+												<option value="">018</option>
+												<option value="">019</option>
+											</select>
+											<span class="dash">-</span>
+											<input type="text" class="xs" maxlength="4">
+											<span class="dash">-</span>
+											<input type="text" class="xs" maxlength="4">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><span class="req pc">도로명주소<br/>(주민등록주소지)</span><span class="req mobile inline">주소</span></th>
+									<td>
+										<div class="ip_group">
+											<input type="text" class="md" readonly=""><button type="button" class="btn btn1" onclick="$('.ads_layer').show();">우편번호</button>
+										</div>
+										<div class="ip_group ads2">
+											<input type="text" class="md" readonly="">
+											<input type="text" class="md">
+										</div>
+										<span class="ip_rule pc">※ 주소지 정보와 다를 경우 변경 가능합니다.</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="pop_table mb_wr">
+						<table>
+							<colgroup>
+								<col style="width:180px;">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>배송 메모</th>
+									<td>
+										<div class="ip_group">
+											<input type="text" class="xl">
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+
+				<div class="pop_btn">
+					<a href="javascript:;" class="btn submit">신청</a>
+				</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div class="ft_cards">
+			<div class="container">
+				<div class="cards_title">카드사 문의전화</div>
+				<ul class="card_list">
+					<li>
+						<span class="card_logo" style="background-image:url('../../assets/images/card_logo_kb.jpg');"></span>
+						<span class="card_name">KB국민카드</span>
+						<span class="card_num pc">1588-1688</span>
+						<a href="1588-1688" class="card_num mobile">1588-1688</a>
+					</li>
+					<li>
+						<span class="card_logo" style="background-image:url('../../assets/images/card_logo_ss.jpg');"></span>
+						<span class="card_name">삼성카드</span>
+						<span class="card_num pc">1588-8700</span>
+						<a href="1588-8700" class="card_num mobile">1588-8700</a>
+					</li>
+					<li>
+						<span class="card_logo" style="background-image:url('../../assets/images/card_logo_wr.jpg');"></span>
+						<span class="card_name">우리카드</span>
+						<span class="card_num pc">1588-9955</span>
+						<a href="1588-9955" class="card_num mobile">1588-9955</a>
+					</li>
+					<li>
+						<span class="card_logo" style="background-image:url('../../assets/images/card_logo_bc.jpg');"></span>
+						<span class="card_name">BC카드</span>
+						<span class="card_num pc">1566-4800</span>
+						<a href="1566-4800" class="card_num mobile">1566-4800</a>
+					</li>
+					<li>
+						<span class="card_logo" style="background-image:url('../../assets/images/card_logo_sh.jpg');"></span>
+						<span class="card_name">신한카드</span>
+						<span class="card_num pc">1544-7000</span>
+						<a href="1544-7000" class="card_num mobile">1544-7000</a>
+					</li>
+					<li>
+						<span class="card_logo" style="background-image:url('../../assets/images/card_logo_hn.jpg');"></span>
+						<span class="card_name">하나카드</span>
+						<span class="card_num pc">1800-1111</span>
+						<a href="tel:1800-1111" class="card_num mobile">1800-1111</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="ft_bottom">
+			<div class="container">
+				<div class="ft_logo">
+					다시뛰는 공정도시 서울
+				</div>
+				<div class="ft_cnt">
+					<ul class="ft_links clearfix">
+						<li><a href="javascript:;">개인정보처리방침</a></li><li><a href="javascript:;">저작권 정책</a></li>
+					</ul>
+					<div class="ft_info clearfix">
+						<span class="ads"><span class="ads_info">서울특별시청 04524 서울특별시 중구 세종대로 110</span>  <a href="http://naver.me/xw6Wqj2F" target="_blank">[찾아오시는 길]</a></span>
+						<span class="tel">대표전화 : 02-120 또는 02-731-2120</span>
+					</div>
+					<span class="ft_copy">© Seoul Metropolitan Government all rights reserved</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //content -->
+	
+</div>
+<script src="../../assets/js/common.js"></script>
+
+</body>
+</html>	 
