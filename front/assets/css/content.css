@@ -1178,6 +1178,8 @@ strong{color:#db626d;font-weight:600;}
 .cnt_table1 table tbody tr td .dot li.foreigner .tit span{display:inline-block;background-color:#6b59af;color:#fff;border-radius:4px;padding:2px 5px;text-indent:0;}
 .cnt_table1 table tbody tr td .dot li.local strong{color:#d862aa;}
 .cnt_table1 table tbody tr td .dot li.foreigner strong{color:#6b59af;}
+.cnt_table1 table tbody tr td .sv_cnt_tit strong.txt_purple{color:#856eaf;}
+.cnt_table1 table tbody tr td .sv_cnt_tit strong.txt_dark{color:#333;}
 
 @media screen and (max-width: 1220px) {
 	.cnt_table1{}
@@ -1732,12 +1734,12 @@ background-repeat:no-repeat;background-position:center center;background-size:8p
 .mom_book_comp div{display:inline-block;padding:35px 35px 35px 105px;background-color:#f8f8f8;color:#db626d;font-size:1.6rem;font-weight:600;
 background-repeat:no-repeat;background-position:left 58px center;background-size:34px;background-image:url('../images/mom_book_comp.png');}
 @media screen and (max-width: 1220px) {
-	#layout .mom_book_check .cnt_txt{padding:14px 14px 14px 58px;background-color:#F8F8F8;color:#000;border:0;border-radius:0;
-	background-repeat:no-repeat;background-position:left 17px center;background-size:31px;background-image:url('../images/mom_book_check.png');}
+	#layout .mom_book_check .cnt_txt{padding:14px 14px 14px 98px;background-color:#F8F8F8;color:#000;border:0;border-radius:0;
+	background-repeat:no-repeat;background-position:left 21px center;background-size:54px;background-image:url('../images/mom_book_check.png');}
 }
 @media screen and (max-width: 740px) {
-	#popup_content .mom_book_check .cnt_txt{padding:14px 14px 14px 58px;background-color:#F8F8F8;color:#000;border:0;border-radius:0;
-	background-repeat:no-repeat;background-position:left 17px center;background-size:31px;background-image:url('../images/mom_book_check.png');}
+	#popup_content .mom_book_check .cnt_txt{padding:14px 14px 14px 98px;background-color:#F8F8F8;color:#000;border:0;border-radius:0;
+	background-repeat:no-repeat;background-position:left 21px center;background-size:54px;background-image:url('../images/mom_book_check.png');}
 	.mom_book_comp{margin-top:20px;}
 	.mom_book_comp div{display:block;padding:20px;color:#000;font-size:1.4rem;font-weight:400;background-position:left -9999em center;}
 }
@@ -1984,4 +1986,11 @@ background-repeat:no-repeat;background-position:left 58px center;background-size
 	.pop_basic_table table tbody td{min-width:calc(100% - 120px);max-width:calc(100% - 120px);padding:8px 8px 8px 16px;min-height:48px;height:auto;display:flex;align-items:center;}
 	.pop_basic_table table tbody tr:last-child th,
 	.pop_basic_table table tbody tr:last-child td{border-bottom:0;}
+}
+
+
+.book_top{margin-bottom:45px;}
+.book_top img{width:100%;}
+@media screen and (max-width: 1220px) {
+.book_top{margin:0 16px 30px;}
 }
