@@ -973,3 +973,89 @@ background-repeat:no-repeat;background-position:left 58px center;background-size
 .pop_basic_table table tbody td .ip_rule{display:block;font-size:13px;color:#db626d;font-weight:500;margin-top:5px;word-break:keep-all;}
 .pop_basic_table table tbody td .btn1{border:1px solid #666;color:#333;font-size:13px;background-color:#fff;width:88px;height:40px;}
 .pop_basic_table table tbody td .btn2{border:1px solid #666;color:#fff;font-size:13px;background-color:#666;width:116px;height:40px;}
+
+
+/*2023-07-30*/
+.main_box{position: relative;}
+.target_status .row{padding:21px 20px;}
+.target_status .row .cnt .item{margin:1px 0;}
+.target_status .row.end .tit{color:#333;}
+.status_box{border-radius:8px;text-align: center;padding:10px 10px 10px 0;display: flex;align-items: center;}
+.status_box + .status_box{margin-top:6px;}
+.status_box.red{background-color: #fce7e2;}
+.status_box.blue{background-color: #eaeef9;}
+.status_box .tit{flex:1 1 auto;text-align: center;color:#000;font-weight:500;font-size:14px;}
+.status_box .cnt{display:flex;}
+.status_box .cnt .box{flex:1 1;border-radius:8px;background-color: #fff;padding:21px 0;width:124px;}
+.status_box .cnt .box + .box{margin-lefT:10px;}
+.status_box .cnt .box .sbj{font-size:14px;font-weight:500;}
+.status_box .cnt .box .count{margin-top:6px;color:#666666;font-size:14px;}
+.status_box .cnt .box .count strong{font-size:20px;font-weight:700;vertical-align: baseline;margin-right:3px;}
+.status_box .cnt .box.black .sbj{color:#000;}
+.status_box .cnt .box.black .count strong{color:#000000;}
+.status_box .cnt .box.red .sbj{color:#e37c4f;}
+.status_box .cnt .box.red .count strong{color:#e37c4f;}
+.status_box .cnt .box.blue .sbj{color:#5b76d0;}
+.status_box .cnt .box.blue .count strong{color:#5b76d0;}
+
+.tap_btn2{display:flex;border-radius:7px;overflow: hidden;margin-bottom:11px;}
+.tap_btn2 a{flex:1 1;padding:7px 12px;text-align:center;font-size:13px;font-weight:600;color:#666666;font-size:14px;font-weight:500;border-top:1px solid #dddddd;border-bottom:1px solid #ddd;}
+.tap_btn2 a + a{border-left:1px solid #ddd;}
+.tap_btn2 a:first-child{border-radius: 7px 0 0 7px;border-left:1px solid #ddd;}
+.tap_btn2 a:last-child{border-radius: 0 7px 7px 0;border-right:1px solid #ddd;}
+.tap_btn2 a.active{background-color: #8294c6;border:1px solid #8294c6;color:#fff;}
+.tap_btn2.rt{position:absolute;right:30px;top:26px;}
+.app_links{display:flex;flex-direction: column;margin-left:20px;min-width: 180px;max-width: 180px;}
+.app_links .link{flex:1 1;display: flex;flex-direction: column;justify-content: center;align-items: center;background-color: #f1f1f1;border-radius: 10px;}
+.app_links .link + .link{margin-top:10px;}
+.app_links .link:before{content:"";width:80px;height:80px;border-radius: 50%;background-color: #fff;background-position: center center;background-repeat: no-repeat;}
+.app_links .link span{font-size:18px;font-weight:500;margin-top:15px;padding-right:24px;position: relative;}
+.app_links .link span:before{content:"";width:18px;height:18px;position:absolute;right:0;top:50%;margin-top:-9px;border-radius:50%;background-color:#ddd;background-position: center center;background-repeat: no-repeat;background-image: url('../images/icon_arrow.png');background-size:18px;}
+.app_links .link.traffic{background-color: #eaeef9;color:#485fab;}
+.app_links .link.care{background-color: #fce7e2;color:#d55f5c;}
+.app_links .link.traffic:before{background-image: url('../images/app_links_traffic.jpg');}
+.app_links .link.care:before{background-image: url('../images/app_links_care.jpg');}
+.app_links .link.traffic span:before{background-color: #8294c6;}
+.app_links .link.care span:before{background-color: #ea7b78;}
+.half_chart{display:flex;}
+.half_chart .chart{flex:1 1;background-color:#f8f8f8;min-height: 200px;border-radius: 8px;position: relative;}
+.half_chart .chart + .chart{margin-left:8px;}
+
+<div class="half_chart">
+							<div class="chart">
+								<div style="position:absolute;left:50%;top:50%;transform: translate(-50%,-50%);">그래프영역</div><!-- 확인후 삭제 -->
+							</div>
+							<div class="chart">
+								<div style="position:absolute;left:50%;top:50%;transform: translate(-50%,-50%);">그래프영역</div><!-- 확인후 삭제 -->
+							</div>
+						</div>
+						<!-- 
+
+margin-left: 20px;
+
+<div class="app_links">
+					<a href="javascript:;" class="link traffic"><span>교통비 신청</span></a>
+					<a href="javascript:;" class="link care"><span>산후조리경비신청</span></a>
+				</div>
+
+<div class="main_row">
+				<div class="main_box">
+					<h2><a href="javascript:;">신청접수 현황</a></h2>
+					<div class="mb_cnt">
+						<div class="status_box blue">
+							<div class="tit">교통비지원금</div>
+							<div class="cnt">
+								<div class="box black">
+									<div class="sbj">전체</div>
+									<div class="count"><strong>12,800</strong>건</div>
+								</div>
+								<div class="box red">
+									<div class="sbj">미처리</div>
+									<div class="count"><strong>12,800</strong>건</div>
+								</div>
+								<div class="box blue">
+									<div class="sbj">처리</div>
+									<div class="count"><strong>12,800</strong>건</div>
+								</div>
+							</div>
+						</div>
