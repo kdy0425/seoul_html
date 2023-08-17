@@ -1372,7 +1372,8 @@ background-repeat:no-repeat;background-position:center top;}
 .card_info_txt .bg_box .dot li{color:#333;font-size:1.3rem;text-indent:-11px;padding-left:11px;}
 .card_info_txt .bg_box .dot li + li{margin-top:3px;}
 .card_info_txt .bg_box .dot li strong{color:#db626d;font-weight:400;}
-.card_info_txt .card_precautions{padding-left:25px;margin-top:22px;color:#333;font-size:1.3rem;}
+.card_info_txt .card_precautions{padding-left:25px;margin-top:22px;color:#333;font-size:1.3rem;position:relative;}
+.card_info_txt .card_precautions .cd_link{position:absolute;right:25px;top:0;font-weight:500;color:#333;text-decoration:underline;}
 .card_info_txt .card_precautions .tit{display:block;font-size:1.4rem;color:#333;font-weight:700;margin-bottom:16px;}
 .card_info_txt .card_precautions .stit{display:block;font-size:1.3rem;color:#333;font-weight:700;margin-bottom:6px;}
 .card_info_txt .card_precautions .btit{display:block;font-size:1.3rem;color:#1284E8;font-weight:700;margin-bottom:4px;}
@@ -1409,6 +1410,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='113' height='65' viewBox
 	.card_info_txt .bg_box{padding:18px 14px;}
 	.card_info_txt .card_precautions{padding-left:0;}
 	.card_info_txt .card_precautions .tit{margin-bottom:11px;padding-left:4px;}
+	.card_info_txt .card_precautions .cd_link{right:0;}
 
 	.incard_check{padding:14px;margin-top:8px;margin-bottom:3px;text-indent:0;max-width:100%;}
 	.incard_check .cnt{float:left;}
