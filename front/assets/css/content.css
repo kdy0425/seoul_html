@@ -1272,7 +1272,7 @@ strong{color:#db626d;font-weight:600;}
 .point_use_check .txt2:before{content:"";position:absolute;left:0;top:0;width:20px;height:20px;background-repeat: no-repeat;background-position: center center;background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='10' r='10' fill='%23DB626D'/%3E%3Cpath d='M9.37524 12.244L9.10224 6.927L9.03724 5.12H10.9612L10.8962 6.927L10.6232 12.244H9.37524ZM9.06324 15.182V13.336H10.9612V15.182H9.06324Z' fill='white'/%3E%3C/svg%3E%0A");}
 .point_use_check .txt2 strong{color:#DB626D;font-weight:700;}
 .point_use_check .btn_check{display:inline-block;margin-top:10px;color:#fff;border-radius:5px;padding:9px 51px 9px 19px;background-color: #6295DB;border:1px solid #5B8ACA;font-size:15px;font-weight:700;background-repeat: no-repeat;background-position:right 20px center;background-image: url("data:image/svg+xml,%3Csvg width='10' height='16' viewBox='0 0 10 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 15L8 8L0.999999 1' stroke='%23BAD4F9' stroke-width='2'/%3E%3C/svg%3E%0A");}
-.point_use_check .btn_check:hover{text-decoration: underline;}
+.point_use_check .btn_check:hover{background-color: #5B8ACA;}
 
 .txt_bg_box{padding:23px 28px;background-color:#fff4f5;}
 .txt_bg_box .dot{}
