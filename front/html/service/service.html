@@ -132,11 +132,13 @@
 			<div id="aside">
 				<h2>사업안내</h2>
 				<ul>
-					<li><a href="javascript:;" class="active">사업안내</a></li>
+					<li><a href="javascript:;" class="active">임산부 교통비 지원 사업</a></li>
+					<li><a href="javascript:;">산후조리경비 지원 사업</a></li>
+					<li><a href="javascript:;">엄마 북(Book)돋움 사업</a></li>
 				</ul>
 			</div>
 			<div id="content">
-				<h3 class="ac_title">사업안내</h3>
+				<h3 class="ac_title">임산부 교통비 지원 사업</h3>
 
 				<div class="ac_content">
 					<div class="service_top">
@@ -226,88 +228,144 @@
 						<div class="service_box">
 							<div class="sb_title">신청방법</div>
 							<div class="sb_cnt">
-								<div class="apply_how">
-									<div class="box">
-										<div class="title">임신기간 중 신청</div>
-										<div id="" class="content">
-											<div class="inbox">
-												<div class="in_tit online"><span>온라인</span></div>
-												<div class="item">
-													<span class="tit">정부24 홈페이지 <a href="https://www.gov.kr" target="_blank" class="link">https://www.gov.kr</a></span>
-													<div class="cnt">
-														<p>원스톱 서비스 - 맘편한 임신 신청에서 <br/>‘지자체서비스 - 서울시 임산부 교통비 지원’ 신청</p>
-														<ul class="ct">
-															<li>※ 엽산·철분제·임신출산진료비 지원 등 타서비스와 동시 신청 가능</li>
-															<li>※ 외국인 임산부 신청 불필요</li>
-														</ul>
-													</div>
+								<div class="tap_visible">
+									<script>
+										$(document).ready(function() {
+											$('.tap_visible_btn a').click(function(e) {
+												e.preventDefault();
+												var targetId = $(this).attr('href');
+												var $targetElement = $(targetId);
+										
+												if ($targetElement.length) {
+													var headerHeight = $('#header').outerHeight();
+													var targetOffsetTop = $targetElement.offset().top - headerHeight;
+										
+													$('html, body').animate({
+														scrollTop: targetOffsetTop
+													}, 400); 
+												}
+											});
+										});
+										</script>
+									<div id="apply_before" class="tap_box">
+										<div class="tap_visible_btn tap_flex">
+											<a href="#apply_before" class="active">임신 기간 중 신청</a>
+											<a href="#apply_after">출산 후 신청</a>
+										</div>
+										<div class="tap_cnt">
+											<div class="tb_table">
+												<div class="title">
+													<span class="online">온라인 신청</span>
 												</div>
-												<div class="item">
-													<span class="tit">서울시 임산부 교통비 지원 홈페이지 </span>
-													<div class="cnt">
-														<a href="https://www.seoulmomcare.com" target="_blank" class="link">https://www.seoulmomcare.com</a>
-														<p>서울시 임산부 교통비 지원금 신청</p>
-														<ul class="ct">
-															<li>※ 외국인 임산부의 경우 임신확인서, 외국인등록사실증명, 주민등록등본 이미지 파일 첨부</li>
-														</ul>
+												<div class="content">
+													<div class="item">
+														<div class="tit">정부24 신청</div>
+														<div class="cnt">
+															<p><strong>정부24 홈페이지</strong> <a href="https://www.gov.kr" class="link_url" target="_blank">https://www.gov.kr</a></p>
+															<p>원스톱 서비스 >  맘편한 임신 신청에서 ‘지자체서비스 - 서울시 임산부 교통비 지원’ 신청</p>
+															<span class="ct">※ 엽산·철분제·임신출산진료비 지원 등 타서비스와 동시 신청 가능<br/>
+															※ 외국인 임산부 신청 불필요</span>
+														</div>
+													</div>
+													<div class="item">
+														<div class="tit">온라인 교육 수강</div>
+														<div class="cnt">
+															<p><strong>서울맘케어 홈페이지</strong> <a href="https://www.seoulmomcare.com" class="link_url" target="_blank">https://www.seoulmomcare.com</a></p>
+															<p><a href="javascript:;" class="link_text" target="_blank">온라인 교육 바로가기</a></p>
+														</div>
+													</div>
+													<div class="item">
+														<div class="tit">지원금 신청서 작성</div>
+														<div class="cnt">
+															<p><strong>서울맘케어 홈페이지</strong> <a href="https://www.seoulmomcare.com" class="link_url" target="_blank">https://www.seoulmomcare.com</a></p>
+															<p><a href="javascript:;" class="link_text" target="_blank">교통비 지원금 신청서 작성</a></p>
+															<span class="ct">※ 외국인 임산부의 경우 임신확인서, 외국인등록사실증명, 주민등록등본 이미지 파일 첨부</span>
+														</div>
 													</div>
 												</div>
 											</div>
-
-											<div class="inbox">
-												<div class="in_tit visit"><span>방문 신청</span></div>
-												<div class="item">
-													<span class="tit">관할 동 주민센터 방문 신청</span>
-													<div class="cnt">
-														<p>임산부 본인만 가능</p>
-														<ul class="ct">
-															<li>※ 신분증, 임신확인서, 본인 명의 휴대폰 또는 신용˙체크카드 지참</li>
-															<li>※ 외국인 임산부는 외국인등록사실증명, 주민등록등본 추가 지참</li>
-														</ul>
+											<div class="tb_table">
+												<div class="title">
+													<span class="offline">방문 신청</span>
+												</div>
+												<div class="content">
+													<div class="item">
+														<div class="tit">온라인 교육 수강</div>
+														<div class="cnt">
+															<p><strong>서울맘케어 홈페이지</strong> <a href="https://www.seoulmomcare.com" class="link_url" target="_blank">https://www.seoulmomcare.com</a></p>
+															<p><a href="javascript:;" class="link_text" target="_blank">온라인 교육 바로가기</a></p>
+														</div>
+													</div>
+													<div class="item">
+														<div class="tit">관할 동 주민센터 방문 신청</div>
+														<div class="cnt">
+															<p>임산부 본인만 가능</p>
+															<span class="ct">※ 신분증, 임신확인서, 본인 명의 휴대폰 또는 신용·체크카드 지참<br/>
+															※ 외국인 임산부는 외국인등록사실증명, 주민등록등본 추가 지참</span>
+														</div>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 
-									<div class="box">
-										<div class="title">출산 후 신청 <span>( ※ 자녀 출생신고 완료 후 신청가능 )</span></div>
-										<div id="" class="content">
-											<div class="inbox">
-												<div class="in_tit online"><span>온라인</span></div>
-												<div class="item">
-													<span class="tit">서울시 임산부 교통비 지원 홈페이지 </span>
-													<div class="cnt">
-														<a href="https://www.seoulmomcare.com" target="_blank" class="link">https://www.seoulmomcare.com</a>
-														<p>서울시 임산부 교통비 지원금 신청</p>
-														<ul class="ct">
-															<li>※ 외국인 임산부의 경우 외국인등록사실증명, 주민등록등본 이미지 파일 첨부</li>
-														</ul>
+									<div id="apply_after" class="tap_box">
+										<div class="tap_visible_btn tap_flex">
+											<a href="#apply_before">임신 기간 중 신청</a>
+											<a href="#apply_after" class="active">출산 후 신청</a>
+										</div>
+										<div class="tap_cnt">
+											<div class="tb_table">
+												<div class="title">
+													<span class="online">온라인 신청</span>
+												</div>
+												<div class="content">
+													<div class="item">
+														<div class="tit">온라인 교육 수강</div>
+														<div class="cnt">
+															<p><strong>서울맘케어 홈페이지</strong> <a href="https://www.seoulmomcare.com" class="link_url" target="_blank">https://www.seoulmomcare.com</a></p>
+															<p><a href="javascript:;" class="link_text" target="_blank">온라인 교육 바로가기</a></p>
+														</div>
+													</div>
+													<div class="item">
+														<div class="tit">지원금 신청서 작성</div>
+														<div class="cnt">
+															<p><strong>서울맘케어 홈페이지</strong> <a href="https://www.seoulmomcare.com" class="link_url" target="_blank">https://www.seoulmomcare.com</a></p>
+															<p><a href="javascript:;" class="link_text" target="_blank">교통비 지원금 신청서 작성</a></p>
+															<span class="ct">※ 외국인 임산부의 경우 임신확인서, 외국인등록사실증명, 주민등록등본 이미지 파일 첨부</span>
+														</div>
 													</div>
 												</div>
 											</div>
 
-											<div class="inbox">
-												<div class="in_tit visit"><span>방문 신청</span></div>
-												<div class="item">
-													<span class="tit">관할 동 주민센터 방문 신청</span>
-													<div class="cnt">
-														<p>출산자 본인 또는 대리인 신청 가능</p>
-														<ul class="ct">
-															<li>※ [본인] 신분증, 본인 명의 휴대폰 또는 신용˙체크카드 지참</li>
-															<li>※ [배우자] 배우자 본인 신분증, 출산자 명의 휴대폰 또는 
-																 신용˙체크카드 지참</li>
-															<li>※ [배우자 이외 가족] 대리인 신분증, 위임장, 대리인의 관계를
-																 확인할 수 있는 서류(주민등록등본, 가족관계 증명서 등),
-																 출산자 명의 휴대폰 또는 신용˙체크카드 지참</li>
-															<li>※ 외국인 임산부의 경우 외국인등록사실증명, 주민등록등본 추가 지참</li>
-														</ul>
+											<div class="tb_table">
+												<div class="title">
+													<span class="offline">방문 신청</span>
+												</div>
+												<div class="content">
+													<div class="item">
+														<div class="tit">온라인 교육 수강</div>
+														<div class="cnt">
+															<p><strong>서울맘케어 홈페이지</strong> <a href="https://www.seoulmomcare.com" class="link_url" target="_blank">https://www.seoulmomcare.com</a></p>
+															<p><a href="javascript:;" class="link_text" target="_blank">온라인 교육 바로가기</a></p>
+														</div>
+													</div>
+													<div class="item">
+														<div class="tit">관할 동 주민센터 방문 신청</div>
+														<div class="cnt">
+															<p>출산자 본인 또는 대리인 신청 가능</p>
+															<span class="ct">[본인] 신분증, 본인 명의 휴대폰 또는 신용·체크카드 지참<br/>
+															[배우자] 배우자 본인 신분증, 출산자 명의 휴대폰 또는 신용·체크카드 지참 <br/>
+															[배우자 이외 가족]<br/>
+															대리인 신분증, 위임장, 대리인의 관계를 확인할 수 있는 서류(주민등록등본, 가족관계 증명서 등), 
+															출산자 명의 휴대폰 또는 신용·체크카드 지참</span>
+															<span class="ct">※ 외국인 임산부는 외국인등록사실증명, 주민등록등본 추가 지참</span>
+														</div>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-
 								</div>
 							</div>
 
