@@ -2158,7 +2158,7 @@ background-repeat:no-repeat;background-position:left 58px center;background-size
 
 .tap_visible{}
 .tap_visible .tap_box{}
-.tap_visible .tap_box + .tap_box{margin-top:14px;}
+.tap_visible .tap_box + .tap_box{}
 .tap_visible .tap_box .tap_cnt{border-left:1px solid #d0d0d0;border-bottom:1px solid #d0d0d0;border-right:1px solid #d0d0d0;padding:20px;}
 .tb_table + .tb_table{margin-top:20px;}
 .tb_table{display: flex;}

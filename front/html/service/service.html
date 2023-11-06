@@ -237,12 +237,8 @@
 												var $targetElement = $(targetId);
 										
 												if ($targetElement.length) {
-													var headerHeight = $('#header').outerHeight();
-													var targetOffsetTop = $targetElement.offset().top - headerHeight;
-										
-													$('html, body').animate({
-														scrollTop: targetOffsetTop
-													}, 400); 
+													$('.tap_box').hide();
+													$targetElement.show();
 												}
 											});
 										});
@@ -309,7 +305,7 @@
 										</div>
 									</div>
 
-									<div id="apply_after" class="tap_box">
+									<div id="apply_after" class="tap_box" style="display:none;">
 										<div class="tap_visible_btn tap_flex">
 											<a href="#apply_before">임신 기간 중 신청</a>
 											<a href="#apply_after" class="active">출산 후 신청</a>
