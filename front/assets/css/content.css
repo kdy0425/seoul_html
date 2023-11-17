@@ -1001,12 +1001,14 @@ background-repeat:no-repeat;background-position:center center;background-size:co
 .lf_detail{color:#666;font-size:1.6rem;line-height:1.6;}
 .lf_detail img + p{margin-top:40px;}
 
-.lf_alert_title{color:#333;font-size:2.4rem;font-weight:700;text-align: center;text-align: center;margin:20px 0 15px;word-break: keep-all;}
-.lf_alert_msg{font-size:1.6rem;color:#333;text-align:center;margin-top:10px;padding:0 20px;word-break:keep-all;line-height:1.6;}
+.lf_alert_title{color:#333;font-size:2.4rem;font-weight:700;text-align: center;text-align: center;margin:30px 0 15px;word-break: keep-all;}
+.lf_alert_title .color{color:#DB626D;}
+.lf_alert_msg{font-size:1.6rem;color:#333;text-align:center;margin-top:10px;padding:0;word-break:keep-all;line-height:1.6;letter-spacing:-0.8px;}
 .lf_alert_msg + .lf_alert_msg{margin-top:20px;}
 .lf_alert_msg + .btn_form{margin-top:40px;}
 .lf_alert_msg strong{font-size:2rem;font-weight:600;line-height:1.4}
 .lf_alert_msg .color{color:#db626d;}
+.lf_alert_msg .bold{font-weight:700;}
 @media screen and (max-width: 1220px) {
 	.layer_form{padding:0;}
 	.layer_form .layer_box{left:0;top:0;width:100% !important;height:100%;max-width:100% !important;background-color:#fff;}
