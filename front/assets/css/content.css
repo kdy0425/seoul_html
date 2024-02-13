@@ -1776,12 +1776,20 @@ background-repeat:no-repeat;background-position:center center;background-size:co
 .terms_page .center_title{margin-bottom:30px;}
 
 .terms_content{color:#333;word-break:keep-all;line-height:1.6;padding-top:35px;border-top:1px solid #e8e8e8;}
+.terms_content .red{color:#FF0000 !important;}
+.terms_content .blue{color:#0044CB !important;}
 .terms_content .tc_tit{font-size:2.2rem;font-weight:500;color:#db626d;text-align:center;}
-.terms_content .tc_stit{margin-top:35px;}
+.terms_content .tc_stit{margin-top:35px;border:1px solid #E5D7D7;background-color: #FCF6F6;padding:35px 40px;color:#333;font-size:1.5rem;}
 .terms_content .tc_section{margin-top:65px;}
-.terms_content .tc_section + .tc_section{margin-top:60px;}
+.terms_content .section_tit{display:flex;align-items: center;font-size:2.4rem;font-weight:700;margin-bottom:10px;}
+.terms_content .section_tit img{width:40px;margin-left:10px;}
+.terms_content .section_tit img + img{margin-left:3px;}
+.terms_content .ul1{}
+.terms_content .ul1 .ul1_li{}
+.terms_content .ul1 .ul1_li + .ul1_li{margin-top:5px;}
+.terms_content .ul1 .ul1_li .ul1_li_tit{display:block;}
+.terms_content .ul1 .ul1_li .ul1_li_cnt{padding-left:17px;margin-top:8px;margin-bottom:15px;}
 
-.terms_content .section_tit{display:block;font-size:2.4rem;font-weight:600;margin-bottom:10px;}
 .terms_content .ol1{}
 .terms_content .ol1 .ol1_li{}
 .terms_content .ol1 .ol1_li + .ol1_li{margin-top:5px;}
@@ -1791,12 +1799,12 @@ background-repeat:no-repeat;background-position:center center;background-size:co
 .terms_content .ol2{}
 .terms_content .ol2 .ol2_li{}
 .terms_content .ol2 .ol2_li .ol2_li_tit{font-size:1.8rem;display:block;margin-bottom:5px;}
-.terms_content .ol2 .ol2_li .ol2_li_tit strong{font-weight:600;}
+.terms_content .ol2 .ol2_li .ol2_li_tit strong{font-weight:700;color:#333;}
 .terms_content .ol2 .ol2_li .ol2_li_cnt{padding-left:17px;}
 
-.terms_content .ol2 .ol2_li + .ol2_li{margin-top:16px;}
+.terms_content .ol2 .ol2_li + .ol2_li{margin-top:10px;}
 .terms_content p{}
-.terms_content p strong{font-weight:600;font-size:1.5rem;}
+.terms_content p strong{font-weight:700;font-size:1.5rem;color:#333;}
 .terms_content .table{margin-top:10px;}
 .terms_content table{width:100%;border-collapse:collapse;border-top:1px solid #666;}
 .terms_content table thead{}
@@ -1804,7 +1812,7 @@ background-repeat:no-repeat;background-position:center center;background-size:co
 .terms_content table tbody{}
 .terms_content table tbody td{background-color:#fff;text-align:center;vertical-align:middle;color:#333;height:61px;padding:18px 10px;border-bottom:1px solid #d0d0d0;}
 .terms_content .st{display:block;color:#666;text-indent:-16px;padding-left:16px;margin-top:10px;}
-.terms_content a{text-decoration:underline;}
+.terms_content a{}
 .terms_content a:hover{color:#000;}
 
 .terms_content p + .dash{margin-top:5px;}
@@ -1818,24 +1826,57 @@ background-repeat:no-repeat;background-position:center center;background-size:co
 .terms_content .item{}
 .terms_content .item + .item{margin-top:15px;}
 
+.terms_icnt{margin-top:40px;}
+.terms_icnt .title{background-color: #F8F8F8;color:#333;border-top:1px solid #666;font-size:1.6rem;font-weight:500;text-align: center;padding:15px 0;border-bottom:1px solid #ddd;}
+.terms_icnt .content{display:grid;}
+.terms_icnt .content .box{border-bottom:1px solid #ddd;border-right:1px solid #ddd;}
+.terms_icnt .content.labels{grid-template-columns: 1fr 1fr 1fr;}
+.terms_icnt .content.labels .box{padding:30px 0 27px;text-align:center;text-decoration: none;}
+.terms_icnt .content.labels .box:nth-child(3n){border-right:0;}
+.terms_icnt .content.labels .box:nth-child(n+4){}
+.terms_icnt .content.labels .box .cnt{}
+.terms_icnt .content.labels .box .cnt img{margin:0 7px;width:92px;}
+.terms_icnt .content.labels .box .tit{margin-top:20px;color:#333;font-size:1.5rem;}
+.terms_icnt .content.plist{grid-template-columns: 1fr 1fr;}
+.terms_icnt .content.plist .box{padding:30px;}
+.terms_icnt .content.plist .box:nth-child(2n){border-right:0;}
+.terms_icnt .content.plist .box:nth-child(n+3){}
+.terms_icnt .content.plist .box ul{}
+.terms_icnt .content.plist .box ul li{color:#333;font-size:1.5rem;}
+.terms_icnt .content.plist .box ul li + li{margin-top:13px;}
+.terms_icnt .content.plist .box ul li a:hover{color:#000;}
 @media screen and (max-width: 1220px) {
 	.terms_page .center_title{margin-bottom:20px;}
 	.terms_content{padding-top:25px;}
 	.terms_content .tc_tit{font-size:1.8rem;}
-	.terms_content .tc_stit{margin-top:25px;}
+	.terms_content .tc_stit{margin-top:20px;padding:15px;font-size:1.4rem;}
 	.terms_content .tc_section{margin-top:35px;}
 	.terms_content .tc_section + .tc_section{margin-top:30px;}
 
-	.terms_content .section_tit{font-size:1.9rem;}
-
+	.terms_content .section_tit{font-size:1.9rem;display:block;}
+	.terms_content .section_tit img{width:29px;margin-left:6px;}
 	.terms_content .ol2 .ol2_li .ol2_li_tit{font-size:1.6rem;}
-
 	.terms_content .table{margin:10px -16px 0;padding:0 16px;overflow-x:auto;}
 	.terms_content table{white-space:nowrap;}
 	.terms_content table thead{}
 	.terms_content table thead th{height:41px;padding:8px 5px;font-size:1.3rem;}
 	.terms_content table tbody{}
 	.terms_content table tbody td{height:41px;padding:8px 5px;font-size:1.25rem;}
+	.terms_icnt{margin-top:25px;}
+	.terms_icnt .title{font-size:1.5rem;padding:12px 0;}
+	.terms_icnt .content.labels{grid-template-columns: 1fr 1fr;}
+	.terms_icnt .content.labels .box{padding:12px;}
+	.terms_icnt .content.labels .box:nth-child(3n){border-right:1px solid #ddd;}
+	.terms_icnt .content.labels .box:nth-child(2n){border-right:0;}
+	.terms_icnt .content.labels .box:nth-child(n+4){}
+	.terms_icnt .content.labels .box .cnt{}
+	.terms_icnt .content.labels .box .cnt img{margin:0 2px;width:42px;}
+	.terms_icnt .content.labels .box .tit{margin-top:5px;font-size:1.4rem;}
+	.terms_icnt .content.plist{grid-template-columns: 1fr;padding:12px;border-bottom:1px solid #ddd;}
+	.terms_icnt .content.plist .box{padding:0;border-right:0;border-bottom:0;}
+	.terms_icnt .content.plist .box + .box{margin-top:5px;}
+	.terms_icnt .content.plist .box ul li{font-size:1.4rem;text-indent:-9px;padding-left:9px;}
+	.terms_icnt .content.plist .box ul li + li{margin-top:5px;}
 }
 
 .table_btn1{border:1px solid #666666;color:#333;font-size:1.3rem;padding:2px 9px;}
