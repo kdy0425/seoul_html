@@ -1844,7 +1844,9 @@ background-repeat:no-repeat;background-position:center center;background-size:co
 .terms_icnt .content.plist .box ul{}
 .terms_icnt .content.plist .box ul li{color:#333;font-size:1.5rem;}
 .terms_icnt .content.plist .box ul li + li{margin-top:13px;}
+.terms_icnt .content.plist .box ul li a{position:relative;padding-left:12px;}
 .terms_icnt .content.plist .box ul li a:hover{color:#000;}
+.terms_icnt .content.plist .box ul li a:before{content:"·";position:absolute;left:0;top:0;}
 @media screen and (max-width: 1220px) {
 	.terms_page .center_title{margin-bottom:20px;}
 	.terms_content{padding-top:25px;}
@@ -1875,7 +1877,7 @@ background-repeat:no-repeat;background-position:center center;background-size:co
 	.terms_icnt .content.plist{grid-template-columns: 1fr;padding:12px;border-bottom:1px solid #ddd;}
 	.terms_icnt .content.plist .box{padding:0;border-right:0;border-bottom:0;}
 	.terms_icnt .content.plist .box + .box{margin-top:5px;}
-	.terms_icnt .content.plist .box ul li{font-size:1.4rem;text-indent:-9px;padding-left:9px;}
+	.terms_icnt .content.plist .box ul li{font-size:1.4rem;}
 	.terms_icnt .content.plist .box ul li + li{margin-top:5px;}
 }
 
