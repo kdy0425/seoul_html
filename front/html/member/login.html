@@ -135,14 +135,27 @@
 			</div>
 			<div class="login_form">
 				<form action="">
-					<input type="tel" maxlength="11" placeholder="휴대폰 번호를 입력해주세요.">
-					<input type="password"  placeholder="비밀번호를 입력해주세요.">
+					<div class="row">
+						<label for="lfPhone">휴대폰 번호</label>
+						<input type="tel" id="lfPhone" maxlength="11" placeholder="휴대폰 번호를 입력해주세요.">
+					</div>
+					<div class="row">
+						<label for="lfPassword">비밀번호</label>
+						<input type="password" id="lfPassword"  placeholder="비밀번호를 입력해주세요.">
+					</div>
 					<button type="button" class="login_btn btn">로그인</button>
 				</form>
 			</div>
-			<ul class="login_links">
-				<li><a href="javascript:;" onclick="layerShow('password_change_layer');">비밀번호 변경</a></li><li><a href="javascript:;">회원가입</a></li>
-			</ul>
+			<div class="login_links">
+				<div class="join">
+					<p>아직 회원이 아니신가요?</p>
+					<a href="javascript:;" class="btn">회원가입</a>
+				</div>
+				<div class="password">
+					<p>비밀번호를 잊으셨나요?</p>
+					<a href="javascript:;" class="btn">비밀번호 변경</a>
+				</div>
+			</div>
 		</div>
 	</div>
 	<!-- //content -->
