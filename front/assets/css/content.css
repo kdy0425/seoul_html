@@ -1795,7 +1795,7 @@ background-repeat:no-repeat;background-position:center center;background-size:co
 .terms_content .ol1 .ol1_li + .ol1_li{margin-top:5px;}
 .terms_content .ol1 .ol1_li .ol1_li_tit{display:block;text-indent:-17px;padding-left:17px;}
 .terms_content .ol1 .ol1_li .ol1_li_cnt{padding-left:17px;margin-top:8px;margin-bottom:15px;}
-
+.terms_content .link{text-decoration: underline;}
 .terms_content .ol2{}
 .terms_content .ol2 .ol2_li{}
 .terms_content .ol2 .ol2_li .ol2_li_tit{font-size:1.8rem;display:block;margin-bottom:5px;}
@@ -1813,7 +1813,7 @@ background-repeat:no-repeat;background-position:center center;background-size:co
 .terms_content table tbody td{background-color:#fff;text-align:center;vertical-align:middle;color:#333;height:61px;padding:18px 10px;border-bottom:1px solid #d0d0d0;}
 .terms_content .st{display:block;color:#666;text-indent:-16px;padding-left:16px;margin-top:10px;}
 .terms_content a{}
-.terms_content a:hover{color:#000;}
+.terms_content a:hover{color:#000;text-decoration:underline;}
 
 .terms_content p + .dash{margin-top:5px;}
 .terms_content p + p{margin-top:5px;}
