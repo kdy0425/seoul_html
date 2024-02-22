@@ -1006,15 +1006,30 @@ background-repeat:no-repeat;background-position:left 58px center;background-size
 .tap_btn2 a.active{background-color: #8294c6;border:1px solid #8294c6;color:#fff;}
 .tap_btn2.rt{position:absolute;right:30px;top:26px;}
 .app_links{display:flex;flex-direction: column;margin-left:20px;min-width: 180px;max-width: 180px;}
-.app_links .link{flex:1 1;display: flex;flex-direction: column;justify-content: center;align-items: center;background-color: #f1f1f1;border-radius: 10px;}
+.app_links .link{flex:1 1;display: flex;flex-direction: column;justify-content: center;align-items: center;background-color: #f1f1f1;border-radius: 10px;position:relative;}
 .app_links .link + .link{margin-top:10px;}
 .app_links .link:before{content:"";width:80px;height:80px;border-radius: 50%;background-color: #fff;background-position: center center;background-repeat: no-repeat;}
-.app_links .link span{font-size:18px;font-weight:500;margin-top:15px;padding-right:24px;position: relative;}
+.app_links .link span{font-size:18px;font-weight:500;margin-top:8px;padding-right:24px;position: relative;line-height:1;}
 .app_links .link span:before{content:"";width:18px;height:18px;position:absolute;right:0;top:50%;margin-top:-9px;border-radius:50%;background-color:#ddd;background-position: center center;background-repeat: no-repeat;background-image: url('../images/icon_arrow.png');background-size:18px;}
 .app_links .link.traffic{background-color: #eaeef9;color:#485fab;}
 .app_links .link.care{background-color: #fce7e2;color:#d55f5c;}
+.app_links .link strong{color:#fff;font-size:14px;border-radius:20px;padding:2.5px 10px;background-color:#000;position:absolute;left:50%;top:16px;transform:translate(-50%,0);}
+.app_links .link strong:before{content:"";position:absolute;left:50%;bottom:-7px;border-left:10px solid #000;border-bottom:10px solid #000;width:1px;height:1px;transform:translate(-50%,0) rotate(-45deg);margin-left:2px;transform-origin: left;}
+.app_links .link.traffic strong{background-color:#3856b8;}
+.app_links .link.traffic strong:before{border-left:10px solid #3856b8;border-bottom:10px solid #3856b8;}
+.app_links .link.traffic:hover strong{background-color:#1f46c5;}
+.app_links .link.traffic:hover strong:before{border-left:10px solid #1f46c5;border-bottom:10px solid #1f46c5;}
+.app_links .link.care strong{background-color:#ea7b78;}
+.app_links .link.care strong:before{border-left:10px solid #ea7b78;border-bottom:10px solid #ea7b78;}
+.app_links .link.care:hover strong{background-color:#d55f5c;}
+.app_links .link.care:hover strong:before{border-left:10px solid #d55f5c;border-bottom:10px solid #d55f5c;}
+.app_links .link.care:hover strong{background-color:#d55f5c;}
+.app_links .link.traffic:hover span:before{background-color:#485fab;}
+.app_links .link.care:hover span:before{background-color:#d55f5c;}
 .app_links .link.traffic:before{background-image: url('../images/app_links_traffic.jpg');}
+.app_links .link.traffic:hover:before{box-shadow:0 5px 15px rgba(122,134,168,.2);}
 .app_links .link.care:before{background-image: url('../images/app_links_care.jpg');}
+.app_links .link.care:hover:before{box-shadow:0 5px 15px rgba(168,122,122,.2);}
 .app_links .link.traffic span:before{background-color: #8294c6;}
 .app_links .link.care span:before{background-color: #ea7b78;}
 .half_chart{display:flex;}
