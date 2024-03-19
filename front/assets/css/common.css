@@ -50,8 +50,10 @@ a:active, a:hover {
     text-decoration: none;
 }
 textarea:focus,input:focus,select,button,.swiper-button-prev,.swiper-button-next,a{ outline: none; }
-img{max-width:100%;}
+img:not(.kpd-image-button){max-width:100%;}
 input[type="text"],input[type="password"],input[type="tel"],input[type="email"],textarea{-webkit-appearance: none;-moz-appearance: none;appearance: none;border-radius: 0px;box-shadow:0;}
+.kpd-wrap .keyboard img{}
+
 
 select{border-radius:0;}
 select::-ms-expand{display: none;}
@@ -127,11 +129,11 @@ button{cursor:pointer;}
 .mgr25 {margin-right:25px !important;}
 .mgr30 {margin-right:30px !important;}
 
-.container{max-width:1180px;margin-left:auto;margin-right:auto;}
+.container{max-width:1360px;margin-left:auto;margin-right:auto;}
 .container_sm{max-width:480px;margin-left:auto;margin-right:auto;}
 .container:after{clear: both;display: table;content: "";*display: block;*overflow: hidden}
 .container:before{display: table;content: "";*display: block;*overflow: hidden}
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1400px) {
 	.container,.container_sm{padding-left:16px;padding-right:16px;}
 	.container_sm{max-width:100%;}
 }
@@ -146,7 +148,7 @@ background-repeat:no-repeat;background-position:center center;background-size:18
 .checkbox input[type="checkbox"]{position:absolute;left:-999em;top:0;}
 .checkbox input[type="checkbox"]:checked + span{background-color:#db626d;border:1px solid #db626d;background-image:url('../images/icon_check.png');}
 
-.radiobox{display:inline-block;padding-left:25px;min-height:18px;line-height:18px;position:relative;font-size:14px;color:#333;}
+.radiobox{display:inline-block;padding-left:25px;min-height:18px;line-height:18px;position:relative;font-size:13px;color:#333;}
 .radiobox span{width:18px;height:18px;position:absolute;left:0;top:0;background-color:#fff;border:1px solid #d0d0d0;border-radius:50%;}
 .radiobox span:before{content:"";display:block;width:8px;height:8px;position:absolute;left:50%;top:50%;margin-top:-4px;margin-left:-4px;border-radius:50%;background-color:#F4F4F4;}
 .radiobox input[type="radio"]{position:absolute;left:-999em;top:0;}
@@ -220,3 +222,4 @@ textarea:read-only{background-color:#f8f8f8;color:#666;}
 input.datepicker:read-only{background-color:#fff !important;color:#333 !important;opacity:1;}
 input.datepicker:disabled{background-color:#f8f8f8 !important;color:#666 !important;background-image:url('../images/icon_callendar_disabled.png');}
 
+.txt_red { color:#db626d !important}
