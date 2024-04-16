@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'SCoreDream';
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+    src: local('SCoreDream'),
+    url('../fonts/SCoreDream3.woff2') format('woff2'),
+    url('../fonts/SCoreDream3.woff') format('woff');
+}
