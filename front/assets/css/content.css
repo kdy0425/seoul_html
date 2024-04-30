@@ -13,7 +13,7 @@
     line-height: 0;
     overflow: hidden;
 }
-.pc{display:block;}
+.pc{display:block;} 
 .pc.inline{display:inline-block;}
 .mobile{display:none;}
 
