@@ -101,6 +101,9 @@ background-position:right center;background-repeat:no-repeat;background-size:20p
 	#header .hd_top .hd_links li + li{margin-left:8px;}
 	#header .hd_top .hd_links li + li:before{display:none;}
 	#header .hd_top .hd_links li a{display:block;width:24px;height:24px;padding:0;text-indent:-999em;overflow:hidden;background-position:center center;background-repeat:no-repeat;background-size:20px;}
+	#header .hd_top .hd_links li.logout{float:right;}
+	#header .hd_top .hd_links li.login{float:right;}
+	#header .hd_top .hd_links li.join{float:left;}
 	#header .hd_top .hd_links li + li.leave{display: none;}
 	#header .hd_top .hd_links.active li + li.leave{display: block;}
 
