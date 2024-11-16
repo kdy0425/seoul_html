@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=1200"/>
+<link rel="canonical" href="">
+<link rel="shortcut icon" type="image/x-icon" href="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta property="og:title" content=""/>
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content=""/>
+<meta property="og:description" content="" />
+<title>서울특별시 임산부 교통비 지원 업무 시스템</title>
+<link rel="stylesheet" type="text/css" href="../assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../assets/css/content.css" />
+<link rel="stylesheet" type="text/css" href="../assets/css/jquery-ui.css" />
+<script src="../assets/js/jquery-1.11.3.min.js"></script>
+<script src="../assets/js/slick.js"></script>
+<script src="../assets/js/polyfill.min.js"></script>
+<script src="../assets/js/classList.js"></script>
+<script src="../assets/js/resize-observer.js"></script>
+<script src="../assets/js/findindex_polyfill_mdn.js"></script>
+<script src="../assets/js/umd.js"></script>
+<script src="../assets/js/apexcharts.js"></script>
+</head>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+	<h1 id="header_h1">서울특별시 임산부 교통비 지원 업무 시스템</h1>
+	<div id="skip_to_container">
+		<!-- skip navigation -->
+		<a href="#content">내용 바로가기</a>
+		<a href="#nav">서비스메뉴 바로가기</a>
+	</div>
+	<hr class="hide" />	
+
+	<!-- header -->
+	<div id="header">
+		<div class="hd_top">
+			<div class="container">
+				<div id="logo">
+					<a href="#">
+						<img src="../assets/images/logo.jpg" alt="서울특별시 임산부 교통비 지원 업무 시스템">
+					</a>
+				</div>
+				<div class="hd_rt">
+					<span class="hd_welcome"><span class="name">강남</span><span class="area">(강남구청)</span>님 반갑습니다.</span>
+					<ul class="hd_links">
+						<li><a href="javascript:;">회원정보변경</a></li>
+						<li><a href="javascript:;">로그아웃</a></li>
+						<li class="alram"><a href="javascript:;"><span class="sound_only">알림</span><span class="count">6</span></a></li>
+						<li class="alram"><a href="javascript:;"><span class="sound_only">알림</span><span class="count">10+</span></a></li><!-- 10초과일 때 (10+) -->
+					</ul>
+					
+				</div>
+			</div>
+		</div>
+		<div class="hd_bottom">
+			<div class="container">
+				<ul id="nav">
+					<li><a href="javascript:;">신청접수</a>
+						<ul>
+							<li><a href="javascript:;">신청접수 현황</a></li>
+							<li><a href="javascript:;">신규신청</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">사용현황</a>
+						<ul>
+							<li><a href="javascript:;">사용내역</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">정산현황</a>
+						<ul>
+							<li><a href="javascript:;">정산내역</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">커뮤니티</a>
+						<ul>
+							<li><a href="javascript:;">공지사항</a></li>
+							<li><a href="javascript:;">자주하는 질문</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">통계</a>
+						<ul>
+							<li><a href="javascript:;">신청현황</a></li>
+							<li><a href="javascript:;">바우처 지급 현황</a></li>
+							<li><a href="javascript:;">바우처 불용 현황</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">사용자</a>
+						<ul>
+							<li><a href="javascript:;">사용자 관리</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<span class="nav_bg"></span>
+		</div>
+	</div>
+	<!-- //header -->	
+
+	<!-- content -->
+	<div id="content">
+
+		<div class="main_content container">
+			<div class="main_row">
+				<div class="main_box">
+					<h2><a href="javascript:;">승인요청 현황</a></h2>
+					<div class="mb_cnt">
+						<div class="status_col">
+                            <a href="javascript:;" class="item gray">
+                                <div class="icon">
+                                    <svg width="36" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.568 5.584h16.574v3.224c0 1.175-.936 2.13-2.088 2.13H9.655c-1.151 0-2.087-.955-2.087-2.13V5.584Z" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.22 7.256H3a2 2 0 0 0-2 2V39.79a2 2 0 0 0 2 2h25.71a2 2 0 0 0 2-2V9.256a2 2 0 0 0-2-2h-4.363" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.936 43.21v.516a2 2 0 0 0 2 2h25.71a2 2 0 0 0 2-2V13.192a2 2 0 0 0-2-2h-.937M13.4 5.584V3.507C13.4 2.122 14.497 1 15.854 1c1.356 0 2.455 1.122 2.455 2.507v2.077M14.331 19.725h9.678M14.331 25.586h9.678M14.331 31.448h9.678" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="m6.183 18.888 1.833 1.894 2.662-3.458M6.183 24.88l1.833 1.896 2.662-3.458" stroke="#495FAB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="m6.183 30.875 3.612 4.05M9.795 30.875l-3.612 4.05" stroke="#E34F56" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
+                                <div class="tit">전체</div>
+                                <div class="count"><strong>280</strong> 건</div>
+                            </a>
+                            <a href="javascript:;" class="item red">
+                                <div class="icon">
+                                    <svg width="38" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.217 14.831h9.293M12.217 20h9.293M12.217 25.166h9.293M28.56 15.5v17.575a2 2 0 0 1-2 2H7.166a2 2 0 0 1-2-2V8.177a2 2 0 0 1 2-2H22" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.086 10.102H3a2 2 0 0 0-2 2V37a2 2 0 0 0 2 2h19.392a2 2 0 0 0 2-2v-1.56" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M29.31 14.702c3.813 0 6.905-3.067 6.905-6.851S33.123 1 29.31 1c-3.814 0-6.906 3.067-6.906 6.851s3.092 6.851 6.906 6.851ZM27.5 5.8l3.69 4.137M31.19 5.8 27.5 9.937" stroke="#EA4762" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
+                                <div class="tit">미처리</div>
+                                <div class="count"><strong>273</strong> 건</div>
+                            </a>
+                            <a href="javascript:;" class="item purple">
+                                <div class="icon">
+                                    <svg width="38" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.217 14.831h9.293M12.217 20h9.293M12.217 25.166h9.293M28.56 15.5v17.575a2 2 0 0 1-2 2H7.166a2 2 0 0 1-2-2V8.177a2 2 0 0 1 2-2H22" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.086 10.102H3a2 2 0 0 0-2 2V37a2 2 0 0 0 2 2h19.392a2 2 0 0 0 2-2v-1.56" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M29.31 14.702c3.813 0 6.905-3.067 6.905-6.851S33.123 1 29.31 1c-3.814 0-6.906 3.067-6.906 6.851s3.092 6.851 6.906 6.851Z" stroke="#5B76D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="m26.651 7.66 2.168 2.178 3.148-3.974" stroke="#5B76D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
+                                <div class="tit">처리</div>
+                                <div class="count"><strong>7</strong> 건</div>
+                            </a>
+                        </div>
+						<span class="rp">2022.04.29 기준 한달</span>
+					</div>
+				</div>
+                
+                <div class="main_box">
+					<h2>지자체예산 현황</h2>
+					<div class="mb_cnt">
+                        <style>#chart4{height:198px !important;min-height: 195px !important;}</style>
+						<div id="chart4" class="chart_area" ></div>
+                        <ul class="chart_legend mgt15">
+                            <li><span class="color" style="background-color:#348CDE;"></span>발급수</li>
+                            <li><span class="color" style="background-color:#B9BDCD;"></span>미발급수</li>
+                        </ul>
+						<span class="rp">2024.10.31 현재</span>
+						<script>
+							var options = {
+							  series: [{
+							  name: '발급수',
+							  type: 'column',
+							  data: [440, 505, 666]
+							}, {
+							  name: '미발급수',
+							  type: 'column',
+							  data: [555, 888, 200]
+							}],
+							  chart: {
+							  height: 198,
+							  type: 'bar',
+							   toolbar: {
+								show: false,
+							  },
+                              stacked: true,
+                                stackType: '100%'
+							},
+							colors: ['#348CDE', '#B9BDCD'],
+							 legend: {
+								show: false,
+							 },
+                             plotOptions: {
+                            bar: {
+                                horizontal: false,
+                                columnWidth: '30%'
+                            },
+                            },
+                            tooltip: {
+                                y: {
+                                formatter: function (value, { series, seriesIndex, dataPointIndex, w }) {
+                                    return series[seriesIndex][dataPointIndex];
+                                }
+                                }
+                            },
+                            yaxis: {
+                                tickAmount: 2,
+                                labels: {
+                                    formatter: function (value) {
+                                    if (value === 0 || value === 50 || value === 100) {
+                                        return value;
+                                    }
+                                    return '';
+                                }
+                            },
+                            max: 100,
+                            },
+                            dataLabels: {
+							  enabled: true,
+							},
+							labels: ['임산부', '맞벌이', '다자녀' ],
+							};
+
+							var chart = new ApexCharts(document.querySelector("#chart4"), options);
+							chart.render();
+						</script>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="main_row">
+				<div class="main_box">
+					<h2>일별 신청 현황</h2>
+					<div class="mb_cnt">
+                        <style>#chart5{height:183px !important;min-height: 183px !important;}</style>
+						<div id="chart5" class="chart_area" ></div>
+                        <ul class="chart_legend mgt15">
+                            <li><span class="color" style="background-color:#5B76D0;"></span>신청</li>
+                            <li><span class="color" style="background-color:#835DBD;"></span>확인</li>
+                            <li><span class="color" style="background-color:#30B456;"></span>승인</li>
+                            <li><span class="color" style="background-color:#EA4762;"></span>거절</li>
+                        </ul>
+						<script>
+							var options = {
+							  series: [{
+							  name: '신청',
+							  type: 'column',
+							  data: [440, 505, 666,440, 505, 666, 222]
+							}, {
+							  name: '확인',
+							  type: 'column',
+							  data: [555, 888, 200, 555, 888, 200, 565]
+							}, {
+							  name: '승인',
+							  type: 'column',
+							  data: [225, 321, 135, 324, 545, 235, 545]
+							}, {
+							  name: '거절',
+							  type: 'column',
+							  data: [451, 251, 341, 555, 888, 123, 231]
+							}],
+							  chart: {
+							  height: 183,
+							  type: 'bar',
+							   toolbar: {
+								show: false,
+							  },
+							},
+							colors: ['#5B76D0', '#835DBD', '#30B456', '#EA4762'],
+							 legend: {
+								show: false,
+							 },
+                           
+                            dataLabels: {
+							  enabled: false,
+							},
+							labels: ['10-25', '10-26', '10-27', '10-28', '10-29', '10-30', '10-31' ],
+							};
+
+							var chart = new ApexCharts(document.querySelector("#chart5"), options);
+							chart.render();
+						</script>
+					</div>
+				</div>
+
+				<div class="main_box">
+					<h2><a href="javascript:;">공지사항</a></h2>
+					<div class="mb_cnt">
+						<ul class="lst">
+							<li><a href="javascript:;" class="subject">임산부 교통비 지원 사업 공지사항입니다. 임산부 교통비 지원 사업임산부 교통비 지원 사업</a><span class="date">2022-05-08</span></li>
+							<li><a href="javascript:;" class="subject">임산부 교통비 지원 사업 공지사항입니다.</a><span class="date">2022-05-08</span></li>
+							<li><a href="javascript:;" class="subject">임산부 교통비 지원 사업 공지사항입니다.</a><span class="date">2022-05-08</span></li>
+							<li><a href="javascript:;" class="subject">임산부 교통비 지원 사업 공지사항입니다.</a><span class="date">2022-05-08</span></li>
+							<li><a href="javascript:;" class="subject">임산부 교통비 지원 사업 공지사항입니다.</a><span class="date">2022-05-08</span></li>
+							<li><a href="javascript:;" class="subject">임산부 교통비 지원 사업 공지사항입니다.</a><span class="date">2022-05-08</span></li>
+							<li><a href="javascript:;" class="subject">임산부 교통비 지원 사업 공지사항입니다.</a><span class="date">2022-05-08</span></li>
+							<!-- <li class="lst_empty">내역이 없습니다</li> -->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- 퀵배너 -->
+		<div class="quick_area">
+			<a href="javascript:;" class="quick_btn live" >거주기간<br/>계산기</a>
+			<a href="javascript:;" class="quick_btn pregnancy" >임신주차<br/>계산기</a>
+			<a href="javascript:;" class="quick_btn birth" >출산개월<br/>계산기</a>
+
+			<!-- 임신주차계산기 -->
+			<div class="layer_box calc_layer" style="display:none;">
+				<div class="layer_cnt">
+					<div class="lf_title">
+						임신주차계산기
+						<a href="javascript:;" class="lf_close" onclick="layerHide('calc_layer');$('.layer_bg2').hide();">팝업닫기</a>
+					</div>
+					<div class="lf_content">
+						<div class="form_table2">
+							<table>
+								<colgroup>
+									<col style="width:119px;">
+									<col style=";">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>기준일</th>
+										<td><input type="text" class="datepicker align_center" readonly=""></td>
+									</tr>
+									<tr>
+										<th>출산예정일</th>
+										<td><input type="text" class="datepicker align_center" readonly=""></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="calc_text">
+							<div>
+								기준일 기준 현재 임신 <strong class="text_red">12주차 4일</strong> 입니다. 
+							</div>
+						</div>
+						<div class="calc_text">
+							<div>
+								기준일 기준 현재  임신 <strong class="text_red">11주차 4일</strong> 입니다.<br/>
+								임신 12주차의 기준일은 <strong class="text_blue">2022년06월27일</strong> 입니다. 
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //임신주차계산기 -->
+			<span class="layer_bg2" style="display:none;"></span>
+
+			<script>
+			$('.quick_btn.pregnancy').click(function(){
+				if($('.calc_layer').is(':visible')){
+					$('.calc_layer').hide();
+					$('.layer_bg2').hide();
+				}else{
+					$('.calc_layer').show();
+					$('.layer_bg2').show();
+				}
+			});
+			$('.layer_bg2').click(function(){
+				$('.layer_box').hide();
+				$('.layer_bg2').hide();
+			});
+
+			$(window).scroll(function(){ 
+				let height = $(document).scrollTop(); 
+				if(height <= 130){ 
+				  $('.quick_area').removeClass('fixed'); 
+				}else if(height > 130){ 
+				  $('.quick_area').addClass('fixed'); 
+				} 
+			  });
+			</script>
+		</div>
+		<!-- //퀵배너 -->
+
+	</div>
+	<!-- //content -->
+
+
+	<div id="footer">
+		<div class="container">
+			<span class="ft_copy">COPYRIGHT Ⓒ 2021 상생소비지원금 ALL RIGHTS RESERVED.</span>
+            <ul class="ft_info">
+                <li>사업안내 : 서울시 가족다문화담당관 02-2133-8689, 8688</li>
+                <li>시스템 이용안내 : 070-4341-4944, 070-7464-1344</li>
+            </ul>
+		</div>
+	</div>
+</div>
+<script src="../assets/js/jquery-ui.min.js"></script>
+<script src="../assets/js/common.js"></script>
+</body>
+</html>	 

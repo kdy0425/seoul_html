@@ -64,7 +64,7 @@
 						</colgroup>
 						<tbody>
 							<tr>
-								<th><span class="req">아이디</th>
+								<th><span class="req">아이디</span></th>
 								<td>
 									<div class="ip_group">
 										<input type="text" class="lg">
@@ -74,7 +74,7 @@
 								</td>
 							</tr>
 							<tr>
-								<th><span class="req">비밀번호</th>
+								<th><span class="req">비밀번호</span></th>
 								<td>
 									<div class="ip_group">
 										<input type="password" class="lg">
@@ -83,7 +83,7 @@
 								</td>
 							</tr>
 							<tr>
-								<th><span class="req">비밀번호 확인</th>
+								<th><span class="req">비밀번호 확인</span></th>
 								<td>
 									<div class="ip_group">
 										<input type="password" class="lg">
@@ -92,9 +92,14 @@
 								</td>
 							</tr>
 							<tr>
-								<th><span class="req">기관정보</th>
+								<th><span class="req">기관정보</span></th>
 								<td>
-									<div class="ip_group">
+									<div class="ip_group mgt5">
+										<label class="radiobox inline"><input type="radio" name="radio1" value="자치구"><span></span>자치구</label>
+										<label class="radiobox inline"><input type="radio" name="radio1" value="주민센터"><span></span>주민센터</label>
+										<label class="radiobox inline"><input type="radio" name="radio1" value="보건소"><span></span>보건소</label>
+									</div>
+									<div class="ip_group mgt15">
 										<div id="ipGu" class="design_select md"><!-- common.js 18 -->
 											<input type="hidden">
 											<a href="javascript:;" class="ds_value type1">선택</a>
@@ -132,22 +137,22 @@
 											</div>
 											<script>
 											//구 변경했을때 동 초기화
-											$('#ipGu .ds_option').click(function(){
-												let ipVal = $('#ipGu input[type="hidden"]').val(),
-												ipSelect = $(this).attr('data-rel');
-												if( ipVal !== ipSelect){
-													$('#ipDong input[type="hidden"]').val('');
-													$('#ipDong .ds_value').text('선택');
-													$('#ipDong .ds_list .ds_option').removeClass('active');
-												}
-												if(ipSelect){
-													$('#ipDong').removeClass('disabled');
-												}
-											});
+											// $('#ipGu .ds_option').click(function(){
+											// 	let ipVal = $('#ipGu input[type="hidden"]').val(),
+											// 	ipSelect = $(this).attr('data-rel');
+											// 	if( ipVal !== ipSelect){
+											// 		$('#ipDong input[type="hidden"]').val('');
+											// 		$('#ipDong .ds_value').text('선택');
+											// 		$('#ipDong .ds_list .ds_option').removeClass('active');
+											// 	}
+											// 	if(ipSelect){
+											// 		$('#ipDong').removeClass('disabled');
+											// 	}
+											// });
 											</script>
 										</div>
 
-										<div id="ipDong" class="design_select disabled md"><!-- common.js 18 --><!-- 비활성화 class -> disabled -->
+										<!-- <div id="ipDong" class="design_select disabled md">
 											<input type="hidden">
 											<a href="javascript:;" class="ds_value type1">선택</a>
 											<div class="ds_options" style="display: none;">
@@ -163,14 +168,21 @@
 												</div>
 												<a href="javascript:;" class="ds_bg">옵션 닫기</a>
 											</div>
-										</div>
+										</div> -->
 
 									</div>
 									<span class="error_txt">소속 기관을 선택하세요.</span>
 								</td>
 							</tr>
 							<tr>
-								<th><span class="req">주소</th>
+								<th><span class="req">담당업무</span></th>
+								<td>
+									<label class="checkbox inline"><input type="checkbox"><span></span>임산부교통비/산후조리경비</label>
+									<label class="checkbox inline"><input type="checkbox"><span></span>가사서비스</label>
+								</td>
+							</tr>
+							<tr>
+								<th><span class="req">주소</span></th>
 								<td>
 									<div class="ip_group">
 										<input type="text" class="md" readonly=""><button type="button" class="btn btn1" onclick="$('.ads_layer').show();">우편번호</button>
@@ -500,7 +512,11 @@
 
 	<div id="footer">
 		<div class="container">
-			<span class="ft_copy">© Seoul Metropolitan Government all rights reserved</span>
+			<span class="ft_copy">COPYRIGHT Ⓒ 2021 상생소비지원금 ALL RIGHTS RESERVED.</span>
+            <ul class="ft_info">
+                <li>사업안내 : 서울시 가족다문화담당관 02-2133-8689, 8688</li>
+                <li>시스템 이용안내 : 070-4341-4944, 070-7464-1344</li>
+            </ul>
 		</div>
 	</div>
 </div>

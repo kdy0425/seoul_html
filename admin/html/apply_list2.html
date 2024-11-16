@@ -102,7 +102,7 @@
 	<div id="content">
 		<div class="sub_content container">
 			
-			<div class="pg_title">북돋움 신청현황</div>
+			<div class="pg_title">가사서비스 지원금 신청접수현황</div>
 
 			<div class="search_form">
 				<form action="">
@@ -111,7 +111,7 @@
 							<colgroup>
 								<col style="width:108px;">
 								<col style="width:321px;">
-								<col style="width:122px;">
+								<col style="width:98px;">
 								<col style="width:156px;">
 								<col style="width:88px;">
 								<col style="">
@@ -134,7 +134,7 @@
 												<a href="javascript:;" class="ds_bg">옵션 닫기</a>
 											</div>
 										</div>
-										<div class="date_cwrap">
+										<div class="date_cwrap mgr10">
 											<div class="date_ip clearfix mgr10">
 												<input type="text" class="dc_start datepicker sm" readonly="">
 												<span class="dash">-</span>
@@ -149,15 +149,34 @@
 												</div>
 											</div>
 										</div>
+										<label class="checkbox inline mgt10"><input type="checkbox"><span></span>지급정지복원여부</label>
 									</td>
 								</tr>
 								<tr>
 									<th>생년월일</th>
-									<td>	<input type="text" placeholder="‘-’없이 13자리 입력" class="lg" maxlength="13"></td>
+									<td>
+                                        <input type="text" placeholder="6자리입력(예:900101)" class="lg mgr10" maxlength="6">
+										<label class="checkbox mgt10"><input type="checkbox"><span></span>외국인여부</label>
+                                    </td>
 									<th>수급자명</th>
-									<td>	<input type="text" placeholder=""  class="sm"></td>
-									<th>연락처</th>
-									<td>	<input type="text" placeholder="‘-’없이 숫자만 입력" class="lg" maxlength="11"></td>
+									<td><input type="text" placeholder=""  class="sm"></td>
+									<th>지원유형</th>
+									<td>
+                                        <div class="design_select">
+											<input type="hidden">
+											<a href="javascript:;" class="ds_value type1">전체</a>
+											<div class="ds_options" style="display: none;">
+												<div id="" class="ds_cnt">
+													<ul class="ds_list">
+														<li><a href="javascript:;" class="ds_option" data-rel="임산부">임산부</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="맞벌이">맞벌이</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="다자녀">다자녀</a></li>
+													</ul>
+												</div>
+												<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+											</div>
+										</div>
+                                    </td>
 								</tr>
 								<tr>
 									<th>관할기관</th>
@@ -232,8 +251,8 @@
 											</div>
 										</div>
 									</td>
-									<th>신청상태</th>
-									<td colspan="3">
+									<th>신청카드사</th>
+									<td>
 										<div class="design_select sm">
 											<input type="hidden">
 											<a href="javascript:;" class="ds_value type1">전체</a>
@@ -241,15 +260,39 @@
 												<div id="" class="ds_cnt">
 													<ul class="ds_list">
 														<li><a href="javascript:;" class="ds_option" data-rel="전체">전체</a></li>
-														<li><a href="javascript:;" class="ds_option" data-rel="신청">신청</a></li>
-														<li><a href="javascript:;" class="ds_option" data-rel="미신청">미신청</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="카드사1">카드사1</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="카드사2">카드사2</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="카드사3">카드사3</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="카드사4">카드사4</a></li>
 													</ul>
 												</div>
 												<a href="javascript:;" class="ds_bg">옵션 닫기</a>
 											</div>
 										</div>
-										<div class="sf_labels">
-											<label class="checkbox inline"><input type="checkbox"><span></span>현금지원</label>
+									</td>
+									<th>신청상태</th>
+									<td>
+										<div class="design_select sm">
+											<input type="hidden">
+											<a href="javascript:;" class="ds_value type1">전체</a>
+											<div class="ds_options" style="display: none;">
+												<div id="" class="ds_cnt">
+													<ul class="ds_list">
+														<li><a href="javascript:;" class="ds_option" data-rel="전체">전체</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="접수대기">접수대기</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="승인대기">승인대기</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="처리대기">처리대기</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="지급완료">지급완료</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="재접수대기">재접수대기</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="반려">반려</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="카드사반려">카드사반려</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="반려(예산마감)">반려(예산마감)</a></li>
+														<li><a href="javascript:;" class="ds_option" data-rel="지급정지">지급정지</a></li>
+                                                        
+													</ul>
+												</div>
+												<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+											</div>
 										</div>
 									</td>
 								</tr>
@@ -260,21 +303,62 @@
 				</form>
 			</div>
 
+            <div class="gline_box">
+                <div class="title">2024년도 강남구 예산현황</div>
+                <div class="status_sel_group">
+                    <a href="javascript:;" class="group">
+                        <div class="tit">임산부</div>
+                        <div class="status">
+                            <div class="item"><span>전체</span> <strong class="black">100</strong> 건</div>
+                            <div class="item"><span>신청</span> <strong class="blue">60</strong> 건</div>
+                            <div class="item"><span>미신청</span> <strong class="red">40</strong> 건</div>
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="group">
+                        <div class="tit">맞벌이</div>
+                        <div class="status">
+                            <div class="item"><span>전체</span> <strong class="black">100</strong> 건</div>
+                            <div class="item"><span>신청</span> <strong class="blue">60</strong> 건</div>
+                            <div class="item"><span>미신청</span> <strong class="red">40</strong> 건</div>
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="group">
+                        <div class="tit">다자녀</div>
+                        <div class="status">
+                            <div class="item"><span>전체</span> <strong class="black">100</strong> 건</div>
+                            <div class="item"><span>신청</span> <strong class="blue">60</strong> 건</div>
+                            <div class="item"><span>미신청</span> <strong class="red">40</strong> 건</div>
+                        </div>
+                    </a>
+                </div>
+                <script>
+                    $('.status_sel_group .group').click(function(){
+                        $('.status_sel_group .group').removeClass('active');
+                        $(this).addClass('active');
+                        $('#btn_return').show();
+                        $('.list_table colgroup col').eq(0).show();
+                        $('.list_table thead tr th:first-child').show();
+                        $('.list_table tbody tr td:first-child').show();
+                    });
+                </script>
+            </div>
+
+			<div class="tap_btns active_control clearfix mgt40">
+				<a href="javascript:;" class="black active">전체<span>(100건)</span></a>
+				<a href="javascript:;" class="orange">접수대기<span>(100건)</span></a>
+				<a href="javascript:;" class="lblue">승인대기<span>(100건)</span></a>
+				<a href="javascript:;" class="green">처리대기<span>(100건)</span></a>
+				<a href="javascript:;" class="dblue">지급완료<span>(100건)</span></a>
+				<a href="javascript:;" class="purple">지급정지<span>(100건)</span></a>
+				<a href="javascript:;" class="red">반려<span>(100건)</span></a>
+			</div>
+			
 			<div class="list_wrap mgt40">
 				<div class="list_top clearfix">
 					<div class="list_btns">
-						<a href="javascript:;" class="btn upload"><span>배송결과업로드</span></a>
+						<a href="javascript:;" class="btn btn_red" id="btn_return" style="display: none;"><span>반려(예산마감)</span></a>
 						<a href="javascript:;" class="btn excel"><span>엑셀다운로드</span></a>
 					</div>
-				</div>
-
-				<style>
-					#layer_open_btns{position:fixed;left:5%;top:50%;transform:translate(0,-50%);z-index:999999999999;}
-					#layer_open_btns button{margin:10px;padding:3px 5px;display:block;}
-				</style>
-				<div id="layer_open_btns">
-					<button type="button" onclick="$('.lds_outer').fadeIn();">로딩 레이어 시작</button>
-					<button type="button" onclick="$('.lds_outer').fadeOut();">로딩 레이어 종료</button>
 				</div>
 
 				<div class="list_box">
@@ -285,71 +369,94 @@
 						</div>
 
 						<table class="list_table mgt20">
-							<thead class="bg_white">
+                            <colgroup>
+                                <col style="width:40px;display: none;">
+                                <col style="width:100px;">
+                                <col style="width:90px;">
+                                <col style="width:120px;">
+                                <col style="width:220px;">
+                                <col style="width:90px;">
+                                <col style="width:120px;">
+                                <col style="width:90px;">
+                                <col style="width:90px;">
+                                <col style="width:100px;">
+                                <col style="width:120px;">
+                            </colgroup>
+							<thead>
 								<tr>
-									<th>신청일자</th>
-									<th>성명<br/>생년월일</th>
-									<th>연락처</th>
-									<th>배송지 주소</th>
-									<th>교통비<br/>신청상태</th>
-									<th>북돋움<br/>지원현황</th>
-									<th>배송정보</th>
+									<th style="display: none;"></th>
+                                    <th>신청일자</th>
+                                    <th>성명<br/>생년월일</th>
+                                    <th>연락처</th>
+                                    <th>주소</th>
+                                    <th>지자체</th>
+                                    <th>주민센터</th>
+                                    <th>지원유형</th>
+                                    <th>신청카드사</th>
+                                    <th>바우처종료일</th>
+                                    <th>신청상태</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
+									<td style="display: none;">
+                                        <label class="checkbox single"><input type="checkbox"><span></span></label>
+                                    </td>
 									<td>2022.05.09<br/>15:03:24</td>
-									<td>김태희<br/>(90.01.01)</td>
-									<td>010-1234-5678</td>
-									<td>(06052) 서울특별시 강남구 논현로 706<br/>아이케슬빌딩5층</td>
-									<td>지급완료<br/>2022-11-25</td>
-									<td>신청완료<br/>2022-11-25</td>
-									<td>-</td>
+                                    <td>김태희<br/>(90.01.01)</td>
+                                    <td>010-1234-1234</td>
+                                    <td>(06052) 서울특별시 강남구 강남대로 566 신영와코루 빌딩 5층</td>
+                                    <td>강남구</td>
+                                    <td>논현2동주민센터</td>
+                                    <td>임산부</td>
+                                    <td>신한카드</td>
+                                    <td>2024.12.31</td>
+                                    <td><span class="status lblue">승인대기</span><br/>2024-10-31</td>
 								</tr>
-								<tr>
+                                <tr>
+									<td style="display: none;">
+                                        <label class="checkbox single"><input type="checkbox"><span></span></label>
+                                    </td>
 									<td>2022.05.09<br/>15:03:24</td>
-									<td>김태희<br/>(90.01.01)</td>
-									<td>010-1234-5678</td>
-									<td>(06052) 서울특별시 강남구 논현로 706<br/>아이케슬빌딩5층</td>
-									<td>지급완료<br/>2022-11-25</td>
-									<td><a href="javascript:;" class="tb_btn lg">신청</a></td>
-									<td>-</td>
+                                    <td>김태희<br/>(90.01.01)</td>
+                                    <td>010-1234-1234</td>
+                                    <td>(06052) 서울특별시 강남구 강남대로 566 신영와코루 빌딩 5층</td>
+                                    <td>강남구</td>
+                                    <td>논현2동주민센터</td>
+                                    <td>임산부</td>
+                                    <td>신한카드</td>
+                                    <td>2024.12.31</td>
+                                    <td><span class="status lblue">승인대기</span><br/>2024-10-31</td>
 								</tr>
-								<tr>
-									<td>2022.05.09<br/>15:03:24</td>
-									<td>김태희<br/>(90.01.01)</td>
-									<td>010-1234-5678</td>
-									<td>(06052) 서울특별시 강남구 논현로 706<br/>아이케슬빌딩5층</td>
-									<td>지급완료<br/>2022-11-25</td>
-									<td>배송실패(통화불능)<br/>2022-11-25</td>
-									<td>-</td>
+                                <tr>
+									<td style="display: none;">
+                                        <label class="checkbox single"><input type="checkbox"><span></span></label>
+                                    </td>
+                                    <td>2022.05.09<br/>15:03:24</td>
+                                    <td>김태희<br/>(90.01.01)</td>
+                                    <td>010-1234-1234</td>
+                                    <td>(06052) 서울특별시 강남구 강남대로 566 신영와코루 빌딩 5층</td>
+                                    <td>강남구</td>
+                                    <td>논현2동주민센터</td>
+                                    <td>임산부</td>
+                                    <td>신한카드</td>
+                                    <td>2024.12.31</td>
+                                    <td><span class="status orange">접수대기</span><br/>2024-10-31</td>
 								</tr>
-								<tr>
-									<td>2022.05.09<br/>15:03:24</td>
-									<td>김태희<br/>(90.01.01)</td>
-									<td>010-1234-5678</td>
-									<td>(06052) 서울특별시 강남구 논현로 706<br/>아이케슬빌딩5층</td>
-									<td>지급완료<br/>2022-11-25</td>
-									<td>배송실패(통화불능)<br/>2022-11-25</td>
-									<td>-</td>
-								</tr>
-								<tr>
-									<td>2022.05.09<br/>15:03:24</td>
-									<td>김태희<br/>(90.01.01)</td>
-									<td>010-1234-5678</td>
-									<td>(06052) 서울특별시 강남구 논현로 706<br/>아이케슬빌딩5층</td>
-									<td>지급완료<br/>2022-11-25</td>
-									<td>배송실패(통화불능)<br/>2022-11-25</td>
-									<td>-</td>
-								</tr>
-								<tr>
-									<td>2022.05.09<br/>15:03:24</td>
-									<td>김태희<br/>(90.01.01)</td>
-									<td>010-1234-5678</td>
-									<td>(06052) 서울특별시 강남구 논현로 706<br/>아이케슬빌딩5층</td>
-									<td>지급완료<br/>2022-11-25</td>
-									<td>배송실패(통화불능)<br/>2022-11-25</td>
-									<td>-</td>
+                                <tr>
+									<td style="display: none;">
+                                        <label class="checkbox single"><input type="checkbox"><span></span></label>
+                                    </td>
+                                    <td>2022.05.09<br/>15:03:24</td>
+                                    <td>김태희<br/>(90.01.01)</td>
+                                    <td>010-1234-1234</td>
+                                    <td>(06052) 서울특별시 강남구 강남대로 566 신영와코루 빌딩 5층</td>
+                                    <td>강남구</td>
+                                    <td>논현2동주민센터</td>
+                                    <td>임산부</td>
+                                    <td>신한카드</td>
+                                    <td>2024.12.31</td>
+                                    <td><span class="status orange">접수대기</span><br/>2024-10-31</td>
 								</tr>
 							</tbody>
 						</table>
@@ -453,7 +560,6 @@
 		<!-- //퀵배너 -->
 	</div>
 	<!-- //content -->
-
 
 	<div id="footer">
 		<div class="container">
