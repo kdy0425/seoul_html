@@ -16,25 +16,26 @@ $(document).on('change', '.label_control input[type="checkbox"]', function () {
 
 
 //디자인 셀렉트
-$('.design_select .ds_value').click(function(event){
-	if(!$(this).closest('.design_select').hasClass('disabled')){
-	$(this).closest('.design_select').addClass('active').find('.ds_options').show();
-	}
+$(document).on('click', '.design_select .ds_value', function(event) {
+    if (!$(this).closest('.design_select').hasClass('disabled')) {
+        $(this).closest('.design_select').addClass('active').find('.ds_options').show();
+    }
 });
 
-$('.ds_options .ds_list a').click(function(event){
-	var selVal = $(this).text();
-	var selData =  $(this).attr('data-rel');
-	$(this).closest('.design_select').find('.ds_value').text(selVal);
-	$(this).closest('.design_select').find('input').val(selData);
-	$(this).closest('.ds_options').hide();
-	$(this).closest('.design_select').find('.ds_list a').removeClass('active');
-	$(this).addClass('active');
-	$(this).closest('.design_select').removeClass('active');
+$(document).on('click', '.ds_options .ds_list a', function(event) {
+    var selVal = $(this).text();
+    var selData = $(this).attr('data-rel');
+    $(this).closest('.design_select').find('.ds_value').text(selVal);
+    $(this).closest('.design_select').find('input').val(selData);
+    $(this).closest('.ds_options').hide();
+    $(this).closest('.design_select').find('.ds_list a').removeClass('active');
+    $(this).addClass('active');
+    $(this).closest('.design_select').removeClass('active');
 });
-$('.ds_options .ds_close,.ds_options .ds_bg').click(function(event){
-	$(this).closest('.design_select').removeClass('active');
-	$(this).closest('.ds_options').hide()
+
+$(document).on('click', '.ds_options .ds_close, .ds_options .ds_bg', function(event) {
+    $(this).closest('.design_select').removeClass('active');
+    $(this).closest('.ds_options').hide();
 });
 
 

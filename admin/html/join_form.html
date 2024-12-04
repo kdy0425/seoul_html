@@ -376,10 +376,79 @@
 						</tbody>
 					</table>
 				</div>
-
 				<div class="txt_box">
 					<span class="item">※ 회원가입후 상위기관의 승인 후 로그인이 가능합니다.</span>
 					<span class="item">※ 상위기관 승인 후 담당자 핸드폰으로 승인 알림톡이 전달됩니다.</span>
+				</div>
+			</div>
+
+			<div class="form_box">
+				<div class="form_title">신청정보</div>
+				<div class="form_table">
+					<table>
+						<colgroup>
+							<col style="width:180px;">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th><span class="req">자녀정보<br/>(만 18세 미만)</span></th>
+								<td>
+									<div class="add_wrap">
+										<div class="add_row">
+											<div class="ip_group">
+												<span class="add_tit">자녀1</span>
+												<div class="design_select" style="width: 120px;">
+													<input type="hidden" name="child_year">
+													<a href="javascript:;" class="ds_value type1">연 선택</a>
+													<div class="ds_options" style="display: none;">
+														<div id="" class="ds_cnt">
+															<ul class="ds_list">
+																<li><a href="javascript:;" class="ds_option" data-rel="2024">2024년</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="2023">2023년</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="2022">2022년</a></li>
+															</ul>
+														</div>
+														<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+													</div>
+												</div>
+												<div class="design_select" style="width: 120px;">
+													<input type="hidden" name="child_month">
+													<a href="javascript:;" class="ds_value type1">월 선택</a>
+													<div class="ds_options" style="display: none;">
+														<div id="" class="ds_cnt">
+															<ul class="ds_list">
+																<li><a href="javascript:;" class="ds_option" data-rel="1">1월</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="2">2월</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="3">3월</a></li>
+															</ul>
+														</div>
+														<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+													</div>
+												</div>
+												<div class="design_select" style="width: 120px;">
+													<input type="hidden" name="child_day">
+													<a href="javascript:;" class="ds_value type1">일 선택</a>
+													<div class="ds_options" style="display: none;">
+														<div id="" class="ds_cnt">
+															<ul class="ds_list">
+																<li><a href="javascript:;" class="ds_option" data-rel="1">1일</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="2">2일</a></li>
+																<li><a href="javascript:;" class="ds_option" data-rel="3">3일</a></li>
+															</ul>
+														</div>
+														<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+													</div>
+												</div>
+												<button type="button" class="btn_add">자녀정보 추가</button>
+											</div>
+										</div>
+									</div>
+									<span class="error_txt">※ 만 18세 미만 자녀의 생년월일을 입력합니다.</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 
@@ -523,5 +592,72 @@
 <script src="../assets/js/jquery-ui.min.js"></script>
 <script src="../assets/js/common.js"></script>
 
+<script>
+$(document).ready(function () {
+    $('.add_wrap').on('click', '.btn_add', function () {
+        const newIndex = $('.add_wrap .add_row').length + 1;
+        const newRow = `
+			<div class="add_row">
+				<div class="ip_group">
+					<span class="add_tit">자녀${newIndex}</span>
+					<div class="design_select" style="width: 120px;">
+						<input type="hidden" name="child_year${newIndex}">
+						<a href="javascript:;" class="ds_value type1">연 선택</a>
+						<div class="ds_options" style="display: none;">
+							<div id="" class="ds_cnt">
+								<ul class="ds_list">
+									<li><a href="javascript:;" class="ds_option" data-rel="2024">2024년</a></li>
+									<li><a href="javascript:;" class="ds_option" data-rel="2023">2023년</a></li>
+									<li><a href="javascript:;" class="ds_option" data-rel="2022">2022년</a></li>
+								</ul>
+							</div>
+							<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+						</div>
+					</div>
+					<div class="design_select" style="width: 120px;">
+						<input type="hidden" name="child_month${newIndex}">
+						<a href="javascript:;" class="ds_value type1">월 선택</a>
+						<div class="ds_options" style="display: none;">
+							<div id="" class="ds_cnt">
+								<ul class="ds_list">
+									<li><a href="javascript:;" class="ds_option" data-rel="1">1월</a></li>
+									<li><a href="javascript:;" class="ds_option" data-rel="2">2월</a></li>
+									<li><a href="javascript:;" class="ds_option" data-rel="3">3월</a></li>
+								</ul>
+							</div>
+							<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+						</div>
+					</div>
+					<div class="design_select" style="width: 120px;">
+						<input type="hidden" name="child_day${newIndex}">
+						<a href="javascript:;" class="ds_value type1">일 선택</a>
+						<div class="ds_options" style="display: none;">
+							<div id="" class="ds_cnt">
+								<ul class="ds_list">
+									<li><a href="javascript:;" class="ds_option" data-rel="1">1일</a></li>
+									<li><a href="javascript:;" class="ds_option" data-rel="2">2일</a></li>
+									<li><a href="javascript:;" class="ds_option" data-rel="3">3일</a></li>
+								</ul>
+							</div>
+							<a href="javascript:;" class="ds_bg">옵션 닫기</a>
+						</div>
+					</div>
+					<button type="button" class="btn_remove">삭제</button>
+				</div>
+			</div>
+			`;
+        $('.add_wrap').append(newRow);
+    });
+
+    $('.add_wrap').on('click', '.btn_remove', function () {
+        $(this).closest('.add_row').remove();
+
+        $('.add_wrap .add_row').each(function (index) {
+            $(this).find('.add_tit').text(`자녀${index + 1}`);
+        });
+    });
+});
+
+</script>
 </body>
 </html>	 

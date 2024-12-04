@@ -1041,6 +1041,13 @@ background-repeat:no-repeat;background-position:left 58px center;background-size
 .tap_btn2 a:last-child{border-radius: 0 7px 7px 0;border-right:1px solid #ddd;}
 .tap_btn2 a.active{background-color: #8294c6;border:1px solid #8294c6;color:#fff;}
 .tap_btn2.rt{position:absolute;right:30px;top:26px;}
+
+.tap_btn3{display: inline-flex;border-radius: 8px;background-color: #EFF1F9;margin-bottom:20px;}
+.tap_btn3 a{min-width:160px;text-align: center;padding:10px 20px;background-color: #EFF1F9;color: #898FA7;font-size:14px;font-weight:500;border-radius:8px;border:1px solid transparent;}
+.tap_btn3 .active{color:#485FAB;font-weight: 700;background-color: #fff;border:1px solid #485FAB;box-shadow: 2px 2px 6px rgba(91, 118, 208, 0.25);}
+.tap_btn3 a:hover{color: #686f8b;}
+.tap_btn3 a.active:hover{color: #485FAB;}
+
 .app_links{display:flex;flex-direction: column;margin-left:20px;min-width: 180px;max-width: 180px;}
 .app_links .link{flex:1 1;display: flex;flex-direction: column;justify-content: center;align-items: center;background-color: #f1f1f1;border-radius: 10px;position:relative;}
 .app_links .link + .link{margin-top:10px;}
@@ -1091,26 +1098,18 @@ background-repeat:no-repeat;background-position:left 58px center;background-size
 .status_col a.item.gray:hover{background-color:#efefef;}
 .status_col a.item.red:hover{background-color:#fbe4e4;}
 .status_col a.item.purple:hover{background-color: #e2e8f7;}
-<div class="status_col">
-                            <div class="item gray">
-                                <div class="icon">
-                                    <svg width="36" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.568 5.584h16.574v3.224c0 1.175-.936 2.13-2.088 2.13H9.655c-1.151 0-2.087-.955-2.087-2.13V5.584Z" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.22 7.256H3a2 2 0 0 0-2 2V39.79a2 2 0 0 0 2 2h25.71a2 2 0 0 0 2-2V9.256a2 2 0 0 0-2-2h-4.363" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.936 43.21v.516a2 2 0 0 0 2 2h25.71a2 2 0 0 0 2-2V13.192a2 2 0 0 0-2-2h-.937M13.4 5.584V3.507C13.4 2.122 14.497 1 15.854 1c1.356 0 2.455 1.122 2.455 2.507v2.077M14.331 19.725h9.678M14.331 25.586h9.678M14.331 31.448h9.678" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="m6.183 18.888 1.833 1.894 2.662-3.458M6.183 24.88l1.833 1.896 2.662-3.458" stroke="#495FAB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="m6.183 30.875 3.612 4.05M9.795 30.875l-3.612 4.05" stroke="#E34F56" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                                </div>
-                                <div class="tit">전체</div>
-                                <div class="count"><strong>280</strong> 건</div>
-                            </div>
-                            <div class="item red">
-                                <div class="icon">
-                                    <svg width="38" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.217 14.831h9.293M12.217 20h9.293M12.217 25.166h9.293M28.56 15.5v17.575a2 2 0 0 1-2 2H7.166a2 2 0 0 1-2-2V8.177a2 2 0 0 1 2-2H22" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.086 10.102H3a2 2 0 0 0-2 2V37a2 2 0 0 0 2 2h19.392a2 2 0 0 0 2-2v-1.56" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M29.31 14.702c3.813 0 6.905-3.067 6.905-6.851S33.123 1 29.31 1c-3.814 0-6.906 3.067-6.906 6.851s3.092 6.851 6.906 6.851ZM27.5 5.8l3.69 4.137M31.19 5.8 27.5 9.937" stroke="#EA4762" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                                </div>
-                                <div class="tit">미처리</div>
-                                <div class="count"><strong>273</strong> 건</div>
-                            </div>
-                            <div class="item purple">
-                                <div class="icon">
-                                    <svg width="38" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.217 14.831h9.293M12.217 20h9.293M12.217 25.166h9.293M28.56 15.5v17.575a2 2 0 0 1-2 2H7.166a2 2 0 0 1-2-2V8.177a2 2 0 0 1 2-2H22" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.086 10.102H3a2 2 0 0 0-2 2V37a2 2 0 0 0 2 2h19.392a2 2 0 0 0 2-2v-1.56" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M29.31 14.702c3.813 0 6.905-3.067 6.905-6.851S33.123 1 29.31 1c-3.814 0-6.906 3.067-6.906 6.851s3.092 6.851 6.906 6.851Z" stroke="#5B76D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="m26.651 7.66 2.168 2.178 3.148-3.974" stroke="#5B76D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                                </div>
-                                <div class="tit">처리</div>
-                                <div class="count"><strong>7</strong> 건</div>
-                            </div>
-                        </div>
+
+.add_wrap{}
+.add_wrap .add_row + .add_row{margin-top:5px;}
+.add_wrap .add_row .ip_group{display: flex;align-items: center;}
+.add_wrap .add_tit{color:#666;font-size:13px;font-weight:500;padding-right:10px;min-width:50px;}
+.add_wrap .btn_add{color:#666;font-size:13px;font-weight:700;border:0;background-color: transparent;margin-left:10px;display: inline-flex;align-items: center;}
+.add_wrap .btn_add:before{content:"";margin-right:5px;width: 16px;height: 16px;background-position: center center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%0A%3Csvg width='16' height='16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='8' fill='%23666'/%3E%3Cpath d='M4.11 8h7.779m-3.89-3.89v7.78' stroke='%23fff' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");}
+.add_wrap .btn_add:hover{color:#555;}
+.add_wrap .btn_add:hover:before{background-image: url("data:image/svg+xml,%0A%3Csvg width='16' height='16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='8' fill='%23555'/%3E%3Cpath d='M4.11 8h7.779m-3.89-3.89v7.78' stroke='%23fff' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");}
+.add_wrap .btn_remove{color:#999;font-size:13px;font-weight:700;border:0;background-color: transparent;margin-left:10px;display: inline-flex;align-items: center;}
+.add_wrap .btn_remove:before{content:"";margin-right:5px;width: 16px;height: 16px;background-position: center center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%0A%3Csvg width='16' height='16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='8' fill='%23D0D0D0'/%3E%3Cpath d='M11.89 8H4.11' stroke='%23fff' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");}
+.add_wrap .btn_remove:hover{color:#888;}
+.add_wrap .btn_remove:hover:before{background-image: url("data:image/svg+xml,%0A%3Csvg width='16' height='16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='8' fill='%23bbb'/%3E%3Cpath d='M11.89 8H4.11' stroke='%23fff' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");}
+.add_wrap .add_row .btn_remove{display: none;}
+.add_wrap .add_row:last-child .btn_remove{display: inline-flex;}
