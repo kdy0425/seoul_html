@@ -238,6 +238,120 @@
 						</div>
 
 						<div class="form_box">
+							<div class="fb_title">신청정보</div>
+							<span class="fb_rt req">는 필수 입력 사항입니다.</span>
+							<div class="form_table">
+								<table>
+									<colgroup>
+										<col style="width:180px;">
+										<col style="width:;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th><span class="req">자녀정보<br/>(만 18세 미만)</span></th>
+											<td>
+												<div class="add_wrap">
+													<div class="add_row">
+														<div class="ip_group ymd">
+															<span class="add_tit">자녀1</span>
+															<select name="child_year" id="">
+																<option value="">연 선택</option>
+																<option value="2024">2024년</option>
+																<option value="2023">2023년</option>
+																<option value="2022">2022년</option>
+															</select>
+															<select name="child_month" id="">
+																<option value="">월 선택</option>
+																<option value="1">1월</option>
+																<option value="2">2월</option>
+																<option value="3">3월</option>
+															</select>
+															<select name="child_day" id="">
+																<option value="">일 선택</option>
+																<option value="1">1일</option>
+																<option value="2">2일</option>
+																<option value="3">3일</option>
+															</select>
+															<button type="button" class="btn_add">자녀정보 추가</button>
+														</div>
+													</div>
+													<div class="add_row">
+														<div class="ip_group ymd">
+															<span class="add_tit">자녀2</span>
+															<select name="child_year2" id="">
+																<option value="">연 선택</option>
+																<option value="2024">2024년</option>
+																<option value="2023">2023년</option>
+																<option value="2022">2022년</option>
+															</select>
+															<select name="child_month2" id="">
+																<option value="">월 선택</option>
+																<option value="1">1월</option>
+																<option value="2">2월</option>
+																<option value="3">3월</option>
+															</select>
+															<select name="child_day2" id="">
+																<option value="">일 선택</option>
+																<option value="1">1일</option>
+																<option value="2">2일</option>
+																<option value="3">3일</option>
+															</select>
+															<button type="button" class="btn_remove">삭제</button>
+														</div>
+													</div>
+												</div>
+												<span class="ip_rule pregnancy_calc">※ 만 18세 미만 자녀의 생년월일을 입력합니다.</span>
+												<script>
+													$(document).ready(function () {
+														$('.add_wrap').on('click', '.btn_add', function () {
+															const newIndex = $('.add_wrap .add_row').length + 1;
+															const newRow = `
+																<div class="add_row">
+																	<div class="ip_group ymd">
+																		<span class="add_tit">자녀${newIndex}</span>
+																		<select name="child_year${newIndex}" id="">
+																			<option value="">연 선택</option>
+																			<option value="2024">2024년</option>
+																			<option value="2023">2023년</option>
+																			<option value="2022">2022년</option>
+																		</select>
+																		<select name="child_month${newIndex}" id="">
+																			<option value="">월 선택</option>
+																			<option value="1">1월</option>
+																			<option value="2">2월</option>
+																			<option value="3">3월</option>
+																		</select>
+																		<select name="child_day${newIndex}" id="">
+																			<option value="">일 선택</option>
+																			<option value="1">1일</option>
+																			<option value="2">2일</option>
+																			<option value="3">3일</option>
+																		</select>
+																		<button type="button" class="btn_remove">삭제</button>
+																	</div>
+																</div>
+																`;
+															$('.add_wrap').append(newRow);
+														});
+													
+														$('.add_wrap').on('click', '.btn_remove', function () {
+															$(this).closest('.add_row').remove();
+													
+															$('.add_wrap .add_row').each(function (index) {
+																$(this).find('.add_tit').text(`자녀${index + 1}`);
+															});
+														});
+													});
+													
+													</script>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<div class="form_box">
 							<div class="fb_title">카드정보</div>
 							<span class="fb_rt req">는 필수 입력 사항입니다.</span>
 							<div class="form_table">

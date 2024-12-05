@@ -1113,3 +1113,4 @@ background-repeat:no-repeat;background-position:left 58px center;background-size
 .add_wrap .btn_remove:hover:before{background-image: url("data:image/svg+xml,%0A%3Csvg width='16' height='16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='8' fill='%23bbb'/%3E%3Cpath d='M11.89 8H4.11' stroke='%23fff' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");}
 .add_wrap .add_row .btn_remove{display: none;}
 .add_wrap .add_row:last-child .btn_remove{display: inline-flex;}
+.add_wrap .add_row:nth-child(2) .btn_remove{display: none;}

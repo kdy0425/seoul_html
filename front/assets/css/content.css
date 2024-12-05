@@ -2483,3 +2483,28 @@ background-image: url("data:image/svg+xml,%3Csvg width='134' height='83' viewBox
 	.join_type_radio .item .item_cnt p{color:#666;font-size:14px;}
 }
 
+.add_wrap{}
+.add_wrap .add_row + .add_row{margin-top:5px;}
+.add_wrap .add_row .ip_group{display: flex;align-items: center;}
+.add_wrap .add_tit{color:#666;font-size:13px;font-weight:500;padding-right:10px;min-width:50px;}
+.add_wrap .btn_add{color:#666;font-size:13px;font-weight:700;border:0;background-color: transparent;margin-left:10px;display: inline-flex;align-items: center;}
+.add_wrap .btn_add:before{content:"";margin-right:5px;width: 16px;height: 16px;background-position: center center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%0A%3Csvg width='16' height='16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='8' fill='%23666'/%3E%3Cpath d='M4.11 8h7.779m-3.89-3.89v7.78' stroke='%23fff' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");}
+.add_wrap .btn_add:hover{color:#555;}
+.add_wrap .btn_add:hover:before{background-image: url("data:image/svg+xml,%0A%3Csvg width='16' height='16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='8' fill='%23555'/%3E%3Cpath d='M4.11 8h7.779m-3.89-3.89v7.78' stroke='%23fff' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");}
+.add_wrap .btn_remove{color:#999;font-size:13px;font-weight:700;border:0;background-color: transparent;margin-left:10px;display: inline-flex;align-items: center;}
+.add_wrap .btn_remove:before{content:"";margin-right:5px;width: 16px;height: 16px;background-position: center center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%0A%3Csvg width='16' height='16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='8' fill='%23D0D0D0'/%3E%3Cpath d='M11.89 8H4.11' stroke='%23fff' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");}
+.add_wrap .btn_remove:hover{color:#888;}
+.add_wrap .btn_remove:hover:before{background-image: url("data:image/svg+xml,%0A%3Csvg width='16' height='16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='8' fill='%23bbb'/%3E%3Cpath d='M11.89 8H4.11' stroke='%23fff' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");}
+.add_wrap .add_row .btn_remove{display: none;}
+.add_wrap .add_row:last-child .btn_remove{display: inline-flex;}
+.add_wrap .add_row:nth-child(2) .btn_remove{display: none;}
+
+@media screen and (max-width: 1400px) {	
+	.add_wrap{text-align: left;position: relative;}
+	.add_wrap .add_row + .add_row{margin-top:20px;}
+	.add_wrap .add_row:last-child{position: relative;}
+	.add_wrap .add_row .ip_group{flex-wrap:wrap;justify-content: center;}
+	.add_wrap .add_tit{padding:0;width:100%;margin-bottom:10px;}
+	.add_wrap .btn_add{margin-left:0;position: absolute;right:0;top:0;}
+	.add_wrap .btn_remove{margin-left:0;position: absolute;right:0;top:0;}
+}
