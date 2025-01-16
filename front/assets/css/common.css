@@ -103,6 +103,7 @@ button{cursor:pointer;}
 #skip_to_container a {z-index:100000;position:absolute;top:0;left:0;width:1px;height:1px;font-size:0;line-height:0;overflow:hidden}
 #skip_to_container a:focus, #skip_to_container a:active {width:100%;height:75px;background:#21272e;color:#fff;font-size:2em;font-weight:bold;text-align:center;text-decoration:none;line-height:3.3em}
 
+.mgt0 {margin-top:0px !important;}
 .mgt5 {margin-top:5px !important;}
 .mgt10 {margin-top:10px !important;}
 .mgt15 {margin-top:15px !important;}
