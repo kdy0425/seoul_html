@@ -2713,3 +2713,4 @@ background-image: url("data:image/svg+xml,%3Csvg width='134' height='83' viewBox
 	.list_service ul li .bottom .contact .tel a{text-decoration:underline;cursor: pointer;pointer-events: auto;}
 	.list_service .list_empty{padding:22px 0 24px 0;border:0;}
 	.list_service .list_empty .empty_txt{padding-top:60px;background-size:40px;background-image:url('../images/list_empty.png');}
+}
